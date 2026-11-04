@@ -62,4 +62,17 @@ const epocas = defineCollection({
   }),
 });
 
-export const collections = { hitos, epocas, sociedades, disciplinas };
+// El arte en cada época según el área: un archivo por época y área en src/data/arte/.
+const arteTexto = z.object({ area: z.string(), concepto: z.string(), funcion: z.string(), artista: z.string() });
+const arte = defineCollection({
+  loader: glob({ base: './src/data/arte', pattern: '**/*.{yml,yaml}', generateId: idDeArchivo }),
+  schema: z.object({
+    epoca: z.string().transform(clave),
+    // Columnas a las que se aplica; al desplegar una de ellas, su área sale primero en la ficha.
+    sociedades: z.array(z.string().transform(clave)).nullish().transform((x) => x ?? []),
+    es: arteTexto,
+    en: z.object({ area: z.string().nullish(), concepto: z.string().nullish(), funcion: z.string().nullish(), artista: z.string().nullish() }).nullish(),
+  }),
+});
+
+export const collections = { hitos, epocas, sociedades, disciplinas, arte };

@@ -1,0 +1,15 @@
+id: entreguerras--occidente
+epoca: entreguerras
+sociedades:
+  - europa
+  - norteamerica
+es:
+  area: "Europa y Norteamérica"
+  concepto: "Unos quieren unir arte y vida (Bauhaus, constructivismo); otros buscan el inconsciente (surrealismo). Los totalitarismos lo controlan."
+  funcion: "Diseñar objetos para todos, servir a la revolución, explorar el sueño o hacer propaganda; los nazis persiguen el «arte degenerado»."
+  artista: "Diseñador asalariado, artista de mercado o funcionario; en EE. UU. el Estado paga a artistas en la Gran Depresión."
+en:
+  area: "Europe and North America"
+  concepto: "Some want to join art and life (Bauhaus, Constructivism); others explore the unconscious (Surrealism). Totalitarian states control it."
+  funcion: "To design objects for all, serve the revolution, explore dreams or make propaganda; the Nazis persecute “degenerate art”."
+  artista: "Salaried designer, market artist or state employee; in the USA the government pays artists during the Depression."

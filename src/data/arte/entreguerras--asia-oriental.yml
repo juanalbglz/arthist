@@ -1,0 +1,15 @@
+id: entreguerras--asia-oriental
+epoca: entreguerras
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En China, Lu Xun impulsa el grabado en madera como arte de denuncia; en Japón el arte acaba al servicio del militarismo."
+  funcion: "Despertar conciencias y hacer propaganda; en la guerra, pintar batallas."
+  artista: "Artistas comprometidos que publican en revistas y, en Japón, pintores movilizados por el ejército."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "In China Lu Xun promotes the woodcut as an art of protest; in Japan art ends up serving militarism."
+  funcion: "To raise awareness and make propaganda; in wartime, to paint battles."
+  artista: "Committed artists publishing in magazines and, in Japan, painters mobilised by the army."

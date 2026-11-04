@@ -1,0 +1,14 @@
+id: entreguerras--africa
+epoca: entreguerras
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "Las escuelas coloniales (Makerere, Achimota) enseñan «bellas artes» europeas; en París, la Négritude reivindica lo africano."
+  funcion: "Formar a una élite moderna y, a la vez, afirmar el valor de las culturas africanas."
+  artista: "Profesores y alumnos de escuelas de arte junto a escultores tradicionales que trabajan por encargo."
+en:
+  area: "Africa"
+  concepto: "Colonial schools (Makerere, Achimota) teach European “fine art”; in Paris, Négritude reclaims Africanness."
+  funcion: "To train a modern elite and, at the same time, affirm the value of African cultures."
+  artista: "Teachers and students of art schools alongside traditional sculptors working on commission."

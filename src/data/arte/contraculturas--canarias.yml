@@ -1,0 +1,15 @@
+id: contraculturas--canarias
+epoca: contraculturas
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "César Manrique entiende el arte como intervención en el paisaje: en Lanzarote, arte, naturaleza y turismo se unen."
+  funcion: "Proteger el territorio frente al turismo de masas y crear una identidad moderna."
+  artista: "Artista con encargos públicos de los cabildos; con la democracia aparecen nuevas instituciones."
+en:
+  area: "Canary Islands"
+  concepto: "César Manrique sees art as an intervention in the landscape: on Lanzarote, art, nature and tourism come together."
+  funcion: "To protect the land from mass tourism and create a modern identity."
+  artista: "An artist with public commissions from island councils; democracy brings new institutions."

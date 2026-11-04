@@ -1,0 +1,15 @@
+id: mundo-global--canarias
+epoca: mundo-global
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Nuevos museos (CAAM, TEA) y bienales sitúan a Canarias entre Europa, África y América."
+  funcion: "Pensar el territorio, el turismo y la identidad atlántica."
+  artista: "Artistas que viven de la docencia, becas y encargos públicos; el mercado local es pequeño."
+en:
+  area: "Canary Islands"
+  concepto: "New museums (CAAM, TEA) and biennials place the Canaries between Europe, Africa and the Americas."
+  funcion: "To think about territory, tourism and Atlantic identity."
+  artista: "Artists living from teaching, grants and public commissions; the local market is small."

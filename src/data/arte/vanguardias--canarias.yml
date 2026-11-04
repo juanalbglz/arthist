@@ -1,0 +1,15 @@
+id: vanguardias--canarias
+epoca: vanguardias
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Con Néstor de la Torre el modernismo se mezcla con lo local: el mar, el cuerpo y la flora de las islas."
+  funcion: "Crear una identidad canaria moderna y decorar edificios públicos y teatros."
+  artista: "Artistas que viajan entre Madrid y las islas y viven de encargos públicos y privados."
+en:
+  area: "Canary Islands"
+  concepto: "With Néstor de la Torre, modernism blends with the local: the sea, the body and the islands’ flora."
+  funcion: "To create a modern Canarian identity and decorate public buildings and theatres."
+  artista: "Artists who travel between Madrid and the islands and live from public and private commissions."

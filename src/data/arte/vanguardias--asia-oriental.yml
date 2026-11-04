@@ -1,0 +1,15 @@
+id: vanguardias--asia-oriental
+epoca: vanguardias
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "China pasa del imperio a la república (1911) y debate si adoptar la pintura occidental; Japón tiene ya su sistema de bellas artes."
+  funcion: "Modernizar y fortalecer la nación sin perder la propia tradición."
+  artista: "Profesores de escuelas de arte y pintores que venden en exposiciones."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "China moves from empire to republic (1911) and debates adopting Western painting; Japan already has a fine-art system."
+  funcion: "To modernise and strengthen the nation without losing its own tradition."
+  artista: "Art school teachers and painters who sell at exhibitions."

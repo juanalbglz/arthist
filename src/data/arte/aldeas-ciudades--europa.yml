@@ -1,0 +1,14 @@
+id: aldeas-ciudades--europa
+epoca: aldeas-ciudades
+sociedades:
+  - europa
+es:
+  area: "Europa"
+  concepto: "«Arte» es técnica (tékhne, ars): saber hacer algo bien, igual el escultor que el zapatero. En Grecia nace la idea de belleza ideal."
+  funcion: "Honrar a los dioses, celebrar la ciudad y sus atletas, mostrar el poder de Roma y decorar casas ricas."
+  artista: "Artesanos que cobran por encargo. Algunos firman, como Fidias, pero el trabajo manual se considera inferior."
+en:
+  area: "Europe"
+  concepto: "“Art” is technique (tékhne, ars): knowing how to make something well, a sculptor as much as a shoemaker. Greece invents the idea of ideal beauty."
+  funcion: "To honour the gods, celebrate the city and its athletes, display Rome’s power and decorate wealthy homes."
+  artista: "Craftspeople paid by commission. Some sign, like Phidias, but manual work is seen as inferior."

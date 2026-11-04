@@ -1,0 +1,14 @@
+id: imperios-coloniales--africa
+epoca: imperios-coloniales
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "Los objetos rituales se saquean y pasan a museos etnográficos europeos como «curiosidades» o pruebas de un supuesto atraso."
+  funcion: "En su lugar de origen siguen actuando en el rito; en Europa se convierten en trofeos coloniales (Benín, 1897)."
+  artista: "Los escultores siguen trabajando por encargo de reyes y comunidades; sus nombres se pierden al llegar a Europa."
+en:
+  area: "Africa"
+  concepto: "Ritual objects are looted and placed in European ethnographic museums as “curiosities” or proof of a supposed backwardness."
+  funcion: "At home they keep acting in ritual; in Europe they become colonial trophies (Benin, 1897)."
+  artista: "Sculptors keep working on commission for kings and communities; their names are lost when the works reach Europe."

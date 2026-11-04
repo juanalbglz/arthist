@@ -1,0 +1,18 @@
+id: reinos--america
+epoca: reinos
+sociedades:
+  - mesoamerica
+  - andes
+  - norteamerica
+  - sudamerica
+  - caribe
+es:
+  area: "América"
+  concepto: "Arte y ritual son lo mismo: el tolteca, en náhuatl, es el sabio artista que «dialoga con su corazón»."
+  funcion: "Mantener el orden del cosmos, honrar a los dioses y a los gobernantes, y llevar la cuenta del tiempo en los códices."
+  artista: "Especialistas estimados (toltecas, plumajeros, orfebres), a menudo ligados a palacios y templos."
+en:
+  area: "The Americas"
+  concepto: "Art and ritual are one: the toltecatl, in Nahuatl, is the wise artist who “dialogues with his heart”."
+  funcion: "To keep the cosmos in order, honour gods and rulers and count time in codices."
+  artista: "Esteemed specialists (feather workers, goldsmiths), often attached to palaces and temples."

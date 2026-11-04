@@ -1,0 +1,15 @@
+id: imperios-coloniales--asia-oriental
+epoca: imperios-coloniales
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En la era Meiji, Japón adopta la palabra «bijutsu» (bellas artes) y separa la pintura occidental (yōga) de la japonesa (nihonga)."
+  funcion: "Modernizar la nación, competir con Occidente y exportar objetos que inspiran el japonismo en Europa."
+  artista: "Se crean academias y exposiciones oficiales; aparece el artista que vende, junto a artesanos de exportación."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "In the Meiji era Japan adopts the word “bijutsu” (fine arts) and separates Western-style (yōga) from Japanese-style (nihonga) painting."
+  funcion: "To modernise the nation, compete with the West and export objects that inspire Japonisme in Europe."
+  artista: "Academies and official exhibitions are created; the selling artist appears alongside export craftspeople."

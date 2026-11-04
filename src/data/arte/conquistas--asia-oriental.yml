@@ -1,0 +1,15 @@
+id: conquistas--asia-oriental
+epoca: conquistas
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En China se mantiene el ideal del pintor letrado; en Japón, el ukiyo-e retrata el «mundo flotante» de la ciudad."
+  funcion: "Cultivarse, regalar y expresar valores en China; en Edo, entretener y anunciar actores y cortesanas."
+  artista: "Pintores letrados que no venden (aunque reciben regalos) y, en Japón, grabadores que trabajan para editores en un mercado de masas."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "China keeps the ideal of the scholar painter; in Japan, ukiyo-e portrays the city’s “floating world”."
+  funcion: "To cultivate, give as gifts and express values in China; in Edo, to entertain and advertise actors and courtesans."
+  artista: "Scholar painters who do not sell (though they receive gifts) and, in Japan, printmakers working for publishers in a mass market."

@@ -1,0 +1,15 @@
+id: aldeas-ciudades--canarias
+epoca: aldeas-ciudades
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Los primeros pobladores llegan del norte de África con signos líbico-bereberes: grabar en la roca es escribir y consagrar a la vez."
+  funcion: "Marcar el territorio, los pastos y los lugares sagrados en lo alto, como en Gran Canaria o La Palma."
+  artista: "No hay artistas: la comunidad pastora graba y modela; quizá ciertas personas tenían ese papel ritual."
+en:
+  area: "Canary Islands"
+  concepto: "The first settlers arrive from North Africa with Libyco-Berber signs: carving on rock is both writing and consecrating."
+  funcion: "To mark territory, pastures and high sacred places, as in Gran Canaria or La Palma."
+  artista: "There are no artists: the herding community carves and models; perhaps certain people held that ritual role."

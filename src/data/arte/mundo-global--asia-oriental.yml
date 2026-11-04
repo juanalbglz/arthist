@@ -1,0 +1,15 @@
+id: mundo-global--asia-oriental
+epoca: mundo-global
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "China crea un gran mercado de arte contemporáneo; Murakami une arte, marca y producto."
+  funcion: "Representar la nación moderna, criticar el poder (Ai Weiwei) o vender a escala global."
+  artista: "Artistas con grandes estudios-empresa y una mayoría de artistas jóvenes precarios."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "China creates a huge contemporary art market; Murakami merges art, brand and product."
+  funcion: "To represent the modern nation, criticise power (Ai Weiwei) or sell globally."
+  artista: "Artists running large studio-companies and a majority of precarious young artists."

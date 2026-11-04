@@ -1,0 +1,15 @@
+id: imperios-coloniales--canarias
+epoca: imperios-coloniales
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "El arte se entiende a la europea, con academias y exposiciones; la élite de las islas mira a Madrid y París."
+  funcion: "Retratar a la burguesía, pintar el paisaje y la historia de las islas."
+  artista: "Pocos artistas profesionales; viven de retratos, docencia y becas de los cabildos para estudiar fuera."
+en:
+  area: "Canary Islands"
+  concepto: "Art is understood in European terms, with academies and exhibitions; the island elite looks to Madrid and Paris."
+  funcion: "To portray the bourgeoisie and paint the islands’ landscape and history."
+  artista: "Few professional artists; they live from portraits, teaching and island council grants to study abroad."

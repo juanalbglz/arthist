@@ -1,0 +1,18 @@
+id: conquistas--america
+epoca: conquistas
+sociedades:
+  - mesoamerica
+  - andes
+  - norteamerica
+  - sudamerica
+  - caribe
+es:
+  area: "América"
+  concepto: "El arte virreinal sirve para evangelizar; mezcla iconografía europea con símbolos y técnicas indígenas (escuela cuzqueña, arte plumario)."
+  funcion: "Convertir, enseñar la fe y mostrar el orden colonial, incluidas las pinturas de castas."
+  artista: "Gremios a la manera europea; los artistas indígenas y mestizos pintan mucho, pero cobran menos y casi no firman."
+en:
+  area: "The Americas"
+  concepto: "Viceregal art serves evangelisation; it blends European iconography with Indigenous symbols and techniques (Cusco school, featherwork)."
+  funcion: "To convert, teach the faith and display colonial order, including caste paintings."
+  artista: "European-style guilds; Indigenous and mestizo artists paint a great deal but are paid less and rarely sign."

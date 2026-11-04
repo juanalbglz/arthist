@@ -1,0 +1,14 @@
+id: reinos--europa
+epoca: reinos
+sociedades:
+  - europa
+es:
+  area: "Europa"
+  concepto: "El arte es oficio al servicio de Dios. La imagen es «la Biblia de los que no saben leer»."
+  funcion: "Enseñar la fe, mostrar el poder de la Iglesia y de los reyes, y salvar el alma de quien paga la obra."
+  artista: "Artesanos agrupados en gremios con aprendices y maestros; cobran por encargo y casi nunca firman."
+en:
+  area: "Europe"
+  concepto: "Art is a trade in the service of God. The image is “the Bible of those who cannot read”."
+  funcion: "To teach the faith, show the power of Church and kings, and save the soul of whoever pays for the work."
+  artista: "Craftspeople in guilds with apprentices and masters; paid by commission and seldom signing."

@@ -1,0 +1,18 @@
+id: imperios-coloniales--america
+epoca: imperios-coloniales
+sociedades:
+  - mesoamerica
+  - andes
+  - norteamerica
+  - sudamerica
+  - caribe
+es:
+  area: "América"
+  concepto: "Las nuevas repúblicas fundan academias y piden un arte que cuente la nación; en EE. UU. el paisaje es símbolo de identidad."
+  funcion: "Pintar la independencia, los héroes y el paisaje propio; formar ciudadanos."
+  artista: "Artistas becados por el Estado para formarse en Europa; el mercado privado es todavía pequeño."
+en:
+  area: "The Americas"
+  concepto: "The new republics found academies and call for an art that tells the nation; in the USA landscape becomes a symbol of identity."
+  funcion: "To paint independence, heroes and the land itself; to shape citizens."
+  artista: "Artists funded by the state to train in Europe; the private market is still small."
