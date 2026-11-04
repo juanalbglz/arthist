@@ -1,0 +1,28 @@
+id: grecia-clasica
+anio: -480
+fecha:
+  es: c. 480–323 a. C.
+  en: c. 480–323 BCE
+pista: arte
+sociedad: europa
+disciplinas:
+- escultura
+- arquitectura
+es:
+  titulo: Arte griego clásico
+  texto: Templos de proporciones medidas, como el Partenón, y esculturas que buscan un cuerpo humano idealizado.
+en:
+  titulo: Classical Greek art
+  texto: Temples built on measured proportions, such as the Parthenon, and sculpture seeking an idealised human body.
+wiki:
+  es: Arte de la Antigua Grecia
+  en: Ancient Greek art
+exponentes:
+- nombre: Fidias
+  wiki:
+    es: Fidias
+    en: Phidias
+- nombre: Praxíteles
+  wiki:
+    es: Praxíteles
+    en: Praxiteles

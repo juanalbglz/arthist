@@ -1,0 +1,28 @@
+id: bauhaus
+anio: 1919
+fecha:
+  es: 1919–1933
+  en: 1919–1933
+pista: arte
+sociedad: europa
+disciplinas:
+- diseno
+- arquitectura
+es:
+  titulo: Bauhaus
+  texto: Escuela alemana que une arte, artesanía e industria; el nazismo la cierra en 1933.
+en:
+  titulo: Bauhaus
+  texto: A German school uniting art, craft and industry; the Nazis close it in 1933.
+wiki:
+  es: Bauhaus
+  en: Bauhaus
+exponentes:
+- nombre: Walter Gropius
+  wiki:
+    es: Walter Gropius
+    en: Walter Gropius
+- nombre: Anni Albers
+  wiki:
+    es: Anni Albers
+    en: Anni Albers

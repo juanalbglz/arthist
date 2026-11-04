@@ -1,0 +1,28 @@
+id: futurismo
+anio: 1909
+fecha:
+  es: 1909 (manifiesto)
+  en: 1909 (manifesto)
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Futurismo
+  texto: Exalta la máquina, la velocidad y la guerra; parte de sus miembros acabará ligada al fascismo italiano.
+en:
+  titulo: Futurism
+  texto: It glorifies machines, speed and war; some of its members later become linked to Italian Fascism.
+wiki:
+  es: Futurismo
+  en: Futurism
+exponentes:
+- nombre: Umberto Boccioni
+  wiki:
+    es: Umberto Boccioni
+    en: Umberto Boccioni
+- nombre: Giacomo Balla
+  wiki:
+    es: Giacomo Balla
+    en: Giacomo Balla

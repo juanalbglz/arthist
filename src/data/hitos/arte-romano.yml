@@ -1,0 +1,24 @@
+id: arte-romano
+anio: -100
+fecha:
+  es: c. siglo I a. C.–siglo IV
+  en: c. 1st century BCE–4th century CE
+pista: arte
+sociedad: europa
+disciplinas:
+- arquitectura
+- escultura
+es:
+  titulo: Arte romano
+  texto: Ingeniería monumental (arcos, bóvedas, hormigón), retrato realista y obras públicas por todo el Mediterráneo.
+en:
+  titulo: Roman art
+  texto: Monumental engineering (arches, vaults, concrete), realistic portraiture and public works across the Mediterranean.
+wiki:
+  es: Arte de la Antigua Roma
+  en: Roman art
+exponentes:
+- nombre: Vitruvio
+  wiki:
+    es: Vitruvio
+    en: Vitruvius

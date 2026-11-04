@@ -1,0 +1,28 @@
+id: manierismo
+anio: 1520
+fecha:
+  es: c. 1520–1600
+  en: c. 1520–1600
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Manierismo
+  texto: Figuras alargadas, colores ácidos y composiciones tensas que rompen el equilibrio renacentista.
+en:
+  titulo: Mannerism
+  texto: Elongated figures, acid colours and tense compositions that break Renaissance balance.
+wiki:
+  es: Manierismo
+  en: Mannerism
+exponentes:
+- nombre: El Greco
+  wiki:
+    es: El Greco
+    en: El Greco
+- nombre: Parmigianino
+  wiki:
+    es: Parmigianino
+    en: Parmigianino

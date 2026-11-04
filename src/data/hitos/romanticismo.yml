@@ -1,0 +1,34 @@
+id: romanticismo
+anio: 1800
+fecha:
+  es: c. 1800–1850
+  en: c. 1800–1850
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- grabado
+es:
+  titulo: Romanticismo
+  texto: Emoción, naturaleza sublime, nacionalismo y crítica de la guerra.
+en:
+  titulo: Romanticism
+  texto: Emotion, sublime nature, nationalism and a critique of war.
+wiki:
+  es: Romanticismo
+  en: Romanticism
+exponentes:
+- nombre: Francisco de Goya
+  wiki:
+    es: Francisco de Goya
+    en: Francisco Goya
+- nombre: Caspar David Friedrich
+  wiki:
+    es: Caspar David Friedrich
+    en: Caspar David Friedrich
+peliculas:
+- titulo: Los fantasmas de Goya (Goya's Ghosts)
+  anio: 2006
+  tipo: pelicula
+  direccion: Miloš Forman
+  wiki: Goya's Ghosts

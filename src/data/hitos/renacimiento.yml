@@ -1,0 +1,35 @@
+id: renacimiento
+anio: 1420
+fecha:
+  es: c. 1420–1600
+  en: c. 1420–1600
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+- arquitectura
+es:
+  titulo: Renacimiento
+  texto: Florencia recupera modelos clásicos; perspectiva, anatomía y el artista como intelectual, financiado por banqueros y papas.
+en:
+  titulo: Renaissance
+  texto: Florence revives classical models; perspective, anatomy and the artist as intellectual, funded by bankers and popes.
+wiki:
+  es: Renacimiento
+  en: Italian Renaissance
+exponentes:
+- nombre: Leonardo da Vinci
+  wiki:
+    es: Leonardo da Vinci
+    en: Leonardo da Vinci
+- nombre: Miguel Ángel
+  wiki:
+    es: Miguel Ángel
+    en: Michelangelo
+peliculas:
+- titulo: La agonía y el éxtasis (The Agony and the Ecstasy)
+  anio: 1965
+  tipo: pelicula
+  direccion: Carol Reed
+  wiki: The Agony and the Ecstasy (film)

@@ -1,0 +1,32 @@
+id: postimpresionismo
+anio: 1886
+fecha:
+  es: c. 1886–1905
+  en: c. 1886–1905
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+es:
+  titulo: Postimpresionismo
+  texto: 'Color expresivo y estructura: caminos personales que abren la puerta al arte moderno.'
+en:
+  titulo: Post-Impressionism
+  texto: 'Expressive colour and structure: personal paths that open the door to modern art.'
+wiki:
+  es: Postimpresionismo
+  en: Post-Impressionism
+exponentes:
+- nombre: Vincent van Gogh
+  wiki:
+    es: Vincent van Gogh
+    en: Vincent van Gogh
+- nombre: Paul Cézanne
+  wiki:
+    es: Paul Cézanne
+    en: Paul Cézanne
+peliculas:
+- titulo: Loving Vincent
+  anio: 2017
+  tipo: pelicula
+  direccion: Dorota Kobiela y Hugh Welchman

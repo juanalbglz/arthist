@@ -1,0 +1,27 @@
+id: informalismo
+anio: 1957
+fecha:
+  es: 1957 (grupo El Paso)
+  en: 1957 (El Paso group)
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+es:
+  titulo: Informalismo
+  texto: Materia, gesto y desgarro en la pintura de posguerra; en España, el grupo El Paso.
+en:
+  titulo: Art informel
+  texto: Matter, gesture and rupture in post-war painting; in Spain, the El Paso group.
+wiki:
+  es: Informalismo
+  en: Art informel
+exponentes:
+- nombre: Manolo Millares
+  wiki:
+    es: Manolo Millares
+    en: Manolo Millares
+- nombre: Antoni Tàpies
+  wiki:
+    es: Antoni Tàpies
+    en: Antoni Tàpies

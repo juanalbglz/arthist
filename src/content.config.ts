@@ -22,6 +22,8 @@ const hitos = defineCollection({
     wiki: biOpt,
     // Archivo de Wikimedia Commons, o «no» para no poner imagen (ver scripts/imagenes.mjs).
     imagen: z.union([z.string(), z.literal(false)]).nullish(),
+    // Artistas principales de la corriente u obra, con su artículo de Wikipedia.
+    exponentes: z.array(z.object({ nombre: z.string(), wiki: biOpt })).nullish().transform((x) => x ?? []),
     enlaces: z.array(z.object({ titulo: z.string(), url: z.string().url() })).nullish().transform((x) => x ?? []),
     peliculas: z.array(z.object({
       titulo: z.string(),

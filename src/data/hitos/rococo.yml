@@ -1,0 +1,28 @@
+id: rococo
+anio: 1730
+fecha:
+  es: c. 1730–1770
+  en: c. 1730–1770
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- arquitectura
+es:
+  titulo: Rococó
+  texto: Arte decorativo, ligero y galante para los salones de la aristocracia francesa.
+en:
+  titulo: Rococo
+  texto: Light, decorative and playful art for the salons of the French aristocracy.
+wiki:
+  es: Rococó
+  en: Rococo
+exponentes:
+- nombre: Jean-Honoré Fragonard
+  wiki:
+    es: Jean-Honoré Fragonard
+    en: Jean-Honoré Fragonard
+- nombre: Antoine Watteau
+  wiki:
+    es: Antoine Watteau
+    en: Antoine Watteau

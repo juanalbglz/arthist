@@ -120,6 +120,12 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
                     {f.hito.enlaces.map((e) => <> · <a href={e.url} rel="external">{e.titulo} ↗</a></>)}
                   </p>
                 )}
+                {f.hito.exponentes.length > 0 && (
+                  <p class="meta exponentes">
+                    <span class="eyebrow">{t.exponentes}:</span>{' '}
+                    {f.hito.exponentes.map((x, i) => <>{i > 0 && ', '}<a href={wikiUrl(lang, en2(x.wiki) || x.nombre)} rel="external">{x.nombre}</a></>)}
+                  </p>
+                )}
                 {f.hito.peliculas.length > 0 && (
                   <div class="ver">
                     <p class="eyebrow">{t.verTambien}</p>
