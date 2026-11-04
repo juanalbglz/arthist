@@ -1,0 +1,28 @@
+id: tropicalia
+anio: 1967
+fecha:
+  es: '1967'
+  en: '1967'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- instalacion
+- escenicas
+es:
+  titulo: Tropicália (Brasil)
+  texto: Instalación de Oiticica que da nombre a un movimiento de arte y música contra la dictadura y por una cultura mestiza.
+en:
+  titulo: Tropicália (Brazil)
+  texto: An installation by Oiticica that names an art and music movement against the dictatorship and for a mixed culture.
+wiki:
+  es: Tropicalismo
+  en: Tropicália
+exponentes:
+- nombre: Hélio Oiticica
+  wiki:
+    es: Hélio Oiticica
+    en: Hélio Oiticica
+- nombre: Caetano Veloso
+  wiki:
+    es: Caetano Veloso
+    en: Caetano Veloso

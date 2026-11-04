@@ -1,0 +1,27 @@
+id: videoarte
+anio: 1965
+fecha:
+  es: '1965'
+  en: '1965'
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- video
+es:
+  titulo: Videoarte
+  texto: Con las primeras cámaras portátiles, artistas como Nam June Paik convierten la televisión en material artístico.
+en:
+  titulo: Video art
+  texto: With the first portable cameras, artists such as Nam June Paik turn television into an artistic material.
+wiki:
+  es: Videoarte
+  en: Video art
+exponentes:
+- nombre: Nam June Paik
+  wiki:
+    es: Nam June Paik
+    en: Nam June Paik
+- nombre: Joan Jonas
+  wiki:
+    es: Joan Jonas
+    en: Joan Jonas

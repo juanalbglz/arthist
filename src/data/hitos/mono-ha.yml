@@ -1,0 +1,28 @@
+id: mono-ha
+anio: 1968
+fecha:
+  es: '1968'
+  en: '1968'
+pista: arte
+sociedad: japon
+disciplinas:
+- escultura
+- instalacion
+es:
+  titulo: Mono-ha (Japón)
+  texto: '«Escuela de las cosas»: piedra, tierra, madera y acero dispuestos casi sin intervenir, para pensar la relación entre materiales y espacio.'
+en:
+  titulo: Mono-ha (Japan)
+  texto: '“School of things”: stone, earth, wood and steel placed with minimal intervention, to think about materials and space.'
+wiki:
+  es: Mono-ha
+  en: Mono-ha
+exponentes:
+- nombre: Lee Ufan
+  wiki:
+    es: Lee Ufan
+    en: Lee Ufan
+- nombre: Nobuo Sekine
+  wiki:
+    es: Nobuo Sekine
+    en: Nobuo Sekine

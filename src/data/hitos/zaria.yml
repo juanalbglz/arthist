@@ -1,0 +1,28 @@
+id: zaria
+anio: 1958
+fecha:
+  es: '1958'
+  en: '1958'
+pista: arte
+sociedad: africa
+disciplinas:
+- pintura
+- grabado
+es:
+  titulo: Sociedad de Arte de Zaria (Nigeria)
+  texto: Estudiantes nigerianos proponen una «síntesis natural» entre tradiciones locales y modernidad, en vísperas de la independencia.
+en:
+  titulo: Zaria Art Society (Nigeria)
+  texto: Nigerian students propose a “natural synthesis” of local traditions and modernity, on the eve of independence.
+wiki:
+  es: Zaria Art Society
+  en: Zaria Art Society
+exponentes:
+- nombre: Uche Okeke
+  wiki:
+    es: Uche Okeke
+    en: Uche Okeke
+- nombre: Bruce Onobrakpeya
+  wiki:
+    es: Bruce Onobrakpeya
+    en: Bruce Onobrakpeya

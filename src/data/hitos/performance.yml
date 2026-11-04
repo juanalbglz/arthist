@@ -1,0 +1,27 @@
+id: performance
+anio: 1974
+fecha:
+  es: '1974'
+  en: '1974'
+pista: arte
+sociedad: europa
+disciplinas:
+- escenicas
+es:
+  titulo: Performance y arte de acción
+  texto: El cuerpo del artista se vuelve la obra; en Rhythm 0, Abramović deja que el público use 72 objetos sobre ella.
+en:
+  titulo: Performance and body art
+  texto: The artist’s body becomes the work; in Rhythm 0, Abramović lets the audience use 72 objects on her.
+wiki:
+  es: Arte de acción
+  en: Performance art
+exponentes:
+- nombre: Marina Abramović
+  wiki:
+    es: Marina Abramović
+    en: Marina Abramović
+- nombre: Ana Mendieta
+  wiki:
+    es: Ana Mendieta
+    en: Ana Mendieta

@@ -1,0 +1,23 @@
+id: magiciens-terre
+anio: 1989
+fecha:
+  es: '1989'
+  en: '1989'
+pista: arte
+sociedad: europa
+disciplinas:
+- instalacion
+es:
+  titulo: Magiciens de la Terre (París)
+  texto: Exposición que reúne a artistas de todos los continentes; abre el debate sobre cómo mira Occidente al arte del resto del mundo.
+en:
+  titulo: Magiciens de la Terre (Paris)
+  texto: An exhibition gathering artists from every continent; it opens debate on how the West looks at art from the rest of the world.
+wiki:
+  es: Magiciens de la Terre
+  en: Magiciens de la terre
+exponentes:
+- nombre: Chéri Samba
+  wiki:
+    es: Chéri Samba
+    en: Chéri Samba

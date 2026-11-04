@@ -1,0 +1,28 @@
+id: gutai
+anio: 1954
+fecha:
+  es: '1954'
+  en: '1954'
+pista: arte
+sociedad: japon
+disciplinas:
+- escenicas
+- pintura
+es:
+  titulo: Gutai (Japón)
+  texto: 'En el Japón de posguerra, el cuerpo y la acción pintan: barro, pies, papel roto. Anticipa la performance.'
+en:
+  titulo: Gutai (Japan)
+  texto: 'In post-war Japan, the body and action do the painting: mud, feet, torn paper. It anticipates performance art.'
+wiki:
+  es: Gutai
+  en: Gutai group
+exponentes:
+- nombre: Jirō Yoshihara
+  wiki:
+    es: Jirō Yoshihara
+    en: Jiro Yoshihara
+- nombre: Kazuo Shiraga
+  wiki:
+    es: Kazuo Shiraga
+    en: Kazuo Shiraga

@@ -1,0 +1,19 @@
+id: bienal-habana
+anio: 1984
+fecha:
+  es: '1984'
+  en: '1984'
+pista: arte
+sociedad: caribe
+disciplinas:
+- instalacion
+- pintura
+es:
+  titulo: Bienal de La Habana
+  texto: Primera gran bienal dedicada al arte de América Latina, África y Asia, fuera del circuito Europa–EE. UU.
+en:
+  titulo: Havana Biennial
+  texto: The first major biennial devoted to art from Latin America, Africa and Asia, outside the Europe–US circuit.
+wiki:
+  es: Bienal de La Habana
+  en: Havana Biennial

@@ -1,0 +1,27 @@
+id: antropofagia
+anio: 1928
+fecha:
+  es: '1928'
+  en: '1928'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- pintura
+es:
+  titulo: Antropofagia (Brasil)
+  texto: El Manifiesto antropófago propone «devorar» la cultura europea para crear un arte propio brasileño. Tarsila pinta el Abaporu.
+en:
+  titulo: Anthropophagy (Brazil)
+  texto: The Cannibal Manifesto proposes “devouring” European culture to create a Brazilian art of its own. Tarsila paints Abaporu.
+wiki:
+  es: Manifiesto antropófago
+  en: Manifesto Antropófago
+exponentes:
+- nombre: Tarsila do Amaral
+  wiki:
+    es: Tarsila do Amaral
+    en: Tarsila do Amaral
+- nombre: Oswald de Andrade
+  wiki:
+    es: Oswald de Andrade
+    en: Oswald de Andrade

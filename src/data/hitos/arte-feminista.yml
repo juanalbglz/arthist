@@ -1,0 +1,28 @@
+id: arte-feminista
+anio: 1971
+fecha:
+  es: '1971'
+  en: '1971'
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- instalacion
+- pintura
+es:
+  titulo: Arte feminista
+  texto: Linda Nochlin pregunta por qué no ha habido «grandes artistas mujeres» y el arte feminista revisa toda la historia del arte.
+en:
+  titulo: Feminist art
+  texto: Linda Nochlin asks why there have been no “great women artists”, and feminist art revisits the whole of art history.
+wiki:
+  es: Arte feminista
+  en: Feminist art movement
+exponentes:
+- nombre: Judy Chicago
+  wiki:
+    es: Judy Chicago
+    en: Judy Chicago
+- nombre: Guerrilla Girls
+  wiki:
+    es: Guerrilla Girls
+    en: Guerrilla Girls

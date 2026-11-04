@@ -1,0 +1,16 @@
+id: revolucion-china
+anio: 1949
+fecha:
+  es: '1949'
+  en: '1949'
+pista: mundo
+sociedad: china
+es:
+  titulo: Revolución china
+  texto: Se proclama la República Popular China.
+en:
+  titulo: Chinese Revolution
+  texto: The People’s Republic of China is proclaimed.
+wiki:
+  es: Revolución china
+  en: Chinese Communist Revolution

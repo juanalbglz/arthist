@@ -1,0 +1,27 @@
+id: minimalismo
+anio: 1965
+fecha:
+  es: c. 1965
+  en: c. 1965
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- escultura
+es:
+  titulo: Minimalismo
+  texto: Formas simples y materiales industriales, sin rastro de la mano del artista.
+en:
+  titulo: Minimalism
+  texto: Simple forms and industrial materials, with no trace of the artist’s hand.
+wiki:
+  es: Minimalismo
+  en: Minimalism
+exponentes:
+- nombre: Donald Judd
+  wiki:
+    es: Donald Judd
+    en: Donald Judd
+- nombre: Agnes Martin
+  wiki:
+    es: Agnes Martin
+    en: Agnes Martin

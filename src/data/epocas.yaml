@@ -109,52 +109,146 @@
       - "The Canary Islands are a stopover on Atlantic routes and an early testing ground for sugar."
 
 - id: imperios-coloniales
-  hasta: 1945
+  hasta: 1900
   wiki: { es: "Revolución Industrial", en: "Industrial Revolution" }
   es:
     nombre: "Revoluciones e imperios coloniales"
-    rango: "1800–1945"
+    rango: "1800–1900"
     social:
       - "Independencias en América y en Haití, y abolición progresiva de la esclavitud."
       - "Crecen las ciudades y la clase obrera, con sindicatos y nuevos movimientos políticos."
-      - "Potencias europeas, Japón y EE. UU. se reparten África y gran parte de Asia; dos guerras mundiales."
+      - "Las potencias europeas se reparten África y gran parte de Asia."
     economia:
       - "Revolución industrial: carbón, vapor, ferrocarril y fábricas."
       - "Las colonias proveen materias primas (caucho, algodón, minerales) y mercados cautivos."
-      - "Un capitalismo cada vez más global, con grandes crisis como la de 1929."
   en:
     nombre: "Revolutions and colonial empires"
-    rango: "1800–1945"
+    rango: "1800–1900"
     social:
       - "Independence across the Americas and in Haiti, and the gradual abolition of slavery."
       - "Cities and the working class grow, with trade unions and new political movements."
-      - "European powers, Japan and the US divide up Africa and much of Asia; two world wars."
+      - "European powers divide up Africa and much of Asia."
     economia:
       - "Industrial revolution: coal, steam, railways and factories."
       - "Colonies supply raw materials (rubber, cotton, minerals) and captive markets."
-      - "An increasingly global capitalism, with major crises such as 1929."
+
+- id: vanguardias
+  hasta: 1918
+  wiki: { es: "Vanguardismo", en: "Avant-garde" }
+  es:
+    nombre: "Vanguardias y Gran Guerra"
+    rango: "1900–1918"
+    social:
+      - "Los imperios coloniales viven su apogeo; crecen los movimientos anticoloniales."
+      - "Revolución mexicana (1910) y revolución rusa (1917)."
+      - "La Primera Guerra Mundial moviliza también a cientos de miles de soldados de las colonias."
+    economia:
+      - "Electricidad, automóvil, teléfono y cadena de montaje."
+      - "Caucho, minerales y cultivos coloniales alimentan la industria europea y estadounidense."
+  en:
+    nombre: "Avant-gardes and the Great War"
+    rango: "1900–1918"
+    social:
+      - "Colonial empires reach their peak; anti-colonial movements grow."
+      - "The Mexican Revolution (1910) and the Russian Revolution (1917)."
+      - "The First World War also mobilises hundreds of thousands of colonial soldiers."
+    economia:
+      - "Electricity, cars, the telephone and the assembly line."
+      - "Rubber, minerals and colonial crops feed European and US industry."
+
+- id: entreguerras
+  hasta: 1945
+  wiki: { es: "Período de entreguerras", en: "Interwar period" }
+  es:
+    nombre: "Entreguerras y Segunda Guerra Mundial"
+    rango: "1918–1945"
+    social:
+      - "Ascenso de los fascismos, guerra civil española y Segunda Guerra Mundial, con el Holocausto."
+      - "Movimientos de afirmación negra y anticolonial: Renacimiento de Harlem, negritud, independentismo indio."
+      - "Las mujeres consiguen el voto en muchos países."
+    economia:
+      - "Crack de 1929 y Gran Depresión; paro masivo."
+      - "Economías de guerra y fuerte intervención del Estado."
+  en:
+    nombre: "Interwar years and the Second World War"
+    rango: "1918–1945"
+    social:
+      - "The rise of fascism, the Spanish Civil War and the Second World War, with the Holocaust."
+      - "Black and anti-colonial affirmation: the Harlem Renaissance, Négritude, the Indian independence movement."
+      - "Women win the vote in many countries."
+    economia:
+      - "The 1929 crash and the Great Depression; mass unemployment."
+      - "War economies and heavy state intervention."
 
 - id: descolonizaciones
+  hasta: 1968
   wiki: { es: "Descolonización", en: "Decolonization" }
   es:
-    nombre: "Descolonizaciones y mundo global"
-    rango: "1945–hoy"
+    nombre: "Posguerra y descolonizaciones"
+    rango: "1945–1968"
     social:
-      - "Descolonización de Asia y África; movimientos por los derechos civiles, feminismos y luchas indígenas."
-      - "Guerra Fría y, después, un mundo multipolar."
-      - "Grandes migraciones y urbanización masiva; hoy más de la mitad de la humanidad vive en ciudades."
+      - "Independencias en Asia y África; Bandung y el movimiento de países no alineados."
+      - "Guerra Fría entre EE. UU. y la URSS; revoluciones en China y Cuba."
+      - "Movimiento por los derechos civiles en EE. UU."
     economia:
-      - "Petróleo, consumo de masas y globalización de la producción."
-      - "Turismo de masas, que en Canarias transforma el territorio desde los años sesenta."
-      - "Economía digital y crisis climática como horizonte común."
+      - "Reconstrucción y crecimiento rápido en Europa y Japón; Estado del bienestar."
+      - "Consumo de masas, televisión y comienzo del turismo de masas, también en Canarias."
   en:
-    nombre: "Decolonisation and a global world"
-    rango: "1945–today"
+    nombre: "Post-war and decolonisation"
+    rango: "1945–1968"
     social:
-      - "Decolonisation in Asia and Africa; civil rights movements, feminisms and Indigenous struggles."
-      - "The Cold War and, afterwards, a multipolar world."
-      - "Large-scale migration and urbanisation; today over half of humanity lives in cities."
+      - "Independence in Asia and Africa; Bandung and the Non-Aligned Movement."
+      - "The Cold War between the US and the USSR; revolutions in China and Cuba."
+      - "The civil rights movement in the US."
     economia:
-      - "Oil, mass consumption and the globalisation of production."
-      - "Mass tourism, which has transformed the Canary Islands since the 1960s."
-      - "The digital economy and the climate crisis as a shared horizon."
+      - "Reconstruction and fast growth in Europe and Japan; the welfare state."
+      - "Mass consumption, television and the start of mass tourism, in the Canary Islands too."
+
+- id: contraculturas
+  hasta: 1989
+  wiki: { es: "Contracultura", en: "Counterculture" }
+  es:
+    nombre: "Contraculturas y dictaduras"
+    rango: "1968–1989"
+    social:
+      - "1968: revueltas estudiantiles y obreras en París, México, Praga y otras ciudades."
+      - "Feminismos, ecologismo, movimiento LGTB y luchas indígenas."
+      - "Dictaduras militares en América Latina; fin del franquismo y transición en España."
+    economia:
+      - "Crisis del petróleo de 1973 y fin del crecimiento de posguerra."
+      - "Llega el neoliberalismo: privatizaciones, deuda externa y ajustes en el Sur global."
+  en:
+    nombre: "Countercultures and dictatorships"
+    rango: "1968–1989"
+    social:
+      - "1968: student and worker revolts in Paris, Mexico City, Prague and elsewhere."
+      - "Feminisms, environmentalism, the LGBT movement and Indigenous struggles."
+      - "Military dictatorships in Latin America; the end of Franco and the transition in Spain."
+    economia:
+      - "The 1973 oil crisis and the end of post-war growth."
+      - "Neoliberalism arrives: privatisation, foreign debt and structural adjustment in the Global South."
+
+- id: mundo-global
+  wiki: { es: "Globalización", en: "Globalization" }
+  es:
+    nombre: "Mundo global"
+    rango: "1989–hoy"
+    social:
+      - "Fin de la Guerra Fría y del apartheid; un mundo multipolar."
+      - "Internet y redes sociales cambian cómo nos comunicamos y organizamos."
+      - "Grandes migraciones; hoy más de la mitad de la humanidad vive en ciudades."
+    economia:
+      - "Globalización de la producción y del comercio; crecen China e India."
+      - "Turismo masivo, que en Canarias presiona sobre el territorio y la vivienda."
+      - "La crisis climática como horizonte común."
+  en:
+    nombre: "A global world"
+    rango: "1989–today"
+    social:
+      - "The end of the Cold War and of apartheid; a multipolar world."
+      - "The internet and social media change how we communicate and organise."
+      - "Large-scale migration; today over half of humanity lives in cities."
+    economia:
+      - "Globalised production and trade; China and India rise."
+      - "Mass tourism, which puts pressure on land and housing in the Canary Islands."
+      - "The climate crisis as a shared horizon."

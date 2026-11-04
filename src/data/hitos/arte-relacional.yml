@@ -1,0 +1,28 @@
+id: arte-relacional
+anio: 1996
+fecha:
+  es: década de 1990
+  en: 1990s
+pista: arte
+sociedad: europa
+disciplinas:
+- instalacion
+- escenicas
+es:
+  titulo: Arte relacional
+  texto: 'La obra es el encuentro: cocinar, compartir o conversar con el público. Bourriaud le pone nombre en 1998.'
+en:
+  titulo: Relational art
+  texto: 'The work is the encounter: cooking, sharing or talking with the audience. Bourriaud names it in 1998.'
+wiki:
+  es: Estética relacional
+  en: Relational art
+exponentes:
+- nombre: Rirkrit Tiravanija
+  wiki:
+    es: Rirkrit Tiravanija
+    en: Rirkrit Tiravanija
+- nombre: Félix González-Torres
+  wiki:
+    es: Félix González-Torres
+    en: Felix Gonzalez-Torres

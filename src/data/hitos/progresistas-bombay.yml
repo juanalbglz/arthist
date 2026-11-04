@@ -1,0 +1,27 @@
+id: progresistas-bombay
+anio: 1947
+fecha:
+  es: '1947'
+  en: '1947'
+pista: arte
+sociedad: asia-sur
+disciplinas:
+- pintura
+es:
+  titulo: Grupo de Artistas Progresistas de Bombay
+  texto: Nace el año de la independencia para crear un arte moderno indio, libre del academicismo colonial.
+en:
+  titulo: Bombay Progressive Artists’ Group
+  texto: Founded in the year of independence to create a modern Indian art, free from colonial academicism.
+wiki:
+  es: Grupo de Artistas Progresistas de Bombay
+  en: Bombay Progressive Artists' Group
+exponentes:
+- nombre: F. N. Souza
+  wiki:
+    es: Francis Newton Souza
+    en: Francis Newton Souza
+- nombre: M. F. Husain
+  wiki:
+    es: Maqbool Fida Husain
+    en: M. F. Husain

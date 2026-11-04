@@ -69,6 +69,10 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
       {disciplinas.map((d) => <button type="button" data-disc={d} aria-pressed="false">{(DISCIPLINAS[d][lang] || DISCIPLINAS[d].es)}</button>)}
     </div>
   </div>
+  <nav class="ir-epoca" aria-label={t.irA}>
+    <span class="eyebrow">{t.irA}</span>
+    {epocas.map((e) => <a href={`#${e.id}`}>{e[lang].rango}</a>)}
+  </nav>
   <p class="meta">{t.pista}</p>
 
   <div class="linea" data-linea style={`--n:${columnas.length};${posiciones}`}>
@@ -183,7 +187,7 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
     // Orden: las plegadas en su orden y la desplegada al final, a la derecha.
     const orden = abierta ? [...columnas.filter((c) => c !== abierta), abierta] : columnas;
     orden.forEach((c, i) => linea.style.setProperty(`--c-${c}`, String(i + 3)));
-    const cols = orden.map((c) => (!abierta || c === abierta ? 'minmax(0, 1fr)' : movil ? '0' : '2.4rem'));
+    const cols = orden.map((c) => (!abierta || c === abierta ? 'minmax(0, 1fr)' : movil ? '0' : '2rem'));
     linea.style.setProperty('--plantilla', [eje, '.9rem', ...cols].join(' '));
   }
 

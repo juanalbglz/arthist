@@ -1,0 +1,33 @@
+id: expresionismo-abstracto
+anio: 1943
+fecha:
+  es: c. 1943–1960
+  en: c. 1943–1960
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- pintura
+es:
+  titulo: Expresionismo abstracto
+  texto: Grandes lienzos de gesto y color en Nueva York, que se convierte en la nueva capital del mercado del arte.
+en:
+  titulo: Abstract Expressionism
+  texto: Large canvases of gesture and colour in New York, which becomes the new capital of the art market.
+wiki:
+  es: Expresionismo abstracto
+  en: Abstract expressionism
+exponentes:
+- nombre: Jackson Pollock
+  wiki:
+    es: Jackson Pollock
+    en: Jackson Pollock
+- nombre: Lee Krasner
+  wiki:
+    es: Lee Krasner
+    en: Lee Krasner
+peliculas:
+- titulo: Pollock
+  anio: 2000
+  tipo: pelicula
+  direccion: Ed Harris
+  wiki: Pollock (film)
