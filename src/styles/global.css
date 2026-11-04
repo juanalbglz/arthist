@@ -1,0 +1,151 @@
+/* Dirección «linograbado»: tinta negra y rojo de estampación sobre papel crudo.
+   Tipografía alojada en la propia web (Bricolage Grotesque, OFL); nada se pide a terceros. */
+@font-face { font-family: 'Bricolage'; src: url('../assets/fonts/bricolage-grotesque-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Bricolage'; src: url('../assets/fonts/bricolage-grotesque-latin-800-normal.woff2') format('woff2'); font-weight: 800; font-display: swap; }
+
+:root {
+  --paper: #efe6d2;
+  --ink: #151311;
+  --red: #d2401e;
+  --bg: var(--paper);
+  --text: var(--ink);
+  --muted: #5d554b;
+  --block: var(--ink);
+  --on-block: var(--paper);
+  --font: 'Bricolage', system-ui, sans-serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151311;
+    --text: #efe6d2;
+    --muted: #a99f90;
+    --red: #e8573a;
+    --block: #efe6d2;
+    --on-block: #151311;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+/* Grano de papel */
+body::before {
+  content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 10; opacity: .28; mix-blend-mode: multiply;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) { body::before { mix-blend-mode: screen; opacity: .12; } }
+
+a { color: var(--red); text-underline-offset: .18em; text-decoration-thickness: 2px; }
+a:hover { color: var(--text); }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; }
+img { max-width: 100%; height: auto; }
+
+/* Borde de estampa: el SVG del filtro está en Base.astro */
+.ink { filter: url(#tinta); }
+.ink-soft { filter: url(#tinta-suave); }
+
+.wrap { max-width: 72rem; margin: 0 auto; padding-inline: clamp(1rem, 4vw, 3rem); }
+.narrow { max-width: 44rem; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--bg); padding: .5rem; z-index: 20; }
+
+header.site .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; align-items: baseline; padding-block: 1.4rem; }
+header.site { font-weight: 800; text-transform: uppercase; letter-spacing: .04em; font-size: .9rem; }
+header.site .brand { color: var(--text); text-decoration: none; margin-right: auto; }
+header.site nav { display: flex; flex-wrap: wrap; gap: .25rem 1.4rem; }
+header.site nav a { color: var(--text); text-decoration: none; }
+header.site nav a:hover, header.site nav a[aria-current] { color: var(--red); }
+
+main { padding-block: 1.5rem 5rem; }
+
+h1, h2, h3 { font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: -.01em; }
+h1 { font-size: clamp(2.4rem, 7vw, 4.6rem); margin: 1.5rem 0 1rem; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 4rem 0 1rem; padding-bottom: .4rem; border-bottom: 6px solid var(--text); }
+h3 { font-size: 1.25rem; }
+p { max-width: 40em; }
+.lede { font-size: 1.3rem; color: var(--muted); }
+.meta { font-size: .9rem; color: var(--muted); }
+.eyebrow { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; color: var(--red); margin: 0; }
+hr { border: 0; border-top: 3px solid var(--text); margin: 3rem 0; }
+
+footer.site { font-size: .9rem; color: var(--muted); border-top: 6px solid var(--text); }
+footer.site .wrap { padding-block: 2rem; display: grid; gap: .4rem; }
+footer.site a { color: var(--muted); }
+
+/* ── Línea temporal ─────────────────────────────────────────── */
+.filtros { display: grid; gap: 1.25rem; margin: 2rem 0; padding: 1.25rem; border: 3px solid var(--text); }
+.filtros [role=group] { display: flex; flex-wrap: wrap; gap: .45rem; align-items: center; }
+.filtros .eyebrow { flex-basis: 100%; margin-bottom: .2rem; }
+.filtros button {
+  font: inherit; font-size: .85rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em; cursor: pointer;
+  color: var(--text); background: transparent; border: 2px solid var(--text); padding: .3rem .7rem;
+}
+.filtros button[aria-pressed=true] { background: var(--text); color: var(--bg); }
+.filtros button:hover { border-color: var(--red); }
+
+nav.epocas { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; font-weight: 800; text-transform: uppercase; font-size: .85rem; letter-spacing: .03em; }
+nav.epocas a { color: var(--text); text-decoration: none; }
+nav.epocas a:hover { color: var(--red); }
+
+.epoca h2 small { display: block; font-size: 1rem; color: var(--red); letter-spacing: .04em; margin-top: .4rem; }
+.carriles { display: flex; flex-direction: column; gap: .9rem; }
+.carril { border: 2px solid var(--text); }
+.carril.foco { order: -1; border-width: 4px; }
+.carril > summary {
+  cursor: pointer; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1rem; align-items: baseline;
+  padding: .75rem 1rem; list-style: none;
+}
+.carril > summary::-webkit-details-marker { display: none; }
+.carril > summary .soc { font-weight: 800; text-transform: uppercase; font-size: 1.15rem; }
+.carril > summary .soc::before { content: '+ '; color: var(--red); }
+.carril[open] > summary .soc::before { content: '– '; }
+.carril[open] > summary { background: var(--block); color: var(--on-block); }
+.carril[open] > summary .meta { color: var(--on-block); opacity: .8; }
+.carril .vacio, .carril .historia { margin: 0; padding: .3rem 1rem 1rem; }
+
+.cabecera { display: none; }
+.pistas { list-style: none; margin: 0; padding: .5rem 1rem; }
+.hito { display: grid; grid-template-columns: 6.5rem 1fr; gap: .9rem; padding: .8rem 0; border-bottom: 1px solid color-mix(in srgb, var(--text) 25%, transparent); }
+.hito:last-child { border-bottom: 0; }
+.hito .fecha { font-weight: 800; color: var(--red); font-size: .9rem; line-height: 1.25; font-variant-numeric: tabular-nums; padding-top: .2rem; }
+.hito .tarjeta { border-left: 5px solid var(--text); padding-left: .8rem; }
+.hito.arte .tarjeta { border-left-color: var(--red); }
+.hito .pista { font-weight: 800; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; color: var(--muted); }
+.hito.arte .pista { color: var(--red); }
+.hito h3 { margin: .1rem 0 .3rem; font-size: 1.1rem; line-height: 1.1; }
+.hito p { margin: .25rem 0 0; font-size: 1rem; }
+.hito[hidden] { display: none; }
+@media (max-width: 30rem) { .hito { grid-template-columns: 1fr; gap: .2rem; } }
+
+/* En pantallas anchas: arte a la izquierda, sociedad a la derecha, fechas en el eje */
+@media (min-width: 52rem) {
+  .cabecera { display: grid; grid-template-columns: 1fr 9rem 1fr; padding: .6rem 1rem 0; font-weight: 800; text-transform: uppercase; font-size: .8rem; letter-spacing: .08em; }
+  .cabecera span:first-child { color: var(--red); text-align: right; }
+  .cabecera span:last-child { grid-column: 3; }
+  .pistas { background: linear-gradient(var(--text), var(--text)) center / 3px 100% no-repeat; }
+  .hito { grid-template-columns: 1fr 9rem 1fr; gap: 0; border-bottom: 0; }
+  .hito .fecha { grid-column: 2; grid-row: 1; text-align: center; background: var(--bg); align-self: start; padding: .2rem .4rem; margin: 0 .6rem; }
+  .hito .pista { display: none; }
+  .hito.arte .tarjeta { grid-column: 1; grid-row: 1; border-left: 0; border-right: 5px solid var(--red); padding: 0 .9rem 0 0; text-align: right; }
+  .hito.mundo .tarjeta { grid-column: 3; grid-row: 1; }
+}
+.hito figure { margin: .2rem 0 .6rem; }
+.hito figure img { display: block; width: 100%; max-height: 14rem; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: multiply; }
+.hito figure img:hover { filter: none; mix-blend-mode: normal; }
+@media (prefers-color-scheme: dark) { .hito figure img { mix-blend-mode: normal; } }
+.hito figcaption { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
+.hito figcaption a { color: var(--muted); }
+.hito .ver { margin-top: .6rem; }
+.hito .ver .eyebrow { font-size: .72rem; }
+.hito .ver ul { list-style: none; padding: 0; margin: .2rem 0 0; font-size: .95rem; }
+.hito .ver li { margin: .15rem 0; }
+.hito .ver cite { font-style: italic; }

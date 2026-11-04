@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+import fuente from '../assets/fonts/bricolage-grotesque-latin-800-normal.woff2?url';
+import type { Lang } from '../linea-temporal';
+
+interface Props { lang: Lang; title: string; description: string }
+const { lang, title, description } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const es = lang === 'es';
+const home = es ? 'https://juanalbglz.eu/' : 'https://juanalbglz.eu/en/';
+const otro = es ? `${base}en/` : base;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Juan Alberto González</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <link rel="alternate" hreflang={es ? 'en' : 'es'} href={new URL(otro, Astro.site)} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <link rel="preload" href={fuente} as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#efe6d2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151311" media="(prefers-color-scheme: dark)" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="tinta"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="3" seed="7" result="t" /><feDisplacementMap in="SourceGraphic" in2="t" scale="4" /></filter>
+    </svg>
+    <a class="skip" href="#main">{es ? 'Saltar al contenido' : 'Skip to content'}</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href={home}>Juan Alberto González</a>
+        <nav aria-label={es ? 'Principal' : 'Main'}>
+          <a href={home}>{es ? 'Inicio' : 'Home'}</a>
+          <a href={`${home}blog/`}>Blog</a>
+          <a href={otro} hreflang={es ? 'en' : 'es'} lang={es ? 'en' : 'es'}>{es ? 'English' : 'Español'}</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <span>© Juan Alberto González · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">CC BY-NC-SA 4.0</a></span>
+        <span>{es ? 'Esta web no usa cookies, analítica ni rastreadores.' : 'This site uses no cookies, analytics or trackers.'}</span>
+      </div>
+    </footer>
+  </body>
+</html>

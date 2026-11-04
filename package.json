@@ -1,0 +1,15 @@
+{
+  "name": "arthist",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "imagenes": "node scripts/imagenes.mjs"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "js-yaml": "4.3.2"
+  }
+}
