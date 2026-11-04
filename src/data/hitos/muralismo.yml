@@ -1,0 +1,21 @@
+id: muralismo
+anio: 1922
+pista: arte
+sociedad: mesoamerica
+disciplinas:
+  - pintura
+es:
+  titulo: Muralismo mexicano
+  texto: Rivera, Orozco y Siqueiros pintan muros públicos para contar la historia desde el pueblo y las raíces indígenas.
+en:
+  titulo: Mexican muralism
+  texto: Rivera, Orozco and Siqueiros paint public walls to tell history from the people and Indigenous roots.
+wiki:
+  es: Muralismo mexicano
+  en: Mexican muralism
+peliculas:
+  - titulo: Frida
+    anio: 2002
+    tipo: pelicula
+    direccion: Julie Taymor
+    wiki: Frida (film)

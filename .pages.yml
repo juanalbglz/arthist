@@ -1,0 +1,200 @@
+# Formulario de edición con Pages CMS (https://app.pagescms.org).
+# Entra con tu cuenta de GitHub, elige el repositorio «arthist» y la rama «main».
+# Cada vez que guardas, Pages CMS hace un commit y la web se vuelve a publicar sola.
+
+content:
+  - name: hitos
+    label: Hitos
+    description: Obras, movimientos y acontecimientos de la línea temporal.
+    type: collection
+    path: src/data/hitos
+    format: yaml
+    filename: "{fields.id}.yml"
+    view:
+      fields: [id, anio, pista]
+      primary: id
+      sort: [anio, id]
+      default:
+        sort: anio
+        order: asc
+    fields:
+      - name: id
+        label: Identificador
+        description: Corto, en minúsculas y con guiones, sin espacios ni tildes (por ejemplo «cueva-pintada»). No se ve en la web.
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Solo minúsculas, números y guiones.
+      - name: anio
+        label: Año
+        description: Para ordenar. Negativo = antes de Cristo (-3200 es 3200 a. C.).
+        type: number
+        required: true
+      - name: fecha
+        label: Fecha tal como se muestra (opcional)
+        description: Rellénala si no basta con el año, por ejemplo «c. 1200–900 a. C.» o «siglo XVI».
+        type: object
+        fields:
+          - { name: es, label: Español, type: string }
+          - { name: en, label: Inglés, type: string }
+      - name: pista
+        label: Pista
+        type: select
+        required: true
+        options:
+          values:
+            - { name: arte, label: Arte }
+            - { name: mundo, label: Sociedad / historia }
+      - name: sociedad
+        label: Sociedad
+        type: reference
+        required: true
+        options:
+          collection: sociedades
+          search: "es"
+          label: "{es}"
+      - name: disciplinas
+        label: Disciplinas (solo para arte)
+        type: reference
+        options:
+          collection: disciplinas
+          multiple: true
+          search: "es"
+          label: "{es}"
+      - name: es
+        label: Español
+        type: object
+        required: true
+        fields:
+          - { name: titulo, label: Título, type: string, required: true }
+          - { name: texto, label: Texto breve, type: text, required: true }
+      - name: en
+        label: Inglés (opcional; si falta se usa el español)
+        type: object
+        fields:
+          - { name: titulo, label: Title, type: string }
+          - { name: texto, label: Short text, type: text }
+      - name: wiki
+        label: Artículo de Wikipedia
+        description: El título del artículo. También sirve para buscar la imagen.
+        type: object
+        fields:
+          - { name: es, label: Español, type: string }
+          - { name: en, label: Inglés, type: string }
+      - name: imagen
+        label: Imagen (opcional)
+        description: Nombre de un archivo de Wikimedia Commons para elegir otra imagen, o «no» para no poner ninguna. Vacío = la imagen del artículo de Wikipedia.
+        type: string
+      - name: enlaces
+        label: Otros enlaces
+        type: object
+        list: true
+        fields:
+          - { name: titulo, label: Texto del enlace, type: string, required: true }
+          - { name: url, label: Dirección (https://…), type: string, required: true }
+      - name: peliculas
+        label: Películas y documentales
+        type: object
+        list: true
+        fields:
+          - { name: titulo, label: Título, type: string, required: true }
+          - { name: anio, label: Año, type: number, required: true }
+          - name: tipo
+            label: Tipo
+            type: select
+            required: true
+            options:
+              values:
+                - { name: pelicula, label: Película }
+                - { name: documental, label: Documental }
+                - { name: corto, label: Cortometraje }
+          - { name: direccion, label: Dirección, type: string }
+          - { name: wiki, label: Artículo de Wikipedia (si el título no basta), type: string }
+
+  - name: disciplinas
+    label: Disciplinas
+    description: Expresiones artísticas para clasificar y filtrar los hitos de arte.
+    type: collection
+    path: src/data/disciplinas
+    format: yaml
+    filename: "{fields.id}.yml"
+    view:
+      fields: [es, orden]
+      primary: es
+      sort: [orden, es]
+    fields:
+      - name: id
+        label: Identificador
+        description: En minúsculas y sin espacios ni tildes (por ejemplo «textil»).
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Solo minúsculas, números y guiones.
+      - { name: es, label: Nombre en español, type: string, required: true }
+      - { name: en, label: Nombre en inglés, type: string }
+      - { name: orden, label: Orden en el filtro, description: Menor sale antes., type: number }
+
+  - name: sociedades
+    label: Sociedades
+    description: Columnas de la línea temporal.
+    type: collection
+    path: src/data/sociedades
+    format: yaml
+    filename: "{fields.id}.yml"
+    view:
+      fields: [es, orden]
+      primary: es
+      sort: [orden, es]
+    fields:
+      - name: id
+        label: Identificador
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Solo minúsculas, números y guiones.
+      - { name: es, label: Nombre en español, type: string, required: true }
+      - { name: en, label: Nombre en inglés, type: string }
+      - { name: orden, label: Orden de la columna, description: Menor sale más a la izquierda., type: number }
+      - name: wiki
+        label: Artículo de Wikipedia sobre su historia
+        type: object
+        fields:
+          - { name: es, label: Español, type: string }
+          - { name: en, label: Inglés, type: string }
+
+  - name: epocas
+    label: Épocas
+    description: Marcas del eje y sus fichas informativas. Van de la más antigua a la más reciente.
+    type: file
+    path: src/data/epocas.yaml
+    format: yaml
+    list: true
+    fields:
+      - { name: id, label: Identificador, type: string, required: true }
+      - { name: hasta, label: Año en que termina (la última, vacío), type: number }
+      - name: wiki
+        label: Artículo de Wikipedia (también da la imagen)
+        type: object
+        fields:
+          - { name: es, label: Español, type: string }
+          - { name: en, label: Inglés, type: string }
+      - { name: imagen, label: Imagen de Commons (opcional), type: string }
+      - name: es
+        label: Español
+        type: object
+        fields:
+          - { name: nombre, label: Nombre, type: string, required: true }
+          - { name: rango, label: Fechas que se muestran, type: string, required: true }
+          - { name: social, label: Rasgos sociales, type: text, list: true }
+          - { name: economia, label: Rasgos económicos, type: text, list: true }
+      - name: en
+        label: Inglés
+        type: object
+        fields:
+          - { name: nombre, label: Name, type: string, required: true }
+          - { name: rango, label: Dates shown, type: string, required: true }
+          - { name: social, label: Social features, type: text, list: true }
+          - { name: economia, label: Economic features, type: text, list: true }

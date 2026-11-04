@@ -1,0 +1,21 @@
+id: guernica
+anio: 1937
+pista: arte
+sociedad: europa
+disciplinas:
+  - pintura
+es:
+  titulo: Guernica (Picasso)
+  texto: Respuesta al bombardeo de la villa vasca por la aviación nazi y fascista italiana.
+en:
+  titulo: Guernica (Picasso)
+  texto: A response to the bombing of the Basque town by Nazi and Fascist Italian aircraft.
+wiki:
+  es: Guernica (cuadro)
+  en: Guernica (Picasso)
+peliculas:
+  - titulo: Guernica
+    anio: 1950
+    tipo: corto
+    direccion: Alain Resnais
+    wiki: Guernica (1950 film)

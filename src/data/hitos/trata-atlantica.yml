@@ -1,0 +1,22 @@
+id: trata-atlantica
+anio: 1501
+fecha:
+  es: siglos XVI–XIX
+  en: 16th–19th century
+pista: mundo
+sociedad: atlantico
+es:
+  titulo: Trata atlántica de personas esclavizadas
+  texto: Más de doce millones de africanas y africanos son embarcados a la fuerza hacia América.
+en:
+  titulo: Transatlantic slave trade
+  texto: More than twelve million African women and men are forcibly shipped to the Americas.
+wiki:
+  es: Trata atlántica
+  en: Atlantic slave trade
+peliculas:
+  - titulo: 12 años de esclavitud (12 Years a Slave)
+    anio: 2013
+    tipo: pelicula
+    direccion: Steve McQueen
+    wiki: 12 Years a Slave (film)
