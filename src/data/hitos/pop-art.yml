@@ -1,0 +1,28 @@
+id: pop-art
+anio: 1962
+fecha:
+  es: c. 1956–1970
+  en: c. 1956–1970
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- pintura
+- grabado
+es:
+  titulo: Arte pop
+  texto: 'Nace en Reino Unido y estalla en Nueva York: publicidad, cómic y objetos de consumo convertidos en arte.'
+en:
+  titulo: Pop art
+  texto: 'Born in Britain, it explodes in New York: advertising, comics and consumer goods turned into art.'
+wiki:
+  es: Arte pop
+  en: Pop art
+exponentes:
+- nombre: Andy Warhol
+  wiki:
+    es: Andy Warhol
+    en: Andy Warhol
+- nombre: Marisol
+  wiki:
+    es: Marisol Escobar
+    en: Marisol Escobar

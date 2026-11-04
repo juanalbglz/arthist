@@ -1,0 +1,27 @@
+id: tucuman-arde
+anio: 1968
+fecha:
+  es: '1968'
+  en: '1968'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- instalacion
+es:
+  titulo: Tucumán Arde (Argentina)
+  texto: 'Artistas investigan y denuncian el cierre de ingenios azucareros y el hambre bajo la dictadura: el arte como acción política.'
+en:
+  titulo: Tucumán Arde (Argentina)
+  texto: 'Artists investigate and denounce sugar-mill closures and hunger under the dictatorship: art as political action.'
+wiki:
+  es: Tucumán Arde
+  en: Tucumán Arde
+exponentes:
+- nombre: Graciela Carnevale
+  wiki:
+    es: Graciela Carnevale
+    en: Graciela Carnevale
+- nombre: Roberto Jacoby
+  wiki:
+    es: Roberto Jacoby
+    en: Roberto Jacoby

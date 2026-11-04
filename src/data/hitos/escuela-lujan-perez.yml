@@ -1,0 +1,28 @@
+id: escuela-lujan-perez
+anio: 1918
+fecha:
+  es: '1918'
+  en: '1918'
+pista: arte
+sociedad: canarias
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Escuela Luján Pérez (Gran Canaria)
+  texto: 'Escuela libre de arte en Las Palmas que impulsa el indigenismo canario: paisaje, gente y cultura aborigen de las islas.'
+en:
+  titulo: Luján Pérez School (Gran Canaria)
+  texto: 'A free art school in Las Palmas that drives Canarian indigenismo: the islands’ landscape, people and Aboriginal culture.'
+wiki:
+  es: Escuela Luján Pérez
+  en: Escuela Luján Pérez
+exponentes:
+- nombre: Felo Monzón
+  wiki:
+    es: Felo Monzón
+    en: Felo Monzón
+- nombre: Plácido Fleitas
+  wiki:
+    es: Plácido Fleitas
+    en: Plácido Fleitas

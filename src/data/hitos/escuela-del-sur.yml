@@ -1,0 +1,23 @@
+id: escuela-del-sur
+anio: 1935
+fecha:
+  es: '1935'
+  en: '1935'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- pintura
+es:
+  titulo: Escuela del Sur (Uruguay)
+  texto: 'Torres García pide mirar desde el sur: «nuestro norte es el sur». En 1943 dibuja América invertida.'
+en:
+  titulo: School of the South (Uruguay)
+  texto: 'Torres García calls for looking from the south: “our north is the south”. In 1943 he draws the inverted map of America.'
+wiki:
+  es: Escuela del Sur
+  en: Joaquín Torres-García
+exponentes:
+- nombre: Joaquín Torres García
+  wiki:
+    es: Joaquín Torres García
+    en: Joaquín Torres-García

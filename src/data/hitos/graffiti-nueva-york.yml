@@ -1,0 +1,33 @@
+id: graffiti-nueva-york
+anio: 1980
+fecha:
+  es: c. 1980
+  en: c. 1980
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- pintura
+es:
+  titulo: Graffiti y arte urbano
+  texto: 'Del metro de Nueva York a las galerías: la calle entra en el museo.'
+en:
+  titulo: Graffiti and street art
+  texto: 'From the New York subway to the galleries: the street enters the museum.'
+wiki:
+  es: Grafiti
+  en: Graffiti
+exponentes:
+- nombre: Jean-Michel Basquiat
+  wiki:
+    es: Jean-Michel Basquiat
+    en: Jean-Michel Basquiat
+- nombre: Keith Haring
+  wiki:
+    es: Keith Haring
+    en: Keith Haring
+peliculas:
+- titulo: Basquiat
+  anio: 1996
+  tipo: pelicula
+  direccion: Julian Schnabel
+  wiki: Basquiat (film)

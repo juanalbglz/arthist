@@ -1,0 +1,29 @@
+id: renacimiento-harlem
+anio: 1920
+fecha:
+  es: década de 1920
+  en: 1920s
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- pintura
+- escultura
+- fotografia
+es:
+  titulo: Renacimiento de Harlem
+  texto: Explosión cultural afroamericana en Nueva York que afirma la identidad negra y sus raíces africanas.
+en:
+  titulo: Harlem Renaissance
+  texto: An African American cultural explosion in New York that affirms Black identity and its African roots.
+wiki:
+  es: Renacimiento de Harlem
+  en: Harlem Renaissance
+exponentes:
+- nombre: Aaron Douglas
+  wiki:
+    es: Aaron Douglas
+    en: Aaron Douglas
+- nombre: Augusta Savage
+  wiki:
+    es: Augusta Savage
+    en: Augusta Savage

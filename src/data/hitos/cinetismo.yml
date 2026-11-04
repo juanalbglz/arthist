@@ -1,0 +1,28 @@
+id: cinetismo
+anio: 1955
+fecha:
+  es: '1955'
+  en: '1955'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- escultura
+- instalacion
+es:
+  titulo: Arte cinético y óptico
+  texto: Obras que se mueven o vibran con la mirada del espectador; Venezuela es uno de sus grandes focos.
+en:
+  titulo: Kinetic and Op art
+  texto: Works that move or vibrate as the viewer looks; Venezuela is one of its great centres.
+wiki:
+  es: Arte cinético
+  en: Kinetic art
+exponentes:
+- nombre: Jesús Rafael Soto
+  wiki:
+    es: Jesús Rafael Soto
+    en: Jesús Rafael Soto
+- nombre: Carlos Cruz-Diez
+  wiki:
+    es: Carlos Cruz-Diez
+    en: Carlos Cruz-Diez

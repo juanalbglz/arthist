@@ -1,0 +1,16 @@
+id: revolucion-rusa
+anio: 1917
+fecha:
+  es: '1917'
+  en: '1917'
+pista: mundo
+sociedad: europa
+es:
+  titulo: Revolución rusa
+  texto: Cae el zarismo y nace el primer Estado socialista.
+en:
+  titulo: Russian Revolution
+  texto: Tsarism falls and the first socialist state is born.
+wiki:
+  es: Revolución rusa
+  en: Russian Revolution

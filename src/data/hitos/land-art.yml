@@ -1,0 +1,28 @@
+id: land-art
+anio: 1970
+fecha:
+  es: '1970'
+  en: '1970'
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- escultura
+- instalacion
+es:
+  titulo: Land art
+  texto: La obra sale del museo y se hace con el propio territorio, como la Spiral Jetty de Smithson.
+en:
+  titulo: Land art
+  texto: The work leaves the museum and is made with the land itself, like Smithson’s Spiral Jetty.
+wiki:
+  es: Land art
+  en: Land art
+exponentes:
+- nombre: Robert Smithson
+  wiki:
+    es: Robert Smithson
+    en: Robert Smithson
+- nombre: Nancy Holt
+  wiki:
+    es: Nancy Holt
+    en: Nancy Holt

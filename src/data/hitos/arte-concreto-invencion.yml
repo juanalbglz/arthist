@@ -1,0 +1,28 @@
+id: arte-concreto-invencion
+anio: 1945
+fecha:
+  es: '1945'
+  en: '1945'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Arte Concreto-Invención (Argentina)
+  texto: 'Abstracción geométrica rioplatense: marcos irregulares, obras que se mueven y arte como invención, no como copia.'
+en:
+  titulo: Arte Concreto-Invención (Argentina)
+  texto: 'River Plate geometric abstraction: irregular frames, moving works and art as invention rather than copy.'
+wiki:
+  es: Arte Concreto-Invención
+  en: Asociación Arte Concreto-Invención
+exponentes:
+- nombre: Tomás Maldonado
+  wiki:
+    es: Tomás Maldonado
+    en: Tomás Maldonado
+- nombre: Gyula Kosice
+  wiki:
+    es: Gyula Kosice
+    en: Gyula Kosice

@@ -1,0 +1,27 @@
+id: arte-conceptual
+anio: 1965
+fecha:
+  es: c. 1965
+  en: c. 1965
+pista: arte
+sociedad: norteamerica
+disciplinas:
+- instalacion
+es:
+  titulo: Arte conceptual
+  texto: 'La idea importa más que el objeto: textos, instrucciones y documentos pasan a ser obra.'
+en:
+  titulo: Conceptual art
+  texto: 'The idea matters more than the object: texts, instructions and documents become the work.'
+wiki:
+  es: Arte conceptual
+  en: Conceptual art
+exponentes:
+- nombre: Joseph Kosuth
+  wiki:
+    es: Joseph Kosuth
+    en: Joseph Kosuth
+- nombre: Sol LeWitt
+  wiki:
+    es: Sol LeWitt
+    en: Sol LeWitt

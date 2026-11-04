@@ -1,0 +1,16 @@
+id: hiroshima
+anio: 1945
+fecha:
+  es: '1945'
+  en: '1945'
+pista: mundo
+sociedad: japon
+es:
+  titulo: Hiroshima y Nagasaki
+  texto: EE. UU. lanza dos bombas atómicas sobre Japón.
+en:
+  titulo: Hiroshima and Nagasaki
+  texto: The US drops two atomic bombs on Japan.
+wiki:
+  es: Bombardeos atómicos de Hiroshima y Nagasaki
+  en: Atomic bombings of Hiroshima and Nagasaki

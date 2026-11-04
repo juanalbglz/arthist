@@ -1,0 +1,27 @@
+id: escuela-bengala
+anio: 1905
+fecha:
+  es: c. 1905
+  en: c. 1905
+pista: arte
+sociedad: asia-sur
+disciplinas:
+- pintura
+es:
+  titulo: Escuela de Bengala
+  texto: Pintores indios recuperan técnicas y temas propios frente al academicismo impuesto por el Imperio británico.
+en:
+  titulo: Bengal School
+  texto: Indian painters revive their own techniques and subjects against the academic art imposed by the British Empire.
+wiki:
+  es: Escuela de Bengala
+  en: Bengal School of Art
+exponentes:
+- nombre: Abanindranath Tagore
+  wiki:
+    es: Abanindranath Tagore
+    en: Abanindranath Tagore
+- nombre: Nandalal Bose
+  wiki:
+    es: Nandalal Bose
+    en: Nandalal Bose

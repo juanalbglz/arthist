@@ -1,0 +1,28 @@
+id: neoconcretismo
+anio: 1959
+fecha:
+  es: '1959'
+  en: '1959'
+pista: arte
+sociedad: sudamerica
+disciplinas:
+- escultura
+- instalacion
+es:
+  titulo: Neoconcretismo (Brasil)
+  texto: 'Obras para tocar, vestir y manipular: el público deja de mirar y pasa a participar.'
+en:
+  titulo: Neo-Concretism (Brazil)
+  texto: 'Works to touch, wear and handle: the audience stops looking and starts taking part.'
+wiki:
+  es: Neoconcretismo
+  en: Neo-Concretism
+exponentes:
+- nombre: Lygia Clark
+  wiki:
+    es: Lygia Clark
+    en: Lygia Clark
+- nombre: Hélio Oiticica
+  wiki:
+    es: Hélio Oiticica
+    en: Hélio Oiticica
