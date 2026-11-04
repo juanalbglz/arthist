@@ -1,0 +1,21 @@
+id: glosario-escena-genero
+anio: 1650
+fecha:
+  es: "siglo XVII"
+  en: "17th century"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Pintura de género"
+  en: "Genre painting"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/escena-de-genero/"
+es:
+  titulo: "Escena de género"
+  texto: "Pintura de la vida cotidiana de gente corriente. Triunfa en la Holanda burguesa, que compra cuadros para sus casas."
+en:
+  titulo: "Genre scene"
+  texto: "A painting of the everyday life of ordinary people. It thrives in bourgeois Holland, where people buy pictures for their homes."

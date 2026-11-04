@@ -1,0 +1,21 @@
+id: glosario-encaustica
+anio: 50
+fecha:
+  es: "siglos I–III"
+  en: "1st–3rd century"
+pista: glosario
+sociedad: africa
+disciplinas:
+  - pintura
+wiki:
+  es: "Encáustica"
+  en: "Encaustic painting"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/encaustica/"
+es:
+  titulo: "Encáustica"
+  texto: "Pintura con pigmentos mezclados con cera caliente. Los retratos de El Fayum, en Egipto, la conservan con colores intactos."
+en:
+  titulo: "Encaustic"
+  texto: "Painting with pigments mixed into hot wax. The Fayum portraits in Egypt preserve it with intact colours."

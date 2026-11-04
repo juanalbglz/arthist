@@ -46,6 +46,7 @@ content:
           values:
             - { name: arte, label: Arte }
             - { name: mundo, label: Sociedad / historia }
+            - { name: glosario, label: Glosario (término de arte) }
       - name: sociedad
         label: Sociedad
         type: reference

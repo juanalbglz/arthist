@@ -1,0 +1,16 @@
+id: suez
+anio: 1869
+fecha:
+  es: "1869"
+  en: "1869"
+pista: mundo
+sociedad: africa
+wiki:
+  es: "Canal de Suez"
+  en: "Suez Canal"
+es:
+  titulo: "Canal de Suez"
+  texto: "Une el Mediterráneo y el mar Rojo y acelera el comercio y la colonización."
+en:
+  titulo: "Suez Canal"
+  texto: "It links the Mediterranean and the Red Sea, speeding up trade and colonisation."

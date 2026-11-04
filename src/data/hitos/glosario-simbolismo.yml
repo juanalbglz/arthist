@@ -1,0 +1,21 @@
+id: glosario-simbolismo
+anio: 1886
+fecha:
+  es: "1886"
+  en: "1886"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Simbolismo"
+  en: "Symbolism (arts)"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/simbolismo/"
+es:
+  titulo: "Simbolismo"
+  texto: "Reacción contra el realismo: el arte debe sugerir ideas, sueños y misterios, no describir."
+en:
+  titulo: "Symbolism"
+  texto: "A reaction against Realism: art should suggest ideas, dreams and mysteries, not describe."

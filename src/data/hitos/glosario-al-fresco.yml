@@ -1,0 +1,21 @@
+id: glosario-al-fresco
+anio: -1600
+fecha:
+  es: "c. 1600 a. C. (Creta)"
+  en: "c. 1600 BCE (Crete)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Fresco"
+  en: "Fresco"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/al-fresco/"
+es:
+  titulo: "Pintura al fresco"
+  texto: "Pintura sobre el revoque aún húmedo: el color queda dentro del muro al secarse. Se usa en Creta, en Roma, en las grutas de Ajanta y, sobre todo, en el Renacimiento."
+en:
+  titulo: "Fresco painting"
+  texto: "Painting on wet plaster: the colour becomes part of the wall as it dries. Used in Crete, Rome, the Ajanta caves and, above all, the Renaissance."

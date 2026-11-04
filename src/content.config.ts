@@ -16,7 +16,8 @@ const hitos = defineCollection({
   schema: z.object({
     anio: z.number(),
     fecha: biOpt,
-    pista: z.enum(['arte', 'mundo']),
+    // arte = obra o movimiento; mundo = acontecimiento social; glosario = término de historia del arte.
+    pista: z.enum(['arte', 'mundo', 'glosario']),
     sociedad: z.string().transform(clave),
     disciplinas: z.array(z.string().transform(clave)).nullish().transform((x) => x ?? []),
     wiki: biOpt,

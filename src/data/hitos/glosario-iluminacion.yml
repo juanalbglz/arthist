@@ -1,0 +1,22 @@
+id: glosario-iluminacion
+anio: 800
+fecha:
+  es: "c. 800 (Libro de Kells)"
+  en: "c. 800 (Book of Kells)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - dibujo
+wiki:
+  es: "Manuscrito iluminado"
+  en: "Illuminated manuscript"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/iluminacion/"
+es:
+  titulo: "Iluminación de manuscritos"
+  texto: "Decoración a mano de libros con pintura y oro. Monasterios europeos, calígrafos islámicos y talleres persas la convierten en un gran arte."
+en:
+  titulo: "Manuscript illumination"
+  texto: "Hand decoration of books with paint and gold. European monasteries, Islamic calligraphers and Persian workshops make it a major art."

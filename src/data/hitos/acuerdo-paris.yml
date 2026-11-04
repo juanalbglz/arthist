@@ -1,0 +1,16 @@
+id: acuerdo-paris
+anio: 2015
+fecha:
+  es: "2015"
+  en: "2015"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Acuerdo de París"
+  en: "Paris Agreement"
+es:
+  titulo: "Acuerdo de París sobre el clima"
+  texto: "Casi todos los países se comprometen a limitar el calentamiento global."
+en:
+  titulo: "Paris climate agreement"
+  texto: "Almost every country commits to limiting global warming."

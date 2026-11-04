@@ -1,0 +1,16 @@
+id: onu
+anio: 1945
+fecha:
+  es: "1945"
+  en: "1945"
+pista: mundo
+sociedad: norteamerica
+wiki:
+  es: "Organización de las Naciones Unidas"
+  en: "United Nations"
+es:
+  titulo: "Nace la ONU"
+  texto: "Cincuenta países firman en San Francisco la Carta de las Naciones Unidas."
+en:
+  titulo: "The UN is founded"
+  texto: "Fifty countries sign the UN Charter in San Francisco."

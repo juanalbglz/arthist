@@ -1,0 +1,21 @@
+id: glosario-oleo
+anio: 1434
+fecha:
+  es: "c. 1434 (Van Eyck)"
+  en: "c. 1434 (Van Eyck)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Pintura al óleo"
+  en: "Oil painting"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/oleo/"
+es:
+  titulo: "Óleo"
+  texto: "Pintura con pigmentos mezclados con aceite. Los flamencos la perfeccionan en el siglo XV, aunque ya se usó en las cuevas de Bamiyán (Afganistán) en el siglo VII."
+en:
+  titulo: "Oil paint"
+  texto: "Painting with pigments mixed in oil. The Flemish perfect it in the 15th century, though it was already used in the Bamiyan caves (Afghanistan) in the 7th century."

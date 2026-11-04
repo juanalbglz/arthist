@@ -1,0 +1,16 @@
+id: covid
+anio: 2020
+fecha:
+  es: "2020"
+  en: "2020"
+pista: mundo
+sociedad: china
+wiki:
+  es: "Pandemia de COVID-19"
+  en: "COVID-19 pandemic"
+es:
+  titulo: "Pandemia de covid-19"
+  texto: "El virus detectado en Wuhan paraliza el mundo; museos y escenarios cierran durante meses."
+en:
+  titulo: "COVID-19 pandemic"
+  texto: "The virus detected in Wuhan brings the world to a halt; museums and stages close for months."

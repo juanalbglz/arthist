@@ -1,0 +1,22 @@
+id: glosario-futurismo
+anio: 1909
+fecha:
+  es: "1909"
+  en: "1909"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - escultura
+wiki:
+  es: "Futurismo"
+  en: "Futurism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/futurismo/"
+es:
+  titulo: "Futurismo"
+  texto: "Exalta la máquina, la velocidad y la guerra, y quiere destruir los museos. Parte de sus miembros acaba apoyando al fascismo."
+en:
+  titulo: "Futurism"
+  texto: "It exalts the machine, speed and war and wants to destroy museums. Several members end up supporting Fascism."

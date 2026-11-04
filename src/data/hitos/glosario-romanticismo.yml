@@ -1,0 +1,21 @@
+id: glosario-romanticismo
+anio: 1800
+fecha:
+  es: "c. 1800–1850"
+  en: "c. 1800–1850"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Romanticismo"
+  en: "Romanticism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/romanticismo/"
+es:
+  titulo: "Romanticismo"
+  texto: "Prioriza la emoción, lo individual y la naturaleza salvaje frente a la razón. Nace la idea del artista como genio incomprendido."
+en:
+  titulo: "Romanticism"
+  texto: "It puts emotion, the individual and wild nature above reason. The idea of the artist as misunderstood genius is born."

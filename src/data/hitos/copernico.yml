@@ -1,0 +1,16 @@
+id: copernico
+anio: 1543
+fecha:
+  es: "1543"
+  en: "1543"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Nicolás Copérnico"
+  en: "Nicolaus Copernicus"
+es:
+  titulo: "Copérnico: la Tierra gira alrededor del Sol"
+  texto: "Empieza la revolución científica europea, que se apoya en la astronomía islámica."
+en:
+  titulo: "Copernicus: the Earth orbits the Sun"
+  texto: "The European scientific revolution begins, building on Islamic astronomy."

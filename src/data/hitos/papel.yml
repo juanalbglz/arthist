@@ -1,0 +1,16 @@
+id: papel
+anio: 105
+fecha:
+  es: "c. 105"
+  en: "c. 105"
+pista: mundo
+sociedad: china
+wiki:
+  es: "Papel"
+  en: "Paper"
+es:
+  titulo: "Difusión del papel"
+  texto: "En la China Han se perfecciona el papel. Llegará al mundo islámico en el siglo VIII y a Europa a través de al-Ándalus."
+en:
+  titulo: "Spread of paper"
+  texto: "Paper is perfected in Han China. It reaches the Islamic world in the 8th century and Europe through al-Andalus."

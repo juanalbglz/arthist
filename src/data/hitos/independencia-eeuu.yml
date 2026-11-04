@@ -1,0 +1,16 @@
+id: independencia-eeuu
+anio: 1776
+fecha:
+  es: "1776"
+  en: "1776"
+pista: mundo
+sociedad: norteamerica
+wiki:
+  es: "Declaración de Independencia de los Estados Unidos"
+  en: "United States Declaration of Independence"
+es:
+  titulo: "Independencia de Estados Unidos"
+  texto: "Las trece colonias se separan de Gran Bretaña, aunque mantienen la esclavitud."
+en:
+  titulo: "US independence"
+  texto: "The thirteen colonies break from Britain, while keeping slavery."

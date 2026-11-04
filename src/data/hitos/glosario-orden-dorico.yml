@@ -1,0 +1,21 @@
+id: glosario-orden-dorico
+anio: -600
+fecha:
+  es: "c. 600 a. C."
+  en: "c. 600 BCE"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - arquitectura
+wiki:
+  es: "Orden dórico"
+  en: "Doric order"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/orden-dorico/"
+es:
+  titulo: "Orden dórico"
+  texto: "El más sobrio de los órdenes griegos: columna sin basa, fuste estriado y capitel liso. Es el del Partenón."
+en:
+  titulo: "Doric order"
+  texto: "The plainest Greek order: a column without a base, a fluted shaft and a plain capital. It is the order of the Parthenon."

@@ -1,0 +1,21 @@
+id: glosario-fauvismo
+anio: 1905
+fecha:
+  es: "1905"
+  en: "1905"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Fauvismo"
+  en: "Fauvism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/fauvismo/"
+es:
+  titulo: "Fauvismo"
+  texto: "Color puro y violento que no imita la realidad. Los críticos llaman «fieras» a Matisse y Derain."
+en:
+  titulo: "Fauvism"
+  texto: "Pure, violent colour that does not imitate reality. Critics call Matisse and Derain “wild beasts”."

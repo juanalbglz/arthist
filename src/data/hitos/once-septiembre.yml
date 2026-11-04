@@ -1,0 +1,16 @@
+id: once-septiembre
+anio: 2001
+fecha:
+  es: "2001"
+  en: "2001"
+pista: mundo
+sociedad: norteamerica
+wiki:
+  es: "Atentados del 11 de septiembre de 2001"
+  en: "September 11 attacks"
+es:
+  titulo: "Atentados del 11-S"
+  texto: "Los ataques en Nueva York y Washington abren dos décadas de guerras en Afganistán e Irak."
+en:
+  titulo: "9/11 attacks"
+  texto: "The attacks in New York and Washington open two decades of war in Afghanistan and Iraq."

@@ -1,0 +1,16 @@
+id: ucrania
+anio: 2022
+fecha:
+  es: "2022"
+  en: "2022"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Invasión rusa de Ucrania"
+  en: "Russian invasion of Ukraine"
+es:
+  titulo: "Invasión rusa de Ucrania"
+  texto: "La mayor guerra en Europa desde 1945."
+en:
+  titulo: "Russian invasion of Ukraine"
+  texto: "The largest war in Europe since 1945."

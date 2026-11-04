@@ -1,0 +1,21 @@
+id: glosario-sfumato
+anio: 1503
+fecha:
+  es: "c. 1503 (Leonardo)"
+  en: "c. 1503 (Leonardo)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Sfumato"
+  en: "Sfumato"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/sfumato/"
+es:
+  titulo: "Sfumato"
+  texto: "Técnica de Leonardo da Vinci: contornos difuminados con capas finísimas de pintura, como si hubiera humo entre la figura y quien mira."
+en:
+  titulo: "Sfumato"
+  texto: "Leonardo da Vinci’s technique: contours blurred with very thin layers of paint, as if there were smoke between the figure and the viewer."

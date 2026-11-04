@@ -1,0 +1,21 @@
+id: glosario-xilografia
+anio: 868
+fecha:
+  es: "868 (Sutra del Diamante)"
+  en: "868 (Diamond Sutra)"
+pista: glosario
+sociedad: china
+disciplinas:
+  - grabado
+wiki:
+  es: "Xilografía"
+  en: "Woodcut"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/xilografia/"
+es:
+  titulo: "Xilografía"
+  texto: "Grabado en madera: se talla la imagen en relieve, se entinta y se estampa. El libro impreso fechado más antiguo es chino; siglos después dará el ukiyo-e japonés."
+en:
+  titulo: "Woodcut"
+  texto: "Wood engraving: the image is carved in relief, inked and printed. The oldest dated printed book is Chinese; centuries later it produces Japanese ukiyo-e."
