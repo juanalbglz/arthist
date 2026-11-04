@@ -1,0 +1,21 @@
+id: kusama-venecia
+anio: 1966
+pista: arte
+sociedad: japon
+disciplinas:
+  - instalacion
+  - escenicas
+es:
+  titulo: Narcissus Garden (Yayoi Kusama)
+  texto: Sin invitación oficial, Kusama llena de esferas espejadas el césped de la Bienal de Venecia y las vende a dos dólares.
+en:
+  titulo: Narcissus Garden (Yayoi Kusama)
+  texto: Uninvited, Kusama fills a lawn at the Venice Biennale with mirrored spheres and sells them for two dollars each.
+wiki:
+  es: Yayoi Kusama
+  en: Yayoi Kusama
+peliculas:
+  - titulo: 'Kusama: Infinity'
+    anio: 2018
+    tipo: documental
+    direccion: Heather Lenz

@@ -1,0 +1,19 @@
+id: sarr-savoy
+anio: 2018
+pista: mundo
+sociedad: africa
+es:
+  titulo: Informe Sarr–Savoy
+  texto: Recomienda a Francia devolver el patrimonio africano expoliado. Empiezan las restituciones, como la de bronces de Benín a Nigeria.
+en:
+  titulo: Sarr–Savoy report
+  texto: It recommends that France return looted African heritage. Restitutions begin, such as Benin bronzes returned to Nigeria.
+wiki:
+  es: Informe Sarr-Savoy
+  en: Restitution of African cultural heritage
+peliculas:
+  - titulo: Dahomey
+    anio: 2024
+    tipo: documental
+    direccion: Mati Diop
+    wiki: Dahomey (film)

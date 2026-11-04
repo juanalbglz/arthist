@@ -1,0 +1,24 @@
+id: lascaux
+anio: -15000
+fecha:
+  es: hace unos 17.000 años
+  en: about 17,000 years ago
+pista: arte
+sociedad: europa
+disciplinas:
+  - rupestre
+es:
+  titulo: Cueva de Lascaux (Francia)
+  texto: Caballos, uros y ciervos pintados en las paredes de la cueva.
+en:
+  titulo: Lascaux Cave (France)
+  texto: Horses, aurochs and deer painted on the cave walls.
+wiki:
+  es: Cueva de Lascaux
+  en: Lascaux
+peliculas:
+  - titulo: La cueva de los sueños olvidados (Cave of Forgotten Dreams)
+    anio: 2010
+    tipo: documental
+    direccion: Werner Herzog
+    wiki: Cave of Forgotten Dreams

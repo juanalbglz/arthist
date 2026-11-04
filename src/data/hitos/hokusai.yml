@@ -1,0 +1,28 @@
+id: hokusai
+anio: 1831
+fecha:
+  es: c. 1831
+  en: c. 1831
+pista: arte
+sociedad: japon
+disciplinas:
+  - grabado
+es:
+  titulo: La gran ola de Kanagawa (Hokusai, Japón)
+  texto: Xilografía de la serie Treinta y seis vistas del monte Fuji. Pasará a influir en el arte europeo.
+en:
+  titulo: The Great Wave off Kanagawa (Hokusai, Japan)
+  texto: Woodblock print from the series Thirty-six Views of Mount Fuji. It will go on to influence European art.
+wiki:
+  es: La gran ola de Kanagawa
+  en: The Great Wave off Kanagawa
+peliculas:
+  - titulo: Hokusai
+    anio: 2020
+    tipo: pelicula
+    direccion: Hajime Hashimoto
+    wiki: Hokusai (film)
+  - titulo: Miss Hokusai
+    anio: 2015
+    tipo: pelicula
+    direccion: Keiichi Hara

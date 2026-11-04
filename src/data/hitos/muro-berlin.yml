@@ -1,0 +1,18 @@
+id: muro-berlin
+anio: 1989
+pista: mundo
+sociedad: europa
+es:
+  titulo: Cae el Muro de Berlín
+  texto: Fin de la Guerra Fría y aceleración de la globalización económica.
+en:
+  titulo: The Berlin Wall falls
+  texto: The end of the Cold War and a faster pace of economic globalisation.
+wiki:
+  es: Caída del Muro de Berlín
+  en: Fall of the Berlin Wall
+peliculas:
+  - titulo: Good Bye, Lenin!
+    anio: 2003
+    tipo: pelicula
+    direccion: Wolfgang Becker

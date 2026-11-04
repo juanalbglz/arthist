@@ -1,39 +1,7 @@
 // Configuración de la línea temporal comparada (arthist.juanalbglz.eu).
-// Los hitos están en src/data/linea-temporal.yaml; aquí se definen las listas que usan.
+// Los contenidos están en src/data/ (hitos/, sociedades/, disciplinas/ y epocas.yaml);
+// aquí solo quedan los textos fijos de la página.
 export type Lang = 'es' | 'en';
-
-type Bi = Record<Lang, string>;
-
-// Sociedades o áreas culturales. Cada una es una columna que se despliega o se pliega;
-// salen en este orden, de izquierda a derecha.
-// «wiki» es el artículo general de su historia en cada idioma.
-export const SOCIEDADES: Record<string, { nombre: Bi; wiki: Bi }> = {
-  africa: { nombre: { es: 'África', en: 'Africa' }, wiki: { es: 'Historia de África', en: 'History of Africa' } },
-  canarias: { nombre: { es: 'Canarias', en: 'Canary Islands' }, wiki: { es: 'Historia de Canarias', en: 'History of the Canary Islands' } },
-  mesoamerica: { nombre: { es: 'Mesoamérica', en: 'Mesoamerica' }, wiki: { es: 'Mesoamérica', en: 'Mesoamerica' } },
-  andes: { nombre: { es: 'Andes', en: 'Andes' }, wiki: { es: 'Civilizaciones andinas', en: 'Andean civilizations' } },
-  caribe: { nombre: { es: 'Caribe', en: 'Caribbean' }, wiki: { es: 'Historia del Caribe', en: 'History of the Caribbean' } },
-  atlantico: { nombre: { es: 'Mundo atlántico', en: 'Atlantic world' }, wiki: { es: 'Historia atlántica', en: 'Atlantic history' } },
-  'asia-occidental': { nombre: { es: 'Asia occidental', en: 'Western Asia' }, wiki: { es: 'Antiguo Oriente Próximo', en: 'Ancient Near East' } },
-  'sudeste-asiatico': { nombre: { es: 'Sudeste asiático', en: 'Southeast Asia' }, wiki: { es: 'Historia del Sudeste Asiático', en: 'History of Southeast Asia' } },
-  japon: { nombre: { es: 'Japón', en: 'Japan' }, wiki: { es: 'Historia de Japón', en: 'History of Japan' } },
-  europa: { nombre: { es: 'Europa', en: 'Europe' }, wiki: { es: 'Historia de Europa', en: 'History of Europe' } },
-};
-
-export const DISCIPLINAS: Record<string, Bi> = {
-  rupestre: { es: 'Arte rupestre', en: 'Rock art' },
-  dibujo: { es: 'Dibujo', en: 'Drawing' },
-  pintura: { es: 'Pintura', en: 'Painting' },
-  escultura: { es: 'Escultura', en: 'Sculpture' },
-  ceramica: { es: 'Cerámica', en: 'Ceramics' },
-  metal: { es: 'Metal y fundición', en: 'Metalwork' },
-  grabado: { es: 'Grabado', en: 'Printmaking' },
-  arquitectura: { es: 'Arquitectura', en: 'Architecture' },
-  instalacion: { es: 'Instalación', en: 'Installation' },
-  escenicas: { es: 'Artes vivas', en: 'Live arts' },
-};
-
-// Las épocas (nombre, fechas y ficha informativa) están en src/data/epocas.yaml.
 
 export const TEXTOS = {
   es: {
@@ -77,6 +45,10 @@ export const TEXTOS = {
     ac: (n: number) => `${n.toLocaleString('en-GB')} BCE`,
   },
 };
+
+// Pages CMS guarda las referencias como ruta de archivo («src/data/sociedades/canarias.yml»);
+// a mano se escribe solo «canarias». Esto deja siempre el nombre corto.
+export const clave = (v: string) => v.replace(/^.*\//, '').replace(/\.ya?ml$/, '');
 
 // Enlace a Wikipedia que abre el artículo si el título existe y, si no, la búsqueda.
 export const wikiUrl = (lang: Lang, titulo: string) =>

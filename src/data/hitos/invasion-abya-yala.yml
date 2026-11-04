@@ -1,0 +1,18 @@
+id: invasion-abya-yala
+anio: 1492
+pista: mundo
+sociedad: caribe
+es:
+  titulo: Colón llega al Caribe
+  texto: Comienza la invasión de Abya Yala. Guerras, epidemias y trabajo forzado diezman a los pueblos originarios.
+en:
+  titulo: Columbus reaches the Caribbean
+  texto: The invasion of Abya Yala begins. War, epidemics and forced labour devastate Indigenous peoples.
+wiki:
+  es: Llegada de Colón a América
+  en: Voyages of Christopher Columbus
+peliculas:
+  - titulo: También la lluvia
+    anio: 2010
+    tipo: pelicula
+    direccion: Icíar Bollaín

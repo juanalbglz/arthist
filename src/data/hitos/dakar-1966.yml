@@ -1,0 +1,22 @@
+id: dakar-1966
+anio: 1966
+pista: arte
+sociedad: africa
+disciplinas:
+  - escenicas
+  - escultura
+  - pintura
+es:
+  titulo: Festival Mundial de las Artes Negras (Dakar)
+  texto: Senghor reúne a artistas de África y la diáspora para afirmar las culturas negras.
+en:
+  titulo: World Festival of Black Arts (Dakar)
+  texto: Senghor gathers artists from Africa and the diaspora to affirm Black cultures.
+wiki:
+  es: Festival Mundial de las Artes Negras
+  en: World Festival of Black Arts
+peliculas:
+  - titulo: The First World Festival of Negro Arts
+    anio: 1966
+    tipo: documental
+    direccion: William Greaves

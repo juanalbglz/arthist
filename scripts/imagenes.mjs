@@ -17,7 +17,13 @@ const ANCHO = 640;
 const dir = 'public/imagenes';
 const salida = 'src/data/imagenes.json';
 
-const hitos = yaml.load(await fs.readFile('src/data/linea-temporal.yaml', 'utf8'));
+// Un archivo por hito en src/data/hitos/.
+const carpeta = 'src/data/hitos';
+const hitos = [];
+for (const f of (await fs.readdir(carpeta)).filter((f) => /\.ya?ml$/.test(f))) {
+  const h = yaml.load(await fs.readFile(`${carpeta}/${f}`, 'utf8'));
+  hitos.push({ ...h, id: h.id || f.replace(/\.ya?ml$/, '') });
+}
 // Las épocas también llevan imagen; se guardan como «epoca-<id>».
 const epocas = yaml.load(await fs.readFile('src/data/epocas.yaml', 'utf8'));
 const elementos = [...hitos, ...epocas.map((e) => ({ ...e, id: `epoca-${e.id}` }))];
@@ -41,10 +47,11 @@ const limpiar = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ')
 const creditos = {};
 let ok = 0;
 for (const h of elementos) {
-  if (h.imagen === false) continue;
+  if (h.imagen === false || h.imagen === 'no') continue;
   try {
     let archivo = typeof h.imagen === 'string' ? h.imagen.replace(/^(File|Archivo):/, '') : undefined;
-    if (!archivo && h.wiki) archivo = (await imagenDeArticulo('en', h.wiki.en)) ?? (await imagenDeArticulo('es', h.wiki.es));
+    if (!archivo && h.wiki?.en) archivo = await imagenDeArticulo('en', h.wiki.en);
+    if (!archivo && h.wiki?.es) archivo = await imagenDeArticulo('es', h.wiki.es);
     if (!archivo) continue;
     const j = await api('commons.wikimedia.org', {
       action: 'query', prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: String(ANCHO), titles: `File:${archivo}`,

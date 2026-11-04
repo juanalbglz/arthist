@@ -1,34 +1,50 @@
 import { defineCollection, z } from 'astro:content';
-import { file } from 'astro/loaders';
-import { SOCIEDADES, DISCIPLINAS } from './linea-temporal';
+import { file, glob } from 'astro/loaders';
+import { clave } from './linea-temporal';
 
 const texto = z.object({ titulo: z.string(), texto: z.string() });
 const bi = z.object({ es: z.string(), en: z.string() });
+// Pares es/en que pueden quedar a medias (el formulario guarda los campos vacíos como null).
+const biOpt = z.object({ es: z.string().nullish(), en: z.string().nullish() }).nullish();
 
-// Línea temporal comparada: src/data/linea-temporal.yaml
+// Un archivo por hito en src/data/hitos/. El nombre del archivo no importa: manda el campo «id».
+const idDeArchivo = ({ entry, data }: { entry: string; data: Record<string, unknown> }) =>
+  typeof data.id === 'string' && data.id ? data.id : entry.replace(/\.ya?ml$/, '');
+
 const hitos = defineCollection({
-  loader: file('src/data/linea-temporal.yaml'),
+  loader: glob({ base: './src/data/hitos', pattern: '**/*.{yml,yaml}', generateId: idDeArchivo }),
   schema: z.object({
-    año: z.number(),
-    fecha: bi.optional(),
+    anio: z.number(),
+    fecha: biOpt,
     pista: z.enum(['arte', 'mundo']),
-    sociedad: z.string().refine((s) => s in SOCIEDADES, (s) => ({ message: `Sociedad desconocida: ${s} (añádela en src/linea-temporal.ts)` })),
-    disciplinas: z.array(z.string().refine((d) => d in DISCIPLINAS, (d) => ({ message: `Disciplina desconocida: ${d}` }))).default([]),
-    wiki: bi.optional(),
+    sociedad: z.string().transform(clave),
+    disciplinas: z.array(z.string().transform(clave)).nullish().transform((x) => x ?? []),
+    wiki: biOpt,
     // Archivo de Wikimedia Commons, o «no» para no poner imagen (ver scripts/imagenes.mjs).
-    imagen: z.union([z.string(), z.literal(false)]).optional(),
-    enlaces: z.array(z.object({ titulo: z.string(), url: z.string().url() })).default([]),
+    imagen: z.union([z.string(), z.literal(false)]).nullish(),
+    enlaces: z.array(z.object({ titulo: z.string(), url: z.string().url() })).nullish().transform((x) => x ?? []),
     peliculas: z.array(z.object({
       titulo: z.string(),
-      año: z.number(),
+      anio: z.number(),
       tipo: z.enum(['pelicula', 'documental', 'corto']),
-      direccion: z.string().optional(),
+      direccion: z.string().nullish(),
       // Título del artículo de Wikipedia si no coincide con el de la película.
-      wiki: z.string().optional(),
-    })).default([]),
+      wiki: z.string().nullish(),
+    })).nullish().transform((x) => x ?? []),
     es: texto,
-    en: texto,
+    // El inglés es opcional: si falta, se usa el español.
+    en: z.object({ titulo: z.string().nullish(), texto: z.string().nullish() }).nullish(),
   }),
+});
+
+// Sociedades (columnas) y disciplinas: un archivo por cada una; «orden» decide la posición.
+const sociedades = defineCollection({
+  loader: glob({ base: './src/data/sociedades', pattern: '**/*.{yml,yaml}', generateId: idDeArchivo }),
+  schema: z.object({ orden: z.number().nullish().transform((x) => x ?? 999), es: z.string(), en: z.string().nullish(), wiki: biOpt }),
+});
+const disciplinas = defineCollection({
+  loader: glob({ base: './src/data/disciplinas', pattern: '**/*.{yml,yaml}', generateId: idDeArchivo }),
+  schema: z.object({ orden: z.number().nullish().transform((x) => x ?? 999), es: z.string(), en: z.string().nullish() }),
 });
 
 // Épocas: src/data/epocas.yaml
@@ -36,12 +52,12 @@ const ficha = z.object({ nombre: z.string(), rango: z.string(), social: z.array(
 const epocas = defineCollection({
   loader: file('src/data/epocas.yaml'),
   schema: z.object({
-    hasta: z.number().optional(),
-    wiki: bi.optional(),
-    imagen: z.union([z.string(), z.literal(false)]).optional(),
+    hasta: z.number().nullish(),
+    wiki: biOpt,
+    imagen: z.union([z.string(), z.literal(false)]).nullish(),
     es: ficha,
     en: ficha,
   }),
 });
 
-export const collections = { hitos, epocas };
+export const collections = { hitos, epocas, sociedades, disciplinas };
