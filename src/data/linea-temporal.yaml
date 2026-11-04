@@ -1,0 +1,510 @@
+# Línea temporal comparada: historia del arte e historia mundial.
+#
+# Cada hito es una entrada. Para añadir uno, copia un bloque y cambia los valores.
+#   id:          identificador único, sin espacios (no se ve en la web)
+#   año:         número para ordenar; negativo = antes de Cristo (-3200 = 3200 a. C.)
+#   fecha:       opcional, cómo se escribe la fecha en la web si no basta con el año
+#   pista:       arte | mundo
+#   sociedad:    a qué sociedad o área cultural pertenece; ver la lista en src/linea-temporal.ts
+#   wiki:        título del artículo de Wikipedia en cada idioma (si no existe exacto, el enlace abre la búsqueda)
+#   disciplinas: solo en la pista de arte; ver la lista en src/linea-temporal.ts
+#   es / en:     título y texto breve en cada idioma
+#
+# El orden dentro del archivo da igual: la web los ordena por año.
+
+# ── Tiempo profundo ──────────────────────────────────────────────
+
+- id: jebel-irhoud
+  año: -300000
+  fecha: { es: "hace unos 300.000 años", en: "about 300,000 years ago" }
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Jebel Irhoud", en: "Jebel Irhoud" }
+  es:
+    titulo: "Jebel Irhoud (Marruecos)"
+    texto: "Restos más antiguos conocidos de Homo sapiens. La historia humana empieza en África."
+  en:
+    titulo: "Jebel Irhoud (Morocco)"
+    texto: "The oldest known remains of Homo sapiens. Human history begins in Africa."
+
+- id: blombos
+  año: -75000
+  fecha: { es: "hace unos 75.000 años", en: "about 75,000 years ago" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Cueva de Blombos", en: "Blombos Cave" }
+  disciplinas: [dibujo]
+  es:
+    titulo: "Ocre grabado de la cueva de Blombos (Sudáfrica)"
+    texto: "Líneas cruzadas grabadas en ocre, uno de los signos gráficos más antiguos que se conocen."
+  en:
+    titulo: "Engraved ochre from Blombos Cave (South Africa)"
+    texto: "Cross-hatched lines engraved on ochre, among the oldest known graphic signs."
+
+- id: leang-karampuang
+  año: -49200
+  fecha: { es: "hace unos 51.200 años", en: "about 51,200 years ago" }
+  pista: arte
+  sociedad: sudeste-asiatico
+  wiki: { es: "Leang Karampuang", en: "Leang Karampuang" }
+  disciplinas: [rupestre]
+  es:
+    titulo: "Leang Karampuang (Sulawesi, Indonesia)"
+    texto: "Escena con figuras humanas y un cerdo salvaje; hoy la pintura figurativa más antigua datada."
+  en:
+    titulo: "Leang Karampuang (Sulawesi, Indonesia)"
+    texto: "A scene with human figures and a wild pig; currently the oldest dated figurative painting."
+
+- id: lascaux
+  año: -15000
+  fecha: { es: "hace unos 17.000 años", en: "about 17,000 years ago" }
+  pista: arte
+  sociedad: europa
+  wiki: { es: "Cueva de Lascaux", en: "Lascaux" }
+  disciplinas: [rupestre]
+  es:
+    titulo: "Cueva de Lascaux (Francia)"
+    texto: "Caballos, uros y ciervos pintados en las paredes de la cueva."
+  en:
+    titulo: "Lascaux Cave (France)"
+    texto: "Horses, aurochs and deer painted on the cave walls."
+
+# ── Primeras aldeas, ciudades y estados ──────────────────────────
+
+- id: agricultura
+  año: -9500
+  fecha: { es: "c. 9500 a. C.", en: "c. 9500 BCE" }
+  pista: mundo
+  sociedad: asia-occidental
+  wiki: { es: "Creciente Fértil", en: "Fertile Crescent" }
+  es:
+    titulo: "Primeros cultivos en el Creciente Fértil"
+    texto: "Trigo y cebada domesticados en el suroeste de Asia. La agricultura surgirá por separado en China, Mesoamérica, los Andes, el Sahel y Nueva Guinea."
+  en:
+    titulo: "First crops in the Fertile Crescent"
+    texto: "Wheat and barley domesticated in south-west Asia. Farming will arise separately in China, Mesoamerica, the Andes, the Sahel and New Guinea."
+
+- id: gobekli-tepe
+  año: -9500
+  fecha: { es: "c. 9500 a. C.", en: "c. 9500 BCE" }
+  pista: arte
+  sociedad: asia-occidental
+  wiki: { es: "Göbekli Tepe", en: "Göbekli Tepe" }
+  disciplinas: [arquitectura, escultura]
+  es:
+    titulo: "Göbekli Tepe (Turquía)"
+    texto: "Grandes pilares de piedra tallados con animales, levantados por grupos de cazadores-recolectores."
+  en:
+    titulo: "Göbekli Tepe (Türkiye)"
+    texto: "Large stone pillars carved with animals, raised by hunter-gatherer groups."
+
+- id: tassili
+  año: -8000
+  fecha: { es: "desde hace unos 10.000 años", en: "from about 10,000 years ago" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Tassili n'Ajjer", en: "Tassili n'Ajjer" }
+  disciplinas: [rupestre]
+  es:
+    titulo: "Tassili n'Ajjer (Argelia)"
+    texto: "Miles de pinturas y grabados que registran un Sáhara verde, con fauna, pastores y escenas de vida cotidiana."
+  en:
+    titulo: "Tassili n'Ajjer (Algeria)"
+    texto: "Thousands of paintings and engravings recording a green Sahara, with wildlife, herders and everyday life."
+
+- id: escritura
+  año: -3200
+  fecha: { es: "c. 3200 a. C.", en: "c. 3200 BCE" }
+  pista: mundo
+  sociedad: asia-occidental
+  wiki: { es: "Escritura cuneiforme", en: "Cuneiform" }
+  es:
+    titulo: "Escritura en Mesopotamia"
+    texto: "Las tablillas de Uruk registran cuentas y tributos. Egipto, China y Mesoamérica inventarán sus propias escrituras."
+  en:
+    titulo: "Writing in Mesopotamia"
+    texto: "Tablets from Uruk record accounts and tribute. Egypt, China and Mesoamerica will invent their own scripts."
+
+- id: olmecas
+  año: -1200
+  fecha: { es: "c. 1200–900 a. C.", en: "c. 1200–900 BCE" }
+  pista: arte
+  sociedad: mesoamerica
+  wiki: { es: "Cabezas colosales olmecas", en: "Olmec colossal heads" }
+  disciplinas: [escultura]
+  es:
+    titulo: "Cabezas colosales olmecas (San Lorenzo, México)"
+    texto: "Retratos monumentales tallados en basalto, de hasta tres metros de altura."
+  en:
+    titulo: "Olmec colossal heads (San Lorenzo, Mexico)"
+    texto: "Monumental portraits carved in basalt, up to three metres tall."
+
+- id: nok
+  año: -900
+  fecha: { es: "c. 900 a. C.–siglo I", en: "c. 900 BCE–1st century CE" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Cultura Nok", en: "Nok culture" }
+  disciplinas: [ceramica, escultura]
+  es:
+    titulo: "Terracotas de Nok (Nigeria)"
+    texto: "Figuras humanas de barro cocido, la escultura figurativa más antigua conocida al sur del Sáhara."
+  en:
+    titulo: "Nok terracottas (Nigeria)"
+    texto: "Fired clay human figures, the oldest known figurative sculpture south of the Sahara."
+
+- id: poblamiento-canarias
+  año: 1
+  fecha: { es: "en torno al cambio de era (fecha debatida)", en: "around the turn of the era (date debated)" }
+  pista: mundo
+  sociedad: canarias
+  wiki: { es: "Aborígenes canarios", en: "Guanches" }
+  es:
+    titulo: "Poblamiento amazigh de Canarias"
+    texto: "Poblaciones del norte de África llegan a las islas y desarrollan culturas propias en cada una."
+  en:
+    titulo: "Amazigh settlement of the Canary Islands"
+    texto: "Peoples from North Africa reach the islands and develop distinct cultures on each one."
+
+# ── Imperios y reinos (500–1450) ─────────────────────────────────
+
+- id: cueva-pintada
+  año: 600
+  fecha: { es: "siglos VI–XV", en: "6th–15th century" }
+  pista: arte
+  sociedad: canarias
+  wiki: { es: "Cueva Pintada de Gáldar", en: "Cueva Pintada" }
+  disciplinas: [pintura]
+  es:
+    titulo: "Cueva Pintada de Gáldar (Gran Canaria)"
+    texto: "Cámara decorada con pinturas geométricas en rojo, blanco y negro, en un poblado canario anterior a la conquista."
+  en:
+    titulo: "Painted Cave of Gáldar (Gran Canaria)"
+    texto: "A chamber decorated with geometric paintings in red, white and black, in a pre-conquest Canarian village."
+
+- id: gran-zimbabue
+  año: 1100
+  fecha: { es: "c. 1100–1450", en: "c. 1100–1450" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Gran Zimbabue", en: "Great Zimbabwe" }
+  disciplinas: [arquitectura]
+  es:
+    titulo: "Gran Zimbabue"
+    texto: "Murallas de piedra seca sin argamasa en la capital de un reino comercial del sureste africano."
+  en:
+    titulo: "Great Zimbabwe"
+    texto: "Dry-stone walls without mortar at the capital of a south-east African trading kingdom."
+
+- id: mali
+  año: 1235
+  fecha: { es: "c. 1235", en: "c. 1235" }
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Imperio de Malí", en: "Mali Empire" }
+  es:
+    titulo: "Nace el Imperio de Malí"
+    texto: "Sundiata Keita funda un imperio que controla el comercio de oro del Sahel; Tombuctú será un gran centro del saber."
+  en:
+    titulo: "The Mali Empire is founded"
+    texto: "Sundiata Keita founds an empire that controls the Sahel gold trade; Timbuktu becomes a great centre of learning."
+
+- id: ife
+  año: 1300
+  fecha: { es: "siglos XIV–XV", en: "14th–15th century" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Cabezas de Ife", en: "Ife Head" }
+  disciplinas: [metal, escultura]
+  es:
+    titulo: "Cabezas de Ife (Nigeria)"
+    texto: "Retratos naturalistas fundidos en aleación de cobre por artistas yorubas."
+  en:
+    titulo: "Ife heads (Nigeria)"
+    texto: "Naturalistic portraits cast in copper alloy by Yoruba artists."
+
+- id: machu-picchu
+  año: 1450
+  fecha: { es: "c. 1450", en: "c. 1450" }
+  pista: arte
+  sociedad: andes
+  wiki: { es: "Machu Picchu", en: "Machu Picchu" }
+  disciplinas: [arquitectura]
+  es:
+    titulo: "Machu Picchu (Perú)"
+    texto: "Complejo inca de piedra ajustada sin argamasa, integrado en la montaña."
+  en:
+    titulo: "Machu Picchu (Peru)"
+    texto: "An Inca complex of tightly fitted mortarless stone, built into the mountain."
+
+# ── Conquistas y colonialismo (1400–1800) ────────────────────────
+
+- id: conquista-canarias
+  año: 1402
+  fecha: { es: "1402–1496", en: "1402–1496" }
+  pista: mundo
+  sociedad: canarias
+  wiki: { es: "Conquista de las islas Canarias", en: "Conquest of the Canary Islands" }
+  es:
+    titulo: "Conquista de Canarias"
+    texto: "Empieza con Béthencourt en Lanzarote y termina con la rendición de Tenerife. Las islas son el ensayo de la colonización atlántica."
+  en:
+    titulo: "Conquest of the Canary Islands"
+    texto: "It begins with Béthencourt in Lanzarote and ends with the surrender of Tenerife. The islands are a rehearsal for Atlantic colonisation."
+
+- id: invasion-abya-yala
+  año: 1492
+  pista: mundo
+  sociedad: caribe
+  wiki: { es: "Llegada de Colón a América", en: "Voyages of Christopher Columbus" }
+  es:
+    titulo: "Colón llega al Caribe"
+    texto: "Comienza la invasión de Abya Yala. Guerras, epidemias y trabajo forzado diezman a los pueblos originarios."
+  en:
+    titulo: "Columbus reaches the Caribbean"
+    texto: "The invasion of Abya Yala begins. War, epidemics and forced labour devastate Indigenous peoples."
+
+- id: trata-atlantica
+  año: 1501
+  fecha: { es: "siglos XVI–XIX", en: "16th–19th century" }
+  pista: mundo
+  sociedad: atlantico
+  wiki: { es: "Trata atlántica", en: "Atlantic slave trade" }
+  es:
+    titulo: "Trata atlántica de personas esclavizadas"
+    texto: "Más de doce millones de africanas y africanos son embarcados a la fuerza hacia América."
+  en:
+    titulo: "Transatlantic slave trade"
+    texto: "More than twelve million African women and men are forcibly shipped to the Americas."
+
+- id: placas-benin
+  año: 1550
+  fecha: { es: "siglo XVI", en: "16th century" }
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Bronces de Benín", en: "Benin Bronzes" }
+  disciplinas: [metal, escultura]
+  es:
+    titulo: "Placas de bronce del Reino de Benín (Nigeria)"
+    texto: "Relieves que cubrían los pilares del palacio del oba y narraban la historia de la corte."
+  en:
+    titulo: "Bronze plaques of the Kingdom of Benin (Nigeria)"
+    texto: "Reliefs that covered the pillars of the oba's palace and told the history of the court."
+
+# ── Revoluciones e imperios coloniales (1800–1945) ───────────────
+
+- id: haiti
+  año: 1804
+  pista: mundo
+  sociedad: caribe
+  wiki: { es: "Revolución haitiana", en: "Haitian Revolution" }
+  es:
+    titulo: "Independencia de Haití"
+    texto: "La revolución de las personas esclavizadas funda la primera república negra libre."
+  en:
+    titulo: "Independence of Haiti"
+    texto: "The revolution of enslaved people founds the first free Black republic."
+
+- id: hokusai
+  año: 1831
+  fecha: { es: "c. 1831", en: "c. 1831" }
+  pista: arte
+  sociedad: japon
+  wiki: { es: "La gran ola de Kanagawa", en: "The Great Wave off Kanagawa" }
+  disciplinas: [grabado]
+  es:
+    titulo: "La gran ola de Kanagawa (Hokusai, Japón)"
+    texto: "Xilografía de la serie Treinta y seis vistas del monte Fuji. Pasará a influir en el arte europeo."
+  en:
+    titulo: "The Great Wave off Kanagawa (Hokusai, Japan)"
+    texto: "Woodblock print from the series Thirty-six Views of Mount Fuji. It will go on to influence European art."
+
+- id: berlin
+  año: 1884
+  fecha: { es: "1884–1885", en: "1884–1885" }
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Conferencia de Berlín", en: "Berlin Conference" }
+  es:
+    titulo: "Conferencia de Berlín"
+    texto: "Las potencias europeas se reparten África sin ninguna voz africana en la mesa."
+  en:
+    titulo: "Berlin Conference"
+    texto: "European powers divide Africa among themselves with no African voice at the table."
+
+- id: saqueo-benin
+  año: 1897
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Expedición de castigo a Benín", en: "Benin Expedition of 1897" }
+  es:
+    titulo: "Saqueo de Benín"
+    texto: "Tropas británicas arrasan Benin City y se llevan miles de piezas que aún hoy están en museos europeos."
+  en:
+    titulo: "Looting of Benin"
+    texto: "British troops raze Benin City and carry off thousands of works still held in European museums today."
+
+- id: muralismo
+  año: 1922
+  pista: arte
+  sociedad: mesoamerica
+  wiki: { es: "Muralismo mexicano", en: "Mexican muralism" }
+  disciplinas: [pintura]
+  es:
+    titulo: "Muralismo mexicano"
+    texto: "Rivera, Orozco y Siqueiros pintan muros públicos para contar la historia desde el pueblo y las raíces indígenas."
+  en:
+    titulo: "Mexican muralism"
+    texto: "Rivera, Orozco and Siqueiros paint public walls to tell history from the people and Indigenous roots."
+
+- id: surrealismo-tenerife
+  año: 1935
+  pista: arte
+  sociedad: canarias
+  wiki: { es: "Gaceta de Arte", en: "Gaceta de Arte" }
+  disciplinas: [pintura]
+  es:
+    titulo: "Exposición surrealista en Tenerife"
+    texto: "Gaceta de Arte la organiza en el Ateneo de Santa Cruz; viajan André Breton y Benjamin Péret. Óscar Domínguez es uno de los artistas."
+  en:
+    titulo: "Surrealist exhibition in Tenerife"
+    texto: "Organised by Gaceta de Arte at the Ateneo in Santa Cruz; André Breton and Benjamin Péret travel there. Óscar Domínguez is among the artists."
+
+- id: golpe-1936
+  año: 1936
+  pista: mundo
+  sociedad: canarias
+  wiki: { es: "Golpe de Estado de julio de 1936", en: "Spanish coup of July 1936" }
+  es:
+    titulo: "Golpe militar y guerra civil"
+    texto: "Franco sale de Gran Canaria el 18 de julio para ponerse al frente de las tropas en Marruecos."
+  en:
+    titulo: "Military coup and civil war"
+    texto: "Franco leaves Gran Canaria on 18 July to take command of the troops in Morocco."
+
+- id: guernica
+  año: 1937
+  pista: arte
+  sociedad: europa
+  wiki: { es: "Guernica (cuadro)", en: "Guernica (Picasso)" }
+  disciplinas: [pintura]
+  es:
+    titulo: "Guernica (Picasso)"
+    texto: "Respuesta al bombardeo de la villa vasca por la aviación nazi y fascista italiana."
+  en:
+    titulo: "Guernica (Picasso)"
+    texto: "A response to the bombing of the Basque town by Nazi and Fascist Italian aircraft."
+
+- id: lam-jungla
+  año: 1943
+  pista: arte
+  sociedad: caribe
+  wiki: { es: "La jungla (Lam)", en: "The Jungle (Lam)" }
+  disciplinas: [pintura]
+  es:
+    titulo: "La jungla (Wifredo Lam, Cuba)"
+    texto: "Lam mezcla vanguardia y espiritualidad afrocubana en una obra clave del arte del Caribe."
+  en:
+    titulo: "The Jungle (Wifredo Lam, Cuba)"
+    texto: "Lam blends the avant-garde with Afro-Cuban spirituality in a key work of Caribbean art."
+
+# ── Descolonizaciones y mundo global (1945–hoy) ──────────────────
+
+- id: bandung
+  año: 1955
+  pista: mundo
+  sociedad: sudeste-asiatico
+  wiki: { es: "Conferencia de Bandung", en: "Bandung Conference" }
+  es:
+    titulo: "Conferencia de Bandung (Indonesia)"
+    texto: "Países de Asia y África se reúnen contra el colonialismo y fuera de los dos bloques de la Guerra Fría."
+  en:
+    titulo: "Bandung Conference (Indonesia)"
+    texto: "Asian and African countries meet against colonialism and outside the two Cold War blocs."
+
+- id: ano-africa
+  año: 1960
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Año de África", en: "Year of Africa" }
+  es:
+    titulo: "El año de África"
+    texto: "Diecisiete países africanos se independizan en un solo año."
+  en:
+    titulo: "The Year of Africa"
+    texto: "Seventeen African countries become independent in a single year."
+
+- id: dakar-1966
+  año: 1966
+  pista: arte
+  sociedad: africa
+  wiki: { es: "Festival Mundial de las Artes Negras", en: "World Festival of Black Arts" }
+  disciplinas: [escenicas, escultura, pintura]
+  es:
+    titulo: "Festival Mundial de las Artes Negras (Dakar)"
+    texto: "Senghor reúne a artistas de África y la diáspora para afirmar las culturas negras."
+  en:
+    titulo: "World Festival of Black Arts (Dakar)"
+    texto: "Senghor gathers artists from Africa and the diaspora to affirm Black cultures."
+
+- id: kusama-venecia
+  año: 1966
+  pista: arte
+  sociedad: japon
+  wiki: { es: "Yayoi Kusama", en: "Yayoi Kusama" }
+  disciplinas: [instalacion, escenicas]
+  es:
+    titulo: "Narcissus Garden (Yayoi Kusama)"
+    texto: "Sin invitación oficial, Kusama llena de esferas espejadas el césped de la Bienal de Venecia y las vende a dos dólares."
+  en:
+    titulo: "Narcissus Garden (Yayoi Kusama)"
+    texto: "Uninvited, Kusama fills a lawn at the Venice Biennale with mirrored spheres and sells them for two dollars each."
+
+- id: mirador-rio
+  año: 1973
+  pista: arte
+  sociedad: canarias
+  wiki: { es: "Mirador del Río", en: "Mirador del Río" }
+  disciplinas: [arquitectura]
+  es:
+    titulo: "Mirador del Río (César Manrique, Lanzarote)"
+    texto: "Arquitectura excavada en el risco que se funde con el paisaje volcánico."
+  en:
+    titulo: "Mirador del Río (César Manrique, Lanzarote)"
+    texto: "Architecture dug into the cliff that merges with the volcanic landscape."
+
+- id: sahara-1975
+  año: 1975
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Acuerdos Tripartitos de Madrid", en: "Madrid Accords" }
+  es:
+    titulo: "España abandona el Sáhara Occidental"
+    texto: "Los acuerdos de Madrid entregan el territorio a Marruecos y Mauritania sin descolonizarlo. El pueblo saharaui sigue esperando."
+  en:
+    titulo: "Spain leaves Western Sahara"
+    texto: "The Madrid Accords hand the territory to Morocco and Mauritania without decolonising it. The Sahrawi people are still waiting."
+
+- id: muro-berlin
+  año: 1989
+  pista: mundo
+  sociedad: europa
+  wiki: { es: "Caída del Muro de Berlín", en: "Fall of the Berlin Wall" }
+  es:
+    titulo: "Cae el Muro de Berlín"
+    texto: "Fin de la Guerra Fría y aceleración de la globalización económica."
+  en:
+    titulo: "The Berlin Wall falls"
+    texto: "The end of the Cold War and a faster pace of economic globalisation."
+
+- id: sarr-savoy
+  año: 2018
+  pista: mundo
+  sociedad: africa
+  wiki: { es: "Informe Sarr-Savoy", en: "Restitution of African cultural heritage" }
+  es:
+    titulo: "Informe Sarr–Savoy"
+    texto: "Recomienda a Francia devolver el patrimonio africano expoliado. Empiezan las restituciones, como la de bronces de Benín a Nigeria."
+  en:
+    titulo: "Sarr–Savoy report"
+    texto: "It recommends that France return looted African heritage. Restitutions begin, such as Benin bronzes returned to Nigeria."

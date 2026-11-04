@@ -1,0 +1,139 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SOCIEDADES, DISCIPLINAS, EPOCAS, TEXTOS, wikiUrl, type Lang } from '../linea-temporal';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = TEXTOS[lang];
+
+const hitos = (await getCollection('hitos'))
+  .map((h) => ({ id: h.id, ...h.data }))
+  .sort((a, b) => a.año - b.año || (a.pista === 'arte' ? -1 : 1));
+type Hito = (typeof hitos)[number];
+const fecha = (h: Hito) => h.fecha?.[lang] ?? (h.año < 0 ? t.ac(-h.año) : String(h.año));
+
+const orden = Object.keys(SOCIEDADES);
+const epocas = EPOCAS.map((e, i) => {
+  const desde = i ? EPOCAS[i - 1].hasta : -Infinity;
+  const enEpoca = hitos.filter((h) => h.año >= desde && h.año < e.hasta);
+  const carriles = orden
+    .map((s) => ({ id: s, hitos: enEpoca.filter((h) => h.sociedad === s) }))
+    .filter((c) => c.hitos.length);
+  return { ...e, carriles };
+}).filter((e) => e.carriles.length);
+
+const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.disciplinas.includes(d)));
+const sociedades = orden.filter((s) => hitos.some((h) => h.sociedad === s));
+---
+<Base lang={lang} title={t.titulo} description={t.intro}>
+  <h1 class="ink">{t.titulo}</h1>
+  <p class="lede">{t.intro}</p>
+
+  <div class="filtros" data-filtros hidden>
+    <div role="group" aria-labelledby="f-disc">
+      <p class="eyebrow" id="f-disc">{t.disciplinas}</p>
+      <button type="button" data-disc="" aria-pressed="true">{t.todas}</button>
+      {disciplinas.map((d) => <button type="button" data-disc={d} aria-pressed="false">{DISCIPLINAS[d][lang]}</button>)}
+    </div>
+    <div role="group" aria-labelledby="f-foco">
+      <p class="eyebrow" id="f-foco">{t.foco}</p>
+      <button type="button" data-foco="" aria-pressed="true">{t.todas}</button>
+      {sociedades.map((s) => <button type="button" data-foco={s} aria-pressed="false">{SOCIEDADES[s].nombre[lang]}</button>)}
+    </div>
+  </div>
+
+  <nav class="epocas" aria-label={t.titulo}>
+    {epocas.map((e) => <a href={`#${e.id}`}>{e.nombre[lang]}</a>)}
+  </nav>
+
+  {epocas.map((e) => (
+    <section class="epoca" id={e.id}>
+      <h2>{e.nombre[lang]} <small>{e.rango[lang]}</small></h2>
+      <div class="carriles">
+        {e.carriles.map((c) => {
+          const s = SOCIEDADES[c.id];
+          const nArte = c.hitos.filter((h) => h.pista === 'arte').length;
+          return (
+            <details class="carril" data-sociedad={c.id} open>
+              <summary>
+                <span class="soc">{s.nombre[lang]}</span>
+                <span class="meta">{t.cuenta(nArte, c.hitos.length - nArte)}</span>
+              </summary>
+              <div class="cabecera" aria-hidden="true"><span>{t.arte}</span><span>{t.mundo}</span></div>
+              <ol class="pistas">
+                {c.hitos.map((h) => (
+                  <li class={`hito ${h.pista}`} data-disc={h.disciplinas.join(' ')}>
+                    <span class="fecha">{fecha(h)}</span>
+                    <div class="tarjeta">
+                      <span class="pista">{t[h.pista]}</span>
+                      <h3>{h[lang].titulo}</h3>
+                      <p>{h[lang].texto}</p>
+                      {(h.disciplinas.length > 0 || h.wiki) && (
+                        <p class="meta">
+                          {h.disciplinas.map((d) => DISCIPLINAS[d][lang]).join(' · ')}
+                          {h.disciplinas.length > 0 && h.wiki && ' · '}
+                          {h.wiki && <a href={wikiUrl(lang, h.wiki[lang])} rel="external">Wikipedia ↗</a>}
+                        </p>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+              <p class="meta vacio" hidden>{t.nada}</p>
+              <p class="meta historia"><a href={wikiUrl(lang, s.wiki[lang])} rel="external">{t.historia}: {s.nombre[lang]} ↗</a></p>
+            </details>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+
+  <p class="meta">{t.nota}</p>
+</Base>
+
+<script>
+  const filtros = document.querySelector<HTMLElement>('[data-filtros]')!;
+  filtros.hidden = false;
+  const elegidas = new Set<string>();
+  let foco = '';
+
+  const pulsar = (sel: string, activo: (v: string) => boolean) =>
+    filtros.querySelectorAll<HTMLButtonElement>(sel).forEach((b) => {
+      const v = b.dataset.disc ?? b.dataset.foco ?? '';
+      b.setAttribute('aria-pressed', String(activo(v)));
+    });
+
+  function aplicar() {
+    pulsar('[data-disc]', (v) => (v ? elegidas.has(v) : elegidas.size === 0));
+    pulsar('[data-foco]', (v) => v === foco);
+    document.querySelectorAll<HTMLDetailsElement>('.carril').forEach((c) => {
+      let arteVisible = 0, arteTotal = 0;
+      c.querySelectorAll<HTMLElement>('.hito.arte').forEach((h) => {
+        arteTotal++;
+        const ok = elegidas.size === 0 || (h.dataset.disc ?? '').split(' ').some((d) => elegidas.has(d));
+        h.hidden = !ok;
+        if (ok) arteVisible++;
+      });
+      const soloArte = !c.querySelector('.hito.mundo');
+      c.querySelector<HTMLElement>('.vacio')!.hidden = !(arteTotal && !arteVisible);
+      c.hidden = soloArte && arteTotal > 0 && arteVisible === 0;
+      c.classList.toggle('foco', !!foco && c.dataset.sociedad === foco);
+      c.open = !foco || c.dataset.sociedad === foco;
+    });
+  }
+
+  filtros.addEventListener('click', (ev) => {
+    const b = (ev.target as HTMLElement).closest('button');
+    if (!b) return;
+    if (b.dataset.disc !== undefined) {
+      const d = b.dataset.disc;
+      if (!d) elegidas.clear();
+      else if (elegidas.has(d)) elegidas.delete(d);
+      else elegidas.add(d);
+    } else if (b.dataset.foco !== undefined) {
+      foco = b.dataset.foco;
+    }
+    aplicar();
+  });
+</script>
