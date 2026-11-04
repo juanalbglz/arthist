@@ -1,0 +1,21 @@
+id: glosario-puntillismo
+anio: 1886
+fecha:
+  es: "1886 (Seurat)"
+  en: "1886 (Seurat)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Puntillismo"
+  en: "Pointillism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/pointillisme/"
+es:
+  titulo: "Puntillismo"
+  texto: "Pintar con pequeños puntos de color puro que el ojo mezcla al mirar. Se basa en la ciencia del color de su tiempo."
+en:
+  titulo: "Pointillism"
+  texto: "Painting with small dots of pure colour that the eye blends. It draws on the colour science of its day."

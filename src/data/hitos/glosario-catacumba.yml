@@ -1,0 +1,21 @@
+id: glosario-catacumba
+anio: 200
+fecha:
+  es: "siglos II–IV"
+  en: "2nd–4th century"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Catacumbas"
+  en: "Catacombs"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/catacumba/"
+es:
+  titulo: "Catacumba"
+  texto: "Cementerio subterráneo de los primeros cristianos en Roma. Sus pinturas son el inicio de la iconografía cristiana."
+en:
+  titulo: "Catacomb"
+  texto: "Underground cemetery of the early Christians in Rome. Its paintings are the start of Christian iconography."

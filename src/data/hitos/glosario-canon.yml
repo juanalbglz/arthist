@@ -1,0 +1,21 @@
+id: glosario-canon
+anio: -440
+fecha:
+  es: "c. 440 a. C. (Policleto)"
+  en: "c. 440 BCE (Polykleitos)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - escultura
+wiki:
+  es: "Canon (arte)"
+  en: "Canon of proportions"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/canon/"
+es:
+  titulo: "Canon"
+  texto: "Regla de proporciones para representar el cuerpo ideal. Policleto la fija en el Doríforo; Egipto, India o China tienen cánones propios."
+en:
+  titulo: "Canon"
+  texto: "A rule of proportions for depicting the ideal body. Polykleitos sets one in the Doryphoros; Egypt, India and China have their own canons."

@@ -1,0 +1,21 @@
+id: glosario-litografia
+anio: 1796
+fecha:
+  es: "1796 (Senefelder)"
+  en: "1796 (Senefelder)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - grabado
+wiki:
+  es: "Litografía"
+  en: "Lithography"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/litografia/"
+es:
+  titulo: "Litografía"
+  texto: "Técnica de estampación sobre piedra que repele o retiene la tinta según el dibujo. Abarata la imagen impresa y llena de carteles las ciudades."
+en:
+  titulo: "Lithography"
+  texto: "A printing technique on stone that repels or holds ink according to the drawing. It makes printed images cheap and fills cities with posters."

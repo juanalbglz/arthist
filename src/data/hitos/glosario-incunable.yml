@@ -1,0 +1,22 @@
+id: glosario-incunable
+anio: 1455
+fecha:
+  es: "1455 (Gutenberg)"
+  en: "1455 (Gutenberg)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - grabado
+  - diseno
+wiki:
+  es: "Incunable"
+  en: "Incunable"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/incunabula/"
+es:
+  titulo: "Incunable"
+  texto: "Libro impreso antes de 1501. La imprenta de tipos móviles de Gutenberg tiene precedentes en China y Corea, donde el Jikji se imprime en 1377 con tipos de metal."
+en:
+  titulo: "Incunable"
+  texto: "A book printed before 1501. Gutenberg’s movable type has precedents in China and Korea, where the Jikji was printed in 1377 with metal type."

@@ -1,0 +1,21 @@
+id: glosario-boveda-cruceria
+anio: 1140
+fecha:
+  es: "c. 1140 (Saint-Denis)"
+  en: "c. 1140 (Saint-Denis)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - arquitectura
+wiki:
+  es: "Bóveda de crucería"
+  en: "Rib vault"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/boveda-de-cruceria/"
+es:
+  titulo: "Bóveda de crucería"
+  texto: "Bóveda reforzada por nervios que se cruzan y llevan el peso a los pilares. Permite muros más finos y grandes ventanas: es la base del gótico."
+en:
+  titulo: "Rib vault"
+  texto: "A vault reinforced by crossing ribs that carry the weight to the piers. It allows thinner walls and large windows: the basis of Gothic."

@@ -1,0 +1,16 @@
+id: ferrocarril
+anio: 1830
+fecha:
+  es: "1830"
+  en: "1830"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Ferrocarril de Liverpool a Mánchester"
+  en: "Liverpool and Manchester Railway"
+es:
+  titulo: "Primer ferrocarril moderno"
+  texto: "La línea Liverpool–Mánchester cambia la idea de distancia y tiempo."
+en:
+  titulo: "First modern railway"
+  texto: "The Liverpool–Manchester line changes the sense of distance and time."

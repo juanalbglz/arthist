@@ -1,0 +1,16 @@
+id: constantinopla
+anio: 330
+fecha:
+  es: "330"
+  en: "330"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Constantinopla"
+  en: "Constantinople"
+es:
+  titulo: "Fundación de Constantinopla"
+  texto: "Constantino traslada la capital al Bósforo. Será el centro del Imperio bizantino durante más de mil años."
+en:
+  titulo: "Founding of Constantinople"
+  texto: "Constantine moves the capital to the Bosporus. It will be the centre of the Byzantine Empire for over a thousand years."

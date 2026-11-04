@@ -1,0 +1,22 @@
+id: glosario-terracota
+anio: -500
+fecha:
+  es: "c. 500 a. C. (Nok)"
+  en: "c. 500 BCE (Nok)"
+pista: glosario
+sociedad: africa
+disciplinas:
+  - escultura
+  - ceramica
+wiki:
+  es: "Terracota"
+  en: "Terracotta"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/terracota/"
+es:
+  titulo: "Terracota"
+  texto: "Arcilla cocida usada para esculpir. Las cabezas de Nok, en la actual Nigeria, son de las más antiguas del África subsahariana; el ejército de Xi’an también es de terracota."
+en:
+  titulo: "Terracotta"
+  texto: "Fired clay used for sculpture. The Nok heads in today’s Nigeria are among the oldest in sub-Saharan Africa; the Xi’an army is terracotta too."

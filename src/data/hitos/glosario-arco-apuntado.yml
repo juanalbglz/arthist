@@ -1,0 +1,21 @@
+id: glosario-arco-apuntado
+anio: 750
+fecha:
+  es: "siglo VIII (mundo islámico); siglo XII (gótico)"
+  en: "8th century (Islamic world); 12th century (Gothic)"
+pista: glosario
+sociedad: asia-occidental
+disciplinas:
+  - arquitectura
+wiki:
+  es: "Arco apuntado"
+  en: "Pointed arch"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/arco-apuntado/"
+es:
+  titulo: "Arco apuntado"
+  texto: "Arco formado por dos curvas que se cruzan en punta. Lo usan los arquitectos omeyas y abasíes antes de que llegue al gótico europeo."
+en:
+  titulo: "Pointed arch"
+  texto: "An arch of two curves meeting at a point. Umayyad and Abbasid architects use it before it reaches European Gothic."

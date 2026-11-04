@@ -16,7 +16,7 @@ Todo está en `src/data/`:
 
 | Carpeta o archivo | Qué es |
 | --- | --- |
-| `hitos/` | Un archivo por hito (obra, movimiento o acontecimiento). |
+| `hitos/` | Un archivo por hito: obra o movimiento (`pista: arte`), acontecimiento (`pista: mundo`) o término del glosario (`pista: glosario`, archivos `glosario-*.yml`, con enlace a historiadelarte.net). Los botones «Mostrar» de la web encienden y apagan cada pista. |
 | `disciplinas/` | Un archivo por expresión artística (pintura, textil…). Salen en el filtro. |
 | `sociedades/` | Un archivo por sociedad. Cada una es una columna. |
 | `epocas.yaml` | Las épocas del eje y sus fichas informativas. |

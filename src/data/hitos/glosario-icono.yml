@@ -1,0 +1,21 @@
+id: glosario-icono
+anio: 550
+fecha:
+  es: "siglo VI"
+  en: "6th century"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Icono"
+  en: "Icon"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/icono/"
+es:
+  titulo: "Icono"
+  texto: "Imagen sagrada pintada sobre tabla en el mundo bizantino y ortodoxo. No se considera un cuadro sino una ventana a lo divino."
+en:
+  titulo: "Icon"
+  texto: "A sacred image painted on panel in the Byzantine and Orthodox world. It is seen not as a painting but as a window onto the divine."

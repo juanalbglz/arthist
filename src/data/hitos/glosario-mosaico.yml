@@ -1,0 +1,22 @@
+id: glosario-mosaico
+anio: -2600
+fecha:
+  es: "c. 2600 a. C. (Ur)"
+  en: "c. 2600 BCE (Ur)"
+pista: glosario
+sociedad: asia-occidental
+disciplinas:
+  - pintura
+  - arquitectura
+wiki:
+  es: "Mosaico"
+  en: "Mosaic"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/mosaico/"
+es:
+  titulo: "Mosaico"
+  texto: "Imagen hecha con pequeñas piezas de piedra, concha, vidrio o cerámica. Los sumerios ya lo usan en el Estandarte de Ur; luego lo desarrollan Roma, Bizancio y el islam."
+en:
+  titulo: "Mosaic"
+  texto: "An image made of small pieces of stone, shell, glass or ceramic. The Sumerians already use it in the Standard of Ur; Rome, Byzantium and Islam develop it further."

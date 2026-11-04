@@ -1,0 +1,16 @@
+id: imperio-romano
+anio: -27
+fecha:
+  es: "27 a. C."
+  en: "27 BCE"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Imperio romano"
+  en: "Roman Empire"
+es:
+  titulo: "Comienza el Imperio romano"
+  texto: "Augusto concentra el poder; Roma domina el Mediterráneo durante cuatro siglos."
+en:
+  titulo: "The Roman Empire begins"
+  texto: "Augustus concentrates power; Rome dominates the Mediterranean for four centuries."

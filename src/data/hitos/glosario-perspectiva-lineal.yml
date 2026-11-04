@@ -1,0 +1,22 @@
+id: glosario-perspectiva-lineal
+anio: 1415
+fecha:
+  es: "c. 1415 (Brunelleschi)"
+  en: "c. 1415 (Brunelleschi)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - dibujo
+wiki:
+  es: "Perspectiva lineal"
+  en: "Linear perspective"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/perspectiva-lineal/"
+es:
+  titulo: "Perspectiva lineal"
+  texto: "Método geométrico para representar la profundidad con líneas que convergen en un punto de fuga. China y Japón usan otros sistemas, como la perspectiva paralela."
+en:
+  titulo: "Linear perspective"
+  texto: "A geometric method for showing depth with lines converging on a vanishing point. China and Japan use other systems, such as parallel perspective."

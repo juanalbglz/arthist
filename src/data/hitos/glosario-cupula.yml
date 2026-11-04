@@ -1,0 +1,21 @@
+id: glosario-cupula
+anio: 125
+fecha:
+  es: "c. 125 (Panteón)"
+  en: "c. 125 (Pantheon)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - arquitectura
+wiki:
+  es: "Cúpula"
+  en: "Dome"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/cupula/"
+es:
+  titulo: "Cúpula"
+  texto: "Bóveda semiesférica que cubre un espacio. El Panteón de Roma, Santa Sofía o las mezquitas otomanas la llevan al límite."
+en:
+  titulo: "Dome"
+  texto: "A hemispherical vault covering a space. Rome’s Pantheon, Hagia Sophia and Ottoman mosques push it to the limit."

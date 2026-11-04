@@ -1,0 +1,23 @@
+id: glosario-humanismo
+anio: 1450
+fecha:
+  es: "siglo XV"
+  en: "15th century"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - escultura
+  - arquitectura
+wiki:
+  es: "Humanismo renacentista"
+  en: "Renaissance humanism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/humanismo/"
+es:
+  titulo: "Humanismo"
+  texto: "Movimiento intelectual que pone al ser humano en el centro y recupera los textos grecolatinos. Convierte al artista en un intelectual."
+en:
+  titulo: "Humanism"
+  texto: "An intellectual movement that puts humans at the centre and revives Greek and Latin texts. It turns the artist into an intellectual."

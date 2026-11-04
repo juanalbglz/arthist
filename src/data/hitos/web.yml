@@ -1,0 +1,16 @@
+id: web
+anio: 1991
+fecha:
+  es: "1991"
+  en: "1991"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "World Wide Web"
+  en: "World Wide Web"
+es:
+  titulo: "Nace la World Wide Web"
+  texto: "Se crea en el CERN, en Ginebra; en una década internet entra en la vida diaria."
+en:
+  titulo: "The World Wide Web is born"
+  texto: "It is created at CERN in Geneva; within a decade the internet enters daily life."

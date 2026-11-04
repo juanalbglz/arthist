@@ -1,0 +1,22 @@
+id: glosario-vidriera
+anio: 1200
+fecha:
+  es: "c. 1200 (Chartres)"
+  en: "c. 1200 (Chartres)"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - arquitectura
+  - pintura
+wiki:
+  es: "Vidriera"
+  en: "Stained glass"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/vidriera/"
+es:
+  titulo: "Vidriera"
+  texto: "Ventana de vidrios de colores unidos con plomo. En el gótico la luz coloreada representa la presencia de Dios; los rosetones son su forma más espectacular."
+en:
+  titulo: "Stained glass"
+  texto: "A window of coloured glass joined with lead. In Gothic art coloured light stands for God’s presence; rose windows are its most spectacular form."

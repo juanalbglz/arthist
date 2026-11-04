@@ -1,0 +1,16 @@
+id: revolucion-francesa
+anio: 1789
+fecha:
+  es: "1789"
+  en: "1789"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "Revolución francesa"
+  en: "French Revolution"
+es:
+  titulo: "Revolución francesa"
+  texto: "Cae el Antiguo Régimen; se proclaman los derechos del hombre y del ciudadano."
+en:
+  titulo: "French Revolution"
+  texto: "The Ancien Régime falls; the rights of man and of the citizen are proclaimed."

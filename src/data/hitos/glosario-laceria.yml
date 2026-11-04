@@ -1,0 +1,22 @@
+id: glosario-laceria
+anio: 1000
+fecha:
+  es: "siglos X–XV"
+  en: "10th–15th century"
+pista: glosario
+sociedad: asia-occidental
+disciplinas:
+  - arquitectura
+  - pintura
+wiki:
+  es: "Lacería"
+  en: "Girih"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/laceria/"
+es:
+  titulo: "Lacería"
+  texto: "Decoración de líneas que se cruzan formando estrellas y polígonos sin fin. El arte islámico la usa para sugerir lo infinito sin representar figuras."
+en:
+  titulo: "Interlace (lacería)"
+  texto: "Decoration of crossing lines that form endless stars and polygons. Islamic art uses it to suggest the infinite without depicting figures."

@@ -1,0 +1,21 @@
+id: glosario-vanitas
+anio: 1620
+fecha:
+  es: "siglo XVII"
+  en: "17th century"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Vanitas"
+  en: "Vanitas"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/vanitas/"
+es:
+  titulo: "Vanitas"
+  texto: "Bodegón que recuerda que la vida es breve: calaveras, velas apagadas, flores marchitas. Muy popular en Holanda y España."
+en:
+  titulo: "Vanitas"
+  texto: "A still life reminding us life is short: skulls, snuffed candles, withered flowers. Very popular in Holland and Spain."

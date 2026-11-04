@@ -1,0 +1,16 @@
+id: darwin
+anio: 1859
+fecha:
+  es: "1859"
+  en: "1859"
+pista: mundo
+sociedad: europa
+wiki:
+  es: "El origen de las especies"
+  en: "On the Origin of Species"
+es:
+  titulo: "Darwin: El origen de las especies"
+  texto: "La teoría de la evolución por selección natural cambia la manera de entender la vida."
+en:
+  titulo: "Darwin: On the Origin of Species"
+  texto: "The theory of evolution by natural selection changes how life is understood."

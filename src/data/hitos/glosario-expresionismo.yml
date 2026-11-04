@@ -1,0 +1,22 @@
+id: glosario-expresionismo
+anio: 1905
+fecha:
+  es: "1905"
+  en: "1905"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - grabado
+wiki:
+  es: "Expresionismo"
+  en: "Expressionism"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/expresionismo/"
+es:
+  titulo: "Expresionismo"
+  texto: "Deformar formas y colores para expresar angustia y emoción interior. Recupera la xilografía como lenguaje directo."
+en:
+  titulo: "Expressionism"
+  texto: "Distorting form and colour to express anguish and inner emotion. It revives the woodcut as a direct language."

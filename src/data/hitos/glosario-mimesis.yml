@@ -1,0 +1,22 @@
+id: glosario-mimesis
+anio: -380
+fecha:
+  es: "siglo IV a. C."
+  en: "4th century BCE"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+  - escultura
+wiki:
+  es: "Mímesis"
+  en: "Mimesis"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/mimesis/"
+es:
+  titulo: "Mímesis"
+  texto: "Imitación de la naturaleza. Platón la desconfía porque es copia de una copia; Aristóteles la ve como forma de conocer. Guiará el arte europeo hasta el siglo XIX."
+en:
+  titulo: "Mimesis"
+  texto: "Imitation of nature. Plato distrusts it as a copy of a copy; Aristotle sees it as a way of knowing. It guides European art until the 19th century."

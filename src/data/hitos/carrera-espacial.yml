@@ -1,0 +1,16 @@
+id: carrera-espacial
+anio: 1969
+fecha:
+  es: "1957–1969"
+  en: "1957–1969"
+pista: mundo
+sociedad: norteamerica
+wiki:
+  es: "Apolo 11"
+  en: "Apollo 11"
+es:
+  titulo: "Del Sputnik a la Luna"
+  texto: "La URSS lanza el Sputnik en 1957; en 1969 dos astronautas pisan la Luna."
+en:
+  titulo: "From Sputnik to the Moon"
+  texto: "The USSR launches Sputnik in 1957; in 1969 two astronauts walk on the Moon."

@@ -17,9 +17,10 @@ const porOrden = <T extends { orden: number }>(a: T, b: T) => a.orden - b.orden;
 const SOCIEDADES = Object.fromEntries((await getCollection('sociedades')).map((s) => [s.id, s.data]).sort((a, b) => porOrden(a[1], b[1])));
 const DISCIPLINAS = Object.fromEntries((await getCollection('disciplinas')).map((d) => [d.id, d.data]).sort((a, b) => porOrden(a[1], b[1])));
 
+const ORDEN_PISTA = { arte: 0, glosario: 1, mundo: 2 };
 const hitos = (await getCollection('hitos'))
   .map((h) => ({ id: h.id, ...h.data }))
-  .sort((a, b) => a.anio - b.anio || (a.pista === 'arte' ? -1 : 1));
+  .sort((a, b) => a.anio - b.anio || ORDEN_PISTA[a.pista] - ORDEN_PISTA[b.pista]);
 
 // El arte de cada época por áreas, en el orden de la primera sociedad de cada área.
 const posSoc = (id: string) => Object.keys(SOCIEDADES).indexOf(id);
@@ -71,6 +72,10 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   <p class="lede">{t.intro}</p>
 
   <div class="filtros" data-filtros hidden>
+    <div role="group" aria-labelledby="f-pista">
+      <p class="eyebrow" id="f-pista">{t.mostrar}</p>
+      {(['arte', 'mundo', 'glosario'] as const).map((p) => <button type="button" class={`p-${p}`} data-pista={p} aria-pressed="true">{t.pistas[p]}</button>)}
+    </div>
     <div role="group" aria-labelledby="f-disc">
       <p class="eyebrow" id="f-disc">{t.disciplinas}</p>
       <button type="button" data-disc="" aria-pressed="true">{t.todas}</button>
@@ -108,7 +113,7 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
             <button type="button" class="info" data-info={f.epoca.id} aria-haspopup="dialog" aria-label={t.infoEpoca(f.epoca[lang].nombre)} title={t.infoEpoca(f.epoca[lang].nombre)}>i</button></span>
           </li>
         ) : (
-          <li class={`fila ${f.hito.pista}`} data-col={f.hito.sociedad} data-disc={f.hito.disciplinas.join(' ')}>
+          <li class={`fila ${f.hito.pista}`} data-pista={f.hito.pista} data-col={f.hito.sociedad} data-disc={f.hito.disciplinas.join(' ')}>
             <span class="fecha">{fecha(f.hito)}</span>
             <div class="hito" style={`grid-column:${col(f.hito.sociedad)}`}>
               <button type="button" class="punto" data-abrir={f.hito.sociedad} data-ir={f.hito.id}
@@ -205,6 +210,7 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   const columnas = [...linea.querySelectorAll<HTMLElement>('.col-cab')].map((c) => c.dataset.col!);
   filtros.hidden = false;
   const elegidas = new Set<string>();
+  const apagadas = new Set<string>();
   let abierta = '';
 
   function plantilla() {
@@ -232,8 +238,12 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
       const v = b.dataset.disc!;
       b.setAttribute('aria-pressed', String(v ? elegidas.has(v) : elegidas.size === 0));
     });
-    linea.querySelectorAll<HTMLElement>('.fila.arte').forEach((f) => {
-      f.hidden = elegidas.size > 0 && !(f.dataset.disc ?? '').split(' ').some((d) => elegidas.has(d));
+    filtros.querySelectorAll<HTMLButtonElement>('[data-pista]').forEach((b) => b.setAttribute('aria-pressed', String(!apagadas.has(b.dataset.pista!))));
+    // Una fila se ve si su pista está encendida y, si es de arte o glosario, coincide con las disciplinas elegidas.
+    linea.querySelectorAll<HTMLElement>('.fila').forEach((f) => {
+      const pista = f.dataset.pista!;
+      const porDisc = pista !== 'mundo' && elegidas.size > 0 && !(f.dataset.disc ?? '').split(' ').some((d) => elegidas.has(d));
+      f.hidden = apagadas.has(pista) || porDisc;
     });
     separadores();
   }
@@ -252,6 +262,13 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   }
 
   filtros.addEventListener('click', (ev) => {
+    const p = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-pista]');
+    if (p) {
+      const v = p.dataset.pista!;
+      if (apagadas.has(v)) apagadas.delete(v); else apagadas.add(v);
+      filtrar();
+      return;
+    }
     const b = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-disc]');
     if (!b) return;
     const d = b.dataset.disc!;

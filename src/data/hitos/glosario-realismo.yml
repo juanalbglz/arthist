@@ -1,0 +1,21 @@
+id: glosario-realismo
+anio: 1850
+fecha:
+  es: "c. 1850"
+  en: "c. 1850"
+pista: glosario
+sociedad: europa
+disciplinas:
+  - pintura
+wiki:
+  es: "Realismo artístico"
+  en: "Realism (art movement)"
+enlaces:
+  - titulo: "historiadelarte.net"
+    url: "https://www.historiadelarte.net/glosario/realism/"
+es:
+  titulo: "Realismo"
+  texto: "Pintar lo que se ve, incluida la vida de campesinos y obreros, sin idealizar. Courbet lo convierte en una postura política."
+en:
+  titulo: "Realism"
+  texto: "Painting what one sees, including the life of peasants and workers, without idealising. Courbet makes it a political stance."
