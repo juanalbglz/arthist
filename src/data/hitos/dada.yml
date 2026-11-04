@@ -1,0 +1,28 @@
+id: dada
+anio: 1916
+fecha:
+  es: 1916 (Cabaret Voltaire, Zúrich)
+  en: 1916 (Cabaret Voltaire, Zurich)
+pista: arte
+sociedad: europa
+disciplinas:
+- escenicas
+- instalacion
+es:
+  titulo: Dadá
+  texto: 'Antiarte nacido en plena Primera Guerra Mundial: azar, collage, ready-made y performance.'
+en:
+  titulo: Dada
+  texto: 'Anti-art born in the middle of the First World War: chance, collage, readymades and performance.'
+wiki:
+  es: Dadaísmo
+  en: Dada
+exponentes:
+- nombre: Marcel Duchamp
+  wiki:
+    es: Marcel Duchamp
+    en: Marcel Duchamp
+- nombre: Hannah Höch
+  wiki:
+    es: Hannah Höch
+    en: Hannah Höch

@@ -1,0 +1,28 @@
+id: fluxus
+anio: 1962
+fecha:
+  es: '1962'
+  en: '1962'
+pista: arte
+sociedad: europa
+disciplinas:
+- escenicas
+- instalacion
+es:
+  titulo: Fluxus
+  texto: Red internacional que mezcla música, acción y vida cotidiana; el arte como proceso y no como objeto.
+en:
+  titulo: Fluxus
+  texto: An international network mixing music, action and everyday life; art as process rather than object.
+wiki:
+  es: Fluxus
+  en: Fluxus
+exponentes:
+- nombre: Joseph Beuys
+  wiki:
+    es: Joseph Beuys
+    en: Joseph Beuys
+- nombre: Yoko Ono
+  wiki:
+    es: Yoko Ono
+    en: Yoko Ono

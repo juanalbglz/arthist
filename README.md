@@ -47,6 +47,8 @@ en:                               # opcional; si falta se usa el español
   titulo: "Kente cloth (Asante, Ghana)"
   texto: "Loom-woven strips whose colours and patterns each carry a name and meaning."
 wiki: { es: "Kente", en: "Kente cloth" }
+exponentes:                       # opcional: artistas principales
+  - { nombre: "Nombre", wiki: { es: "Artículo", en: "Article" } }
 peliculas:                        # opcional
   - { titulo: "Título", anio: 2010, tipo: documental, direccion: "Nombre" }
 enlaces:                          # opcional

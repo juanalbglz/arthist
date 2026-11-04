@@ -1,0 +1,28 @@
+id: bizantino
+anio: 532
+fecha:
+  es: 532–537 (Santa Sofía)
+  en: 532–537 (Hagia Sophia)
+pista: arte
+sociedad: europa
+disciplinas:
+- arquitectura
+- pintura
+es:
+  titulo: Arte bizantino
+  texto: Cúpulas, mosaicos dorados e iconos al servicio de la Iglesia y el emperador en Constantinopla.
+en:
+  titulo: Byzantine art
+  texto: Domes, gold mosaics and icons serving the Church and the emperor in Constantinople.
+wiki:
+  es: Arte bizantino
+  en: Byzantine art
+exponentes:
+- nombre: Antemio de Tralles
+  wiki:
+    es: Antemio de Tralles
+    en: Anthemius of Tralles
+- nombre: Andréi Rubliov
+  wiki:
+    es: Andréi Rubliov
+    en: Andrei Rublev

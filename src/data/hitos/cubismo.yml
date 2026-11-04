@@ -1,0 +1,34 @@
+id: cubismo
+anio: 1907
+fecha:
+  es: '1907'
+  en: '1907'
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Cubismo
+  texto: Rompe la perspectiva única y descompone los objetos en planos; bebe de la escultura africana, que llega a París por el colonialismo.
+en:
+  titulo: Cubism
+  texto: It breaks single-point perspective and splits objects into planes; it draws on African sculpture, which reaches Paris through colonialism.
+wiki:
+  es: Cubismo
+  en: Cubism
+exponentes:
+- nombre: Pablo Picasso
+  wiki:
+    es: Pablo Picasso
+    en: Pablo Picasso
+- nombre: Georges Braque
+  wiki:
+    es: Georges Braque
+    en: Georges Braque
+peliculas:
+- titulo: El misterio Picasso (Le Mystère Picasso)
+  anio: 1956
+  tipo: documental
+  direccion: Henri-Georges Clouzot
+  wiki: The Mystery of Picasso

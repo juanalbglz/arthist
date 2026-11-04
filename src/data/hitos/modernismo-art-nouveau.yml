@@ -1,0 +1,34 @@
+id: modernismo-art-nouveau
+anio: 1890
+fecha:
+  es: c. 1890–1910
+  en: c. 1890–1910
+pista: arte
+sociedad: europa
+disciplinas:
+- arquitectura
+- diseno
+es:
+  titulo: Modernismo / Art Nouveau
+  texto: Formas orgánicas inspiradas en la naturaleza, que unen arquitectura, artes decorativas y diseño.
+en:
+  titulo: Art Nouveau / Modernisme
+  texto: Organic forms inspired by nature, uniting architecture, decorative arts and design.
+wiki:
+  es: Art nouveau
+  en: Art Nouveau
+exponentes:
+- nombre: Antoni Gaudí
+  wiki:
+    es: Antoni Gaudí
+    en: Antoni Gaudí
+- nombre: Alfons Mucha
+  wiki:
+    es: Alfons Mucha
+    en: Alphonse Mucha
+peliculas:
+- titulo: Antonio Gaudí
+  anio: 1984
+  tipo: documental
+  direccion: Hiroshi Teshigahara
+  wiki: Antonio Gaudí (film)

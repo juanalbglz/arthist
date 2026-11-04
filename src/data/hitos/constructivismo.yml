@@ -1,0 +1,34 @@
+id: constructivismo
+anio: 1915
+fecha:
+  es: c. 1915–1930
+  en: c. 1915–1930
+pista: arte
+sociedad: europa
+disciplinas:
+- escultura
+- diseno
+es:
+  titulo: Constructivismo
+  texto: En la Rusia revolucionaria, el arte se pone al servicio de la construcción de una nueva sociedad.
+en:
+  titulo: Constructivism
+  texto: In revolutionary Russia, art is put to work building a new society.
+wiki:
+  es: Constructivismo (arte)
+  en: Constructivism (art)
+exponentes:
+- nombre: Vladímir Tatlin
+  wiki:
+    es: Vladímir Tatlin
+    en: Vladimir Tatlin
+- nombre: Liubov Popova
+  wiki:
+    es: Liubov Popova
+    en: Lyubov Popova
+peliculas:
+- titulo: El hombre de la cámara
+  anio: 1929
+  tipo: documental
+  direccion: Dziga Vértov
+  wiki: Man with a Movie Camera

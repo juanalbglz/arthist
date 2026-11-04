@@ -1,0 +1,34 @@
+id: surrealismo
+anio: 1924
+fecha:
+  es: 1924 (manifiesto)
+  en: 1924 (manifesto)
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+es:
+  titulo: Surrealismo
+  texto: El sueño, el deseo y el inconsciente como materia del arte. Llega a Tenerife en 1935.
+en:
+  titulo: Surrealism
+  texto: Dreams, desire and the unconscious as the stuff of art. It reaches Tenerife in 1935.
+wiki:
+  es: Surrealismo
+  en: Surrealism
+exponentes:
+- nombre: Salvador Dalí
+  wiki:
+    es: Salvador Dalí
+    en: Salvador Dalí
+- nombre: Óscar Domínguez
+  wiki:
+    es: Óscar Domínguez
+    en: Óscar Domínguez
+peliculas:
+- titulo: Un perro andaluz
+  anio: 1929
+  tipo: corto
+  direccion: Luis Buñuel
+  wiki: Un Chien Andalou

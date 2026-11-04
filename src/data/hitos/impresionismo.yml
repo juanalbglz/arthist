@@ -1,0 +1,33 @@
+id: impresionismo
+anio: 1874
+fecha:
+  es: 1874 (primera exposición)
+  en: 1874 (first exhibition)
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+es:
+  titulo: Impresionismo
+  texto: Pintura al aire libre que capta la luz y el instante; también recibe la influencia de la estampa japonesa.
+en:
+  titulo: Impressionism
+  texto: Open-air painting that captures light and the moment; it is also shaped by Japanese prints.
+wiki:
+  es: Impresionismo
+  en: Impressionism
+exponentes:
+- nombre: Claude Monet
+  wiki:
+    es: Claude Monet
+    en: Claude Monet
+- nombre: Berthe Morisot
+  wiki:
+    es: Berthe Morisot
+    en: Berthe Morisot
+peliculas:
+- titulo: Renoir
+  anio: 2012
+  tipo: pelicula
+  direccion: Gilles Bourdos
+  wiki: Renoir (2012 film)

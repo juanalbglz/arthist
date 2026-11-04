@@ -1,0 +1,29 @@
+id: gotico
+anio: 1140
+fecha:
+  es: c. 1140–1500
+  en: c. 1140–1500
+pista: arte
+sociedad: europa
+disciplinas:
+- arquitectura
+- escultura
+- pintura
+es:
+  titulo: Gótico
+  texto: Catedrales altas y luminosas con arcos apuntados, bóvedas de crucería y vidrieras; crecen las ciudades y los gremios.
+en:
+  titulo: Gothic
+  texto: Tall, light-filled cathedrals with pointed arches, rib vaults and stained glass; cities and guilds grow.
+wiki:
+  es: Arte gótico
+  en: Gothic art
+exponentes:
+- nombre: Giotto
+  wiki:
+    es: Giotto
+    en: Giotto
+- nombre: Jan van Eyck
+  wiki:
+    es: Jan van Eyck
+    en: Jan van Eyck

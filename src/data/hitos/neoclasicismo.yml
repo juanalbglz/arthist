@@ -1,0 +1,29 @@
+id: neoclasicismo
+anio: 1760
+fecha:
+  es: c. 1760–1830
+  en: c. 1760–1830
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+- arquitectura
+es:
+  titulo: Neoclasicismo
+  texto: Vuelta a Grecia y Roma, con líneas limpias y temas cívicos, al hilo de la Ilustración y la Revolución francesa.
+en:
+  titulo: Neoclassicism
+  texto: A return to Greece and Rome, with clean lines and civic themes, alongside the Enlightenment and the French Revolution.
+wiki:
+  es: Neoclasicismo
+  en: Neoclassicism
+exponentes:
+- nombre: Jacques-Louis David
+  wiki:
+    es: Jacques-Louis David
+    en: Jacques-Louis David
+- nombre: Antonio Canova
+  wiki:
+    es: Antonio Canova
+    en: Antonio Canova

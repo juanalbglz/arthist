@@ -1,0 +1,27 @@
+id: fauvismo
+anio: 1905
+fecha:
+  es: '1905'
+  en: '1905'
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+es:
+  titulo: Fauvismo
+  texto: Color puro y arbitrario en el Salón de Otoño de París; la crítica los llama «fieras».
+en:
+  titulo: Fauvism
+  texto: Pure, arbitrary colour at the Paris Salon d’Automne; critics call them “wild beasts”.
+wiki:
+  es: Fauvismo
+  en: Fauvism
+exponentes:
+- nombre: Henri Matisse
+  wiki:
+    es: Henri Matisse
+    en: Henri Matisse
+- nombre: André Derain
+  wiki:
+    es: André Derain
+    en: André Derain

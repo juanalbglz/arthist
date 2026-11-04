@@ -1,0 +1,40 @@
+id: barroco
+anio: 1600
+fecha:
+  es: c. 1600–1750
+  en: c. 1600–1750
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- escultura
+- arquitectura
+es:
+  titulo: Barroco
+  texto: Claroscuro, movimiento y emoción al servicio de la Contrarreforma y de las monarquías absolutas, también en las colonias americanas.
+en:
+  titulo: Baroque
+  texto: Chiaroscuro, movement and emotion serving the Counter-Reformation and absolute monarchies, in the American colonies too.
+wiki:
+  es: Barroco
+  en: Baroque
+exponentes:
+- nombre: Caravaggio
+  wiki:
+    es: Caravaggio
+    en: Caravaggio
+- nombre: Diego Velázquez
+  wiki:
+    es: Diego Velázquez
+    en: Diego Velázquez
+peliculas:
+- titulo: Caravaggio
+  anio: 1986
+  tipo: pelicula
+  direccion: Derek Jarman
+  wiki: Caravaggio (1986 film)
+- titulo: La joven de la perla (Girl with a Pearl Earring)
+  anio: 2003
+  tipo: pelicula
+  direccion: Peter Webber
+  wiki: Girl with a Pearl Earring (film)

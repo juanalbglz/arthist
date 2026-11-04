@@ -1,0 +1,34 @@
+id: expresionismo
+anio: 1905
+fecha:
+  es: 1905 (Die Brücke)
+  en: 1905 (Die Brücke)
+pista: arte
+sociedad: europa
+disciplinas:
+- pintura
+- grabado
+es:
+  titulo: Expresionismo
+  texto: Formas deformadas y colores violentos para expresar la angustia; recupera la xilografía.
+en:
+  titulo: Expressionism
+  texto: Distorted forms and violent colour to express anguish; it revives the woodcut.
+wiki:
+  es: Expresionismo
+  en: Expressionism
+exponentes:
+- nombre: Edvard Munch
+  wiki:
+    es: Edvard Munch
+    en: Edvard Munch
+- nombre: Ernst Ludwig Kirchner
+  wiki:
+    es: Ernst Ludwig Kirchner
+    en: Ernst Ludwig Kirchner
+peliculas:
+- titulo: El gabinete del doctor Caligari
+  anio: 1920
+  tipo: pelicula
+  direccion: Robert Wiene
+  wiki: The Cabinet of Dr. Caligari

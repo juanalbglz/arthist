@@ -1,0 +1,25 @@
+id: romanico
+anio: 1000
+fecha:
+  es: c. 1000–1200
+  en: c. 1000–1200
+pista: arte
+sociedad: europa
+disciplinas:
+- arquitectura
+- escultura
+- pintura
+es:
+  titulo: Románico
+  texto: Iglesias de muros gruesos y arcos de medio punto a lo largo del Camino de Santiago; pintura mural de colores planos.
+en:
+  titulo: Romanesque
+  texto: Thick-walled churches with round arches along the Way of St James; mural painting in flat colours.
+wiki:
+  es: Arte románico
+  en: Romanesque art
+exponentes:
+- nombre: Maestro de Taüll
+  wiki:
+    es: Maestro de Taüll
+    en: Master of Taüll

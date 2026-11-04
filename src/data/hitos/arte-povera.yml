@@ -1,0 +1,28 @@
+id: arte-povera
+anio: 1967
+fecha:
+  es: '1967'
+  en: '1967'
+pista: arte
+sociedad: europa
+disciplinas:
+- instalacion
+- escultura
+es:
+  titulo: Arte povera
+  texto: Materiales pobres y naturales (tierra, trapos, ramas) contra el consumo y el mercado del arte.
+en:
+  titulo: Arte povera
+  texto: Poor and natural materials (earth, rags, branches) against consumerism and the art market.
+wiki:
+  es: Arte povera
+  en: Arte Povera
+exponentes:
+- nombre: Michelangelo Pistoletto
+  wiki:
+    es: Michelangelo Pistoletto
+    en: Michelangelo Pistoletto
+- nombre: Mario Merz
+  wiki:
+    es: Mario Merz
+    en: Mario Merz
