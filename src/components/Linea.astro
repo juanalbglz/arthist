@@ -22,7 +22,10 @@ const fecha = (h: Hito) => h.fecha?.[lang] ?? (h.año < 0 ? t.ac(-h.año) : Stri
 // Columnas: las sociedades que tienen algún hito, en el orden de SOCIEDADES.
 const columnas = Object.keys(SOCIEDADES).filter((s) => hitos.some((h) => h.sociedad === s));
 // La columna 1 es el eje de fechas y la 2 un margen; las sociedades empiezan en la 3.
-const col = (s: string) => columnas.indexOf(s) + 3;
+// Cada sociedad lee su posición de la variable --c-<id>; al desplegar una, el script
+// la mueve al extremo derecho y deja las plegadas junto al eje.
+const col = (s: string) => `var(--c-${s})`;
+const posiciones = columnas.map((s, i) => `--c-${s}:${i + 3}`).join(';');
 
 // Filas del eje: una por hito, con una marca al empezar cada época.
 type Fila = { epoca: (typeof EPOCAS)[number] } | { hito: Hito };
@@ -49,7 +52,7 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   </div>
   <p class="meta">{t.pista}</p>
 
-  <div class="linea" data-linea style={`--n:${columnas.length}`}>
+  <div class="linea" data-linea style={`--n:${columnas.length};${posiciones}`}>
     <div class="cabeza">
       <span class="eje-cab">{t.tiempo}</span>
       {columnas.map((s) => (
@@ -127,7 +130,10 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   function plantilla() {
     const movil = matchMedia('(max-width: 40rem)').matches;
     const eje = movil ? '4.6rem' : '7rem';
-    const cols = columnas.map((c) => (!abierta ? 'minmax(0, 1fr)' : c === abierta ? 'minmax(0, 1fr)' : movil ? '0' : '2.4rem'));
+    // Orden: las plegadas en su orden y la desplegada al final, a la derecha.
+    const orden = abierta ? [...columnas.filter((c) => c !== abierta), abierta] : columnas;
+    orden.forEach((c, i) => linea.style.setProperty(`--c-${c}`, String(i + 3)));
+    const cols = orden.map((c) => (!abierta || c === abierta ? 'minmax(0, 1fr)' : movil ? '0' : '2.4rem'));
     linea.style.setProperty('--plantilla', [eje, '.9rem', ...cols].join(' '));
   }
 

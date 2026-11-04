@@ -6,7 +6,7 @@ Historia del arte de todo el mundo junto a la historia de cada sociedad que la h
 
 - **Un solo eje vertical de tiempo**: todos los hitos, de todas las sociedades, ordenados por fecha. Las épocas son marcas sobre el eje.
 - **Una columna por sociedad** (África, Canarias, Mesoamérica…). Sin desplegar, cada hito es un punto (rojo = arte, blanco = sociedad) con su título.
-- **Desplegar una sociedad** (pulsando su nombre o uno de sus puntos) abre su columna con las fichas completas: arte a la izquierda, historia social a la derecha. Las demás se pliegan a una franja estrecha con solo sus puntos, para ver qué pasaba a la vez; en el móvil se ocultan. La sociedad abierta queda en la dirección (`#canarias`), así se puede enlazar.
+- **Desplegar una sociedad** (pulsando su nombre o uno de sus puntos) abre su columna, que pasa al extremo derecho, con las fichas completas: arte a la izquierda, historia social a la derecha. Las demás se pliegan junto al eje de tiempo en franjas estrechas con solo sus puntos, para ver qué pasaba a la vez; en el móvil se ocultan. La sociedad abierta queda en la dirección (`#canarias`), así se puede enlazar.
 - **Disciplinas**: filtra los hitos de arte (pintura, escultura, arquitectura…).
 - Cada ficha: imagen, Wikipedia, otros enlaces y películas o documentales relacionados. Cada sociedad enlaza a su historia en Wikipedia.
 
