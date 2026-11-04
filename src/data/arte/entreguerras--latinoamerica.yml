@@ -1,0 +1,17 @@
+id: entreguerras--latinoamerica
+epoca: entreguerras
+sociedades:
+  - mesoamerica
+  - andes
+  - sudamerica
+  - caribe
+es:
+  area: "América Latina y el Caribe"
+  concepto: "El muralismo mexicano hace un arte público y político; en Brasil la «antropofagia» devora lo europeo para crear algo propio."
+  funcion: "Educar al pueblo, contar la historia desde abajo y afirmar lo indígena y lo mestizo."
+  artista: "El Estado mexicano paga a los muralistas como trabajadores; se organizan en sindicato."
+en:
+  area: "Latin America and the Caribbean"
+  concepto: "Mexican muralism makes public and political art; in Brazil “anthropophagy” devours the European to create something new."
+  funcion: "To educate the people, tell history from below and affirm Indigenous and mestizo identities."
+  artista: "The Mexican state pays the muralists as workers; they form a union."

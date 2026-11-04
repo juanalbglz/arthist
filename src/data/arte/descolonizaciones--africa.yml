@@ -1,0 +1,14 @@
+id: descolonizaciones--africa
+epoca: descolonizaciones
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "Con las independencias nacen modernismos nacionales: la Escuela de Dakar, la «síntesis natural» de Zaria, Oshogbo."
+  funcion: "Construir una identidad nacional y panafricana tras el colonialismo."
+  artista: "El Estado actúa como mecenas (Senghor en Senegal); también talleres y mercado para el turismo."
+en:
+  area: "Africa"
+  concepto: "With independence come national modernisms: the École de Dakar, Zaria’s “natural synthesis”, Oshogbo."
+  funcion: "To build national and pan-African identity after colonialism."
+  artista: "The state acts as patron (Senghor in Senegal); there are also workshops and a tourist market."

@@ -1,0 +1,15 @@
+id: aldeas-ciudades--asia-oriental
+epoca: aldeas-ciudades
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En China los bronces Shang son vasos rituales para los ancestros; el valor está en el rito, no en el objeto. Con los Han, la caligrafía empieza a apreciarse."
+  funcion: "Comunicar con los ancestros, ordenar la sociedad según el rango y acompañar a los muertos (los guerreros de terracota)."
+  artista: "Talleres estatales enormes y organizados como una fábrica; obreros anónimos."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "In China, Shang bronzes are ritual vessels for the ancestors; the value lies in the rite, not the object. Under the Han, calligraphy begins to be prized."
+  funcion: "To communicate with ancestors, order society by rank and accompany the dead (the terracotta warriors)."
+  artista: "Huge state workshops organised almost like factories; anonymous workers."

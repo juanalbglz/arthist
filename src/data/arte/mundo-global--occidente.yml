@@ -1,0 +1,15 @@
+id: mundo-global--occidente
+epoca: mundo-global
+sociedades:
+  - europa
+  - norteamerica
+es:
+  area: "Europa y Norteamérica"
+  concepto: "Casi todo puede ser arte si la institución lo acepta; conviven el mercado global, las bienales y lo digital."
+  funcion: "Crear valor económico, denunciar, construir comunidades o generar experiencias."
+  artista: "Una minoría millonaria y una mayoría precaria que vive de becas, docencia y otros trabajos."
+en:
+  area: "Europe and North America"
+  concepto: "Almost anything can be art if the institution accepts it; global markets, biennials and digital work coexist."
+  funcion: "To create economic value, denounce, build communities or generate experiences."
+  artista: "A wealthy minority and a precarious majority living on grants, teaching and other jobs."

@@ -20,6 +20,7 @@ Todo está en `src/data/`:
 | `disciplinas/` | Un archivo por expresión artística (pintura, textil…). Salen en el filtro. |
 | `sociedades/` | Un archivo por sociedad. Cada una es una columna. |
 | `epocas.yaml` | Las épocas del eje y sus fichas informativas. |
+| `arte/` | El arte en cada época según el área: qué era, qué podía ser y hacer, y quién lo hacía y de qué vivía. Un archivo por época y área (`reinos--canarias.yml`); sale en la ficha «i» y, si hay una sociedad desplegada de esa área, aparece primero. |
 
 ### Con el formulario (recomendado)
 

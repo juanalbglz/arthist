@@ -1,0 +1,15 @@
+id: reinos--canarias
+epoca: reinos
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Los objetos y las pinturas forman parte del rito y del orden social; no hay una idea de arte aparte."
+  funcion: "La Cueva Pintada de Gáldar ordena el tiempo y el espacio; las pintaderas marcan pertenencia; los ídolos se ligan a la fertilidad."
+  artista: "No hay artistas: alfareras, tejedoras y pastores producen dentro de la comunidad, sin pago."
+en:
+  area: "Canary Islands"
+  concepto: "Objects and paintings are part of ritual and social order; there is no idea of art apart from it."
+  funcion: "The Cueva Pintada at Gáldar orders time and space; pintaderas mark belonging; idols are linked to fertility."
+  artista: "There are no artists: potters, weavers and herders produce within the community, without payment."

@@ -1,0 +1,15 @@
+id: entreguerras--canarias
+epoca: entreguerras
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Gaceta de Arte (1932) conecta Tenerife con las vanguardias; la Escuela Luján Pérez busca un arte indigenista canario."
+  funcion: "Modernizar la cultura de las islas, acoger la exposición surrealista de 1935 y mirar lo aborigen."
+  artista: "Artistas, escritores y profesores que se financian con revistas, mecenas y docencia."
+en:
+  area: "Canary Islands"
+  concepto: "Gaceta de Arte (1932) connects Tenerife to the avant-garde; the Luján Pérez School seeks an Indigenist Canarian art."
+  funcion: "To modernise island culture, host the 1935 Surrealist exhibition and look to the Aboriginal past."
+  artista: "Artists, writers and teachers funded by magazines, patrons and teaching."

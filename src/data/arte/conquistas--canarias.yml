@@ -1,0 +1,15 @@
+id: conquistas--canarias
+epoca: conquistas
+sociedades:
+  - canarias
+  - atlantico
+es:
+  area: "Canarias"
+  concepto: "Tras la conquista se impone el arte cristiano europeo; se importan tallas flamencas y andaluzas para las iglesias."
+  funcion: "Evangelizar, crear devociones (Candelaria) y mostrar el prestigio de las familias de la élite."
+  artista: "Artesanos y escultores con encargos de iglesias y cofradías; pocos viven solo de ello."
+en:
+  area: "Canary Islands"
+  concepto: "After the conquest, European Christian art is imposed; Flemish and Andalusian carvings are imported for churches."
+  funcion: "To evangelise, create devotions (Candelaria) and show the prestige of elite families."
+  artista: "Craftsmen and sculptors commissioned by churches and brotherhoods; few live from it alone."

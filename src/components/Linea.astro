@@ -21,6 +21,13 @@ const hitos = (await getCollection('hitos'))
   .map((h) => ({ id: h.id, ...h.data }))
   .sort((a, b) => a.anio - b.anio || (a.pista === 'arte' ? -1 : 1));
 
+// El arte de cada época por áreas, en el orden de la primera sociedad de cada área.
+const posSoc = (id: string) => Object.keys(SOCIEDADES).indexOf(id);
+const ARTE = (await getCollection('arte')).map((a) => ({ id: a.id, ...a.data }))
+  .sort((a, b) => Math.min(...a.sociedades.map(posSoc)) - Math.min(...b.sociedades.map(posSoc)));
+for (const a of ARTE) for (const s of a.sociedades) if (!SOCIEDADES[s]) throw new Error(`Arte «${a.id}»: no existe la sociedad «${s}»`);
+const ta = (a: (typeof ARTE)[number], k: 'area' | 'concepto' | 'funcion' | 'artista') => (lang === 'en' && a.en?.[k]) || a.es[k];
+
 // Si un hito apunta a una sociedad o disciplina que no existe, la compilación se para y lo dice.
 for (const h of hitos) {
   if (!SOCIEDADES[h.sociedad]) throw new Error(`Hito «${h.id}»: no existe la sociedad «${h.sociedad}» (créala en src/data/sociedades/)`);
@@ -46,6 +53,7 @@ const posiciones = columnas.map((s, i) => `--c-${s}:${i + 3}`).join(';');
 const epocas = (await getCollection('epocas'))
   .map((e) => ({ id: e.id, ...e.data, hasta: e.data.hasta ?? Infinity }))
   .sort((a, b) => a.hasta - b.hasta);
+for (const a of ARTE) if (!epocas.some((e) => e.id === a.epoca)) throw new Error(`Arte «${a.id}»: no existe la época «${a.epoca}» (mira src/data/epocas.yaml)`);
 type Epoca = (typeof epocas)[number];
 type Fila = { epoca: Epoca } | { hito: Hito };
 const filas: Fila[] = [];
@@ -165,6 +173,24 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
         <ul>{e[lang].social.map((x) => <li>{x}</li>)}</ul>
         <h3>{t.economia}</h3>
         <ul>{e[lang].economia.map((x) => <li>{x}</li>)}</ul>
+        {ARTE.some((a) => a.epoca === e.id) && (
+          <section class="arte-epoca">
+            <h3>{t.arteEpoca}</h3>
+            <p class="meta">{t.arteNota}</p>
+            <div class="areas">
+              {ARTE.filter((a) => a.epoca === e.id).map((a, i) => (
+                <details data-areas={a.sociedades.join(' ')} data-pos={i}>
+                  <summary>{ta(a, 'area')}</summary>
+                  <dl>
+                    <dt>{t.concepto}</dt><dd>{ta(a, 'concepto')}</dd>
+                    <dt>{t.funcion}</dt><dd>{ta(a, 'funcion')}</dd>
+                    <dt>{t.artista}</dt><dd>{ta(a, 'artista')}</dd>
+                  </dl>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
         {e.wiki && <p class="meta"><a href={wikiUrl(lang, en2(e.wiki))} rel="external">Wikipedia ↗</a></p>}
       </dialog>
     );
@@ -236,7 +262,18 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
   // Fichas de época: el botón «i» abre su ventana; un clic fuera de ella la cierra.
   linea.addEventListener('click', (ev) => {
     const b = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-info]');
-    if (b) document.querySelector<HTMLDialogElement>(`#info-${b.dataset.info}`)?.showModal();
+    const d = b && document.querySelector<HTMLDialogElement>(`#info-${b.dataset.info}`);
+    if (!d) return;
+    // El área de la sociedad desplegada va primero y abierta; si no hay ninguna, todas cerradas y en su orden.
+    const areas = d.querySelector<HTMLElement>('.areas');
+    if (areas) {
+      const lista = [...areas.querySelectorAll<HTMLDetailsElement>('details')];
+      const propia = lista.find((x) => abierta && (x.dataset.areas ?? '').split(' ').includes(abierta));
+      lista.forEach((x) => { x.open = x === propia; x.classList.toggle('propia', x === propia); });
+      if (propia) areas.prepend(propia);
+      else lista.sort((x, y) => Number(x.dataset.pos) - Number(y.dataset.pos)).forEach((x) => areas.append(x));
+    }
+    d.showModal();
   });
   document.querySelectorAll<HTMLDialogElement>('dialog.ficha-epoca').forEach((d) =>
     d.addEventListener('click', (ev) => { if (ev.target === d) d.close(); }));

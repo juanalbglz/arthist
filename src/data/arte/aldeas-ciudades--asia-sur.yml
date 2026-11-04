@@ -1,0 +1,15 @@
+id: aldeas-ciudades--asia-sur
+epoca: aldeas-ciudades
+sociedades:
+  - asia-sur
+  - sudeste-asiatico
+es:
+  area: "Asia del sur y sudeste asiático"
+  concepto: "La imagen es soporte de lo sagrado: primero se evita representar a Buda y luego, en Gandhara y Mathura, se crea su figura."
+  funcion: "Enseñar el budismo y el jainismo, marcar lugares de peregrinación y mostrar la piedad de reyes como Ashoka."
+  artista: "Gremios de escultores y canteros financiados por reyes, comerciantes y donantes que dejan su nombre, no el del artista."
+en:
+  area: "South and Southeast Asia"
+  concepto: "The image supports the sacred: at first the Buddha is not depicted; later, in Gandhara and Mathura, his figure is created."
+  funcion: "To teach Buddhism and Jainism, mark pilgrimage sites and show the piety of kings like Ashoka."
+  artista: "Guilds of sculptors and stonemasons funded by kings, merchants and donors, who leave their names instead of the artist’s."

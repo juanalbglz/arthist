@@ -177,6 +177,56 @@ content:
           - { name: es, label: Español, type: string }
           - { name: en, label: Inglés, type: string }
 
+  - name: arte
+    label: Arte por época y área
+    description: Qué era el arte, qué podía ser y hacer, y quién lo hacía en cada época según el área. Sale en la ficha «i» de la época.
+    type: collection
+    path: src/data/arte
+    format: yaml
+    filename: "{fields.id}.yml"
+    view:
+      fields: [id, epoca]
+      primary: id
+      sort: [id]
+    fields:
+      - name: id
+        label: Identificador
+        description: Época y área separadas por dos guiones, por ejemplo «reinos--canarias».
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: Solo minúsculas, números y guiones.
+      - name: epoca
+        label: Época
+        description: El identificador de la época en «Épocas» (por ejemplo «reinos» o «vanguardias»).
+        type: string
+        required: true
+      - name: sociedades
+        label: Sociedades del área
+        description: Si se despliega una de estas columnas, este texto sale primero en la ficha.
+        type: reference
+        options:
+          collection: sociedades
+          search: "es"
+          label: "{es}"
+          multiple: true
+      - name: es
+        label: Español
+        type: object
+        fields:
+          - { name: area, label: Nombre del área, type: string, required: true }
+          - { name: concepto, label: Qué era el arte, type: text, required: true }
+          - { name: funcion, label: Qué podía ser y hacer, type: text, required: true }
+          - { name: artista, label: Quién lo hacía y de qué vivía, type: text, required: true }
+      - name: en
+        label: Inglés (opcional)
+        type: object
+        fields:
+          - { name: area, label: Area name, type: string }
+          - { name: concepto, label: What art was, type: text }
+          - { name: funcion, label: What it could be and do, type: text }
+          - { name: artista, label: Who made it and how they lived, type: text }
   - name: epocas
     label: Épocas
     description: Marcas del eje y sus fichas informativas. Van de la más antigua a la más reciente.

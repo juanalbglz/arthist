@@ -1,0 +1,17 @@
+id: contraculturas--latinoamerica
+epoca: contraculturas
+sociedades:
+  - mesoamerica
+  - andes
+  - sudamerica
+  - caribe
+es:
+  area: "América Latina y el Caribe"
+  concepto: "Bajo las dictaduras el arte se vuelve conceptual y político (Tucumán Arde, CADA, arte correo)."
+  funcion: "Denunciar, burlar la censura y crear redes de resistencia."
+  artista: "Artistas perseguidos o exiliados, sin mercado, que se organizan en colectivos."
+en:
+  area: "Latin America and the Caribbean"
+  concepto: "Under dictatorships art turns conceptual and political (Tucumán Arde, CADA, mail art)."
+  funcion: "To denounce, evade censorship and create networks of resistance."
+  artista: "Persecuted or exiled artists, with no market, who organise in collectives."

@@ -1,0 +1,15 @@
+id: descolonizaciones--asia-oriental
+epoca: descolonizaciones
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En China el arte es herramienta política (realismo socialista); en Japón, Gutai hace del acto y la materia la obra."
+  funcion: "Servir al pueblo y a la revolución en China; en Japón, liberarse después de la guerra."
+  artista: "En China, artistas funcionarios en asociaciones estatales; en Japón, artistas independientes con mecenas industriales."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "In China art is a political tool (Socialist Realism); in Japan, Gutai makes action and matter the work."
+  funcion: "To serve the people and the revolution in China; in Japan, to break free after the war."
+  artista: "In China, artists as civil servants in state associations; in Japan, independent artists with industrial patrons."

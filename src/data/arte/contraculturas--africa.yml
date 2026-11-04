@@ -1,0 +1,14 @@
+id: contraculturas--africa
+epoca: contraculturas
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "En el Congo la pintura popular de Chéri Samba comenta la vida urbana; en Sudáfrica el arte se suma a la lucha contra el apartheid."
+  funcion: "Comentar y criticar la sociedad, informar y resistir."
+  artista: "Pintores de cartel que venden en la calle y artistas militantes en centros comunitarios."
+en:
+  area: "Africa"
+  concepto: "In Congo, Chéri Samba’s popular painting comments on urban life; in South Africa art joins the struggle against apartheid."
+  funcion: "To comment on and criticise society, inform and resist."
+  artista: "Sign painters selling on the street and activist artists in community centres."

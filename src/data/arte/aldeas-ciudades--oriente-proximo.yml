@@ -1,0 +1,14 @@
+id: aldeas-ciudades--oriente-proximo
+epoca: aldeas-ciudades
+sociedades:
+  - asia-occidental
+es:
+  area: "Oriente Próximo"
+  concepto: "No hay «arte» separado: la estatua de un rey o un dios es esa persona o ese dios presente."
+  funcion: "Hacer presentes a los dioses en el templo, legitimar al rey, contar victorias y fijar leyes en piedra."
+  artista: "Artesanos especializados de templo y palacio, pagados en raciones; anónimos y sin prestigio propio."
+en:
+  area: "Near East"
+  concepto: "There is no separate “art”: a statue of a king or god makes that person or god present."
+  funcion: "To make the gods present in the temple, legitimise the king, tell of victories and set laws in stone."
+  artista: "Specialised temple and palace craftspeople, paid in rations; anonymous and without personal prestige."

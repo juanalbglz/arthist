@@ -1,0 +1,14 @@
+id: aldeas-ciudades--africa
+epoca: aldeas-ciudades
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "En Egipto la imagen es eterna y eficaz: lo pintado en la tumba existe para el difunto. Nok y Kush tienen sus propios cánones."
+  funcion: "Asegurar la vida después de la muerte, sostener el orden del faraón y del cosmos."
+  artista: "Talleres reales y de templo con oficios hereditarios; los artesanos de Deir el-Medina cobran en grano y hacen huelga."
+en:
+  area: "Africa"
+  concepto: "In Egypt the image is eternal and effective: what is painted in the tomb exists for the dead. Nok and Kush have their own canons."
+  funcion: "To secure life after death and uphold the pharaoh’s order and the cosmos."
+  artista: "Royal and temple workshops with hereditary trades; the Deir el-Medina craftsmen are paid in grain and go on strike."

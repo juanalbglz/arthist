@@ -1,0 +1,17 @@
+id: vanguardias--latinoamerica
+epoca: vanguardias
+sociedades:
+  - mesoamerica
+  - andes
+  - sudamerica
+  - caribe
+es:
+  area: "América Latina y el Caribe"
+  concepto: "Las academias conviven con modernismos que llegan de Europa; la Revolución mexicana (1910) prepara un arte nuevo."
+  funcion: "Mostrar la modernidad y buscar raíces propias."
+  artista: "Artistas formados en Europa que regresan; el Estado y la burguesía local son sus clientes."
+en:
+  area: "Latin America and the Caribbean"
+  concepto: "Academies coexist with modernisms arriving from Europe; the Mexican Revolution (1910) prepares a new art."
+  funcion: "To show modernity and seek one’s own roots."
+  artista: "Artists trained in Europe who return; the state and local bourgeoisie are their clients."

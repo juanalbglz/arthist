@@ -1,0 +1,15 @@
+id: reinos--asia-oriental
+epoca: reinos
+sociedades:
+  - china
+  - japon
+es:
+  area: "Asia oriental (China, Japón)"
+  concepto: "En China, pintura y caligrafía son actividades del letrado, cercanas a la poesía y la filosofía. Japón crea un arte cortesano propio en Heian."
+  funcion: "Expresar el carácter de quien pinta, cultivarse y contemplar la naturaleza; en Japón, también narrar la vida de la corte."
+  artista: "Dos mundos: el letrado aficionado, que no vende, y el pintor de corte o el artesano de talleres, que sí cobra."
+en:
+  area: "East Asia (China, Japan)"
+  concepto: "In China, painting and calligraphy belong to the scholar, close to poetry and philosophy. Japan creates its own courtly art in Heian."
+  funcion: "To express the painter’s character, cultivate oneself and contemplate nature; in Japan, also to narrate court life."
+  artista: "Two worlds: the amateur scholar who does not sell, and the court painter or workshop artisan who is paid."

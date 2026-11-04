@@ -1,0 +1,17 @@
+id: mundo-global--latinoamerica
+epoca: mundo-global
+sociedades:
+  - mesoamerica
+  - andes
+  - sudamerica
+  - caribe
+es:
+  area: "América Latina y el Caribe"
+  concepto: "El arte trabaja la memoria de la violencia y el territorio (Doris Salcedo, Teresa Margolles)."
+  funcion: "Recordar a las víctimas, cuestionar la historia oficial y defender la tierra."
+  artista: "Bienales y mercado internacional dan visibilidad, pero la mayoría de artistas son precarios."
+en:
+  area: "Latin America and the Caribbean"
+  concepto: "Art works on the memory of violence and on territory (Doris Salcedo, Teresa Margolles)."
+  funcion: "To remember victims, question official history and defend the land."
+  artista: "Biennials and the international market give visibility, but most artists are precarious."

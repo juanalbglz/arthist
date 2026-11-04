@@ -1,0 +1,18 @@
+id: aldeas-ciudades--america
+epoca: aldeas-ciudades
+sociedades:
+  - mesoamerica
+  - andes
+  - norteamerica
+  - sudamerica
+  - caribe
+es:
+  area: "América"
+  concepto: "Olmecas, Chavín, Paracas o mayas: la obra sirve al poder sagrado; el textil andino vale tanto como el oro."
+  funcion: "Representar a gobernantes como intermediarios con los dioses, organizar el calendario ritual y vestir a los muertos."
+  artista: "Especialistas al servicio de las élites; en el mundo maya algunos escribas y pintores firman y son nobles."
+en:
+  area: "The Americas"
+  concepto: "Olmec, Chavín, Paracas or Maya: work serves sacred power; Andean textiles are worth as much as gold."
+  funcion: "To show rulers as intermediaries with the gods, organise the ritual calendar and dress the dead."
+  artista: "Specialists serving the elites; among the Maya some scribes and painters sign and are nobles."

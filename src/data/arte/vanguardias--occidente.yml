@@ -1,0 +1,15 @@
+id: vanguardias--occidente
+epoca: vanguardias
+sociedades:
+  - europa
+  - norteamerica
+es:
+  area: "Europa y Norteamérica"
+  concepto: "El arte se define por romper con el arte anterior: forma, color y objeto se liberan de la imitación."
+  funcion: "Expresar lo interior, cambiar la mirada y, a veces, la sociedad; los manifiestos explican qué es el arte."
+  artista: "Profesión liberal que vive de marchantes y coleccionistas; muchos artistas son pobres al principio."
+en:
+  area: "Europe and North America"
+  concepto: "Art is defined by breaking with earlier art: form, colour and object are freed from imitation."
+  funcion: "To express inner life, change how we see and sometimes change society; manifestos say what art is."
+  artista: "A liberal profession living off dealers and collectors; many artists are poor at first."

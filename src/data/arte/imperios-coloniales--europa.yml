@@ -1,0 +1,14 @@
+id: imperios-coloniales--europa
+epoca: imperios-coloniales
+sociedades:
+  - europa
+es:
+  area: "Europa"
+  concepto: "El arte se vuelve autónomo: «el arte por el arte». El museo nace para guardarlo y el artista se ve como un genio libre."
+  funcion: "Expresar emociones (romanticismo), denunciar (realismo) o captar la percepción (impresionismo), además de servir a la nación."
+  artista: "Profesión liberal: el artista vende en el Salón, a marchantes y en galerías, o malvive en la bohemia."
+en:
+  area: "Europe"
+  concepto: "Art becomes autonomous: “art for art’s sake”. The museum is born to hold it and the artist is seen as a free genius."
+  funcion: "To express emotion (Romanticism), denounce (Realism) or capture perception (Impressionism), as well as serve the nation."
+  artista: "A liberal profession: artists sell at the Salon, to dealers and in galleries, or scrape by in bohemia."

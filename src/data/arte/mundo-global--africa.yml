@@ -1,0 +1,14 @@
+id: mundo-global--africa
+epoca: mundo-global
+sociedades:
+  - africa
+es:
+  area: "África"
+  concepto: "El arte africano contemporáneo entra en el circuito global; se debate la restitución de lo expoliado."
+  funcion: "Recuperar la historia, reciclar materiales (El Anatsui) y narrar la diáspora."
+  artista: "Mercado internacional y bienales (Dakar); muchos artistas trabajan entre África y Europa."
+en:
+  area: "Africa"
+  concepto: "Contemporary African art enters the global circuit; restitution of looted works is debated."
+  funcion: "To recover history, recycle materials (El Anatsui) and narrate the diaspora."
+  artista: "International market and biennials (Dakar); many artists work between Africa and Europe."
