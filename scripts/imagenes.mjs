@@ -6,6 +6,7 @@
 // - En el YAML, «imagen: "Archivo.jpg"» fuerza un archivo concreto de Commons
 //   e «imagen: no» deja el hito sin imagen.
 //
+// También busca la imagen de cada época (src/data/epocas.yaml).
 // Escribe public/imagenes/<id>.<ext> y src/data/imagenes.json (créditos y licencias).
 // Si no hay red, avisa y sigue: la web se construye sin imágenes.
 import fs from 'node:fs/promises';
@@ -17,6 +18,9 @@ const dir = 'public/imagenes';
 const salida = 'src/data/imagenes.json';
 
 const hitos = yaml.load(await fs.readFile('src/data/linea-temporal.yaml', 'utf8'));
+// Las épocas también llevan imagen; se guardan como «epoca-<id>».
+const epocas = yaml.load(await fs.readFile('src/data/epocas.yaml', 'utf8'));
+const elementos = [...hitos, ...epocas.map((e) => ({ ...e, id: `epoca-${e.id}` }))];
 await fs.mkdir(dir, { recursive: true });
 
 const api = async (host, params) => {
@@ -36,7 +40,7 @@ const limpiar = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ')
 
 const creditos = {};
 let ok = 0;
-for (const h of hitos) {
+for (const h of elementos) {
   if (h.imagen === false) continue;
   try {
     let archivo = typeof h.imagen === 'string' ? h.imagen.replace(/^(File|Archivo):/, '') : undefined;
@@ -66,4 +70,4 @@ for (const h of hitos) {
   }
 }
 await fs.writeFile(salida, JSON.stringify(creditos, null, 2) + '\n');
-console.log(`imagenes: ${ok} de ${hitos.length} hitos con imagen`);
+console.log(`imagenes: ${ok} de ${elementos.length} hitos y épocas con imagen`);

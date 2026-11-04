@@ -33,15 +33,7 @@ export const DISCIPLINAS: Record<string, Bi> = {
   escenicas: { es: 'Artes vivas', en: 'Live arts' },
 };
 
-// Épocas: marcas sobre el eje. Cada hito cae en la primera cuyo «hasta» (año, sin incluir) sea mayor que el suyo.
-export const EPOCAS: { id: string; hasta: number; nombre: Bi; rango: Bi }[] = [
-  { id: 'tiempo-profundo', hasta: -10000, nombre: { es: 'Tiempo profundo', en: 'Deep time' }, rango: { es: 'hasta 10.000 a. C.', en: 'to 10,000 BCE' } },
-  { id: 'aldeas-ciudades', hasta: 500, nombre: { es: 'Aldeas, ciudades y estados', en: 'Villages, cities and states' }, rango: { es: '10.000 a. C.–500', en: '10,000 BCE–500 CE' } },
-  { id: 'reinos', hasta: 1400, nombre: { es: 'Reinos e imperios', en: 'Kingdoms and empires' }, rango: { es: '500–1400', en: '500–1400' } },
-  { id: 'conquistas', hasta: 1800, nombre: { es: 'Conquistas y colonialismo', en: 'Conquest and colonialism' }, rango: { es: '1400–1800', en: '1400–1800' } },
-  { id: 'imperios-coloniales', hasta: 1945, nombre: { es: 'Revoluciones e imperios coloniales', en: 'Revolutions and colonial empires' }, rango: { es: '1800–1945', en: '1800–1945' } },
-  { id: 'descolonizaciones', hasta: Infinity, nombre: { es: 'Descolonizaciones y mundo global', en: 'Decolonisation and a global world' }, rango: { es: '1945–hoy', en: '1945–today' } },
-];
+// Las épocas (nombre, fechas y ficha informativa) están en src/data/epocas.yaml.
 
 export const TEXTOS = {
   es: {
@@ -55,6 +47,10 @@ export const TEXTOS = {
     mundo: 'Sociedad',
     historia: 'Historia en Wikipedia',
     verTambien: 'Para ver',
+    infoEpoca: (n: string) => `Información sobre la época: ${n}`,
+    sociedad: 'Sociedad',
+    economia: 'Economía',
+    cerrar: 'Cerrar',
     tipos: { pelicula: 'película', documental: 'documental', corto: 'cortometraje' },
     imagen: 'Imagen',
     nota: 'Muestra inicial. Las fechas antiguas son aproximadas y algunas están en debate.',
@@ -71,6 +67,10 @@ export const TEXTOS = {
     mundo: 'Society',
     historia: 'History on Wikipedia',
     verTambien: 'To watch',
+    infoEpoca: (n: string) => `About this period: ${n}`,
+    sociedad: 'Society',
+    economia: 'Economy',
+    cerrar: 'Close',
     tipos: { pelicula: 'film', documental: 'documentary', corto: 'short film' },
     imagen: 'Image',
     nota: 'Initial sample. Ancient dates are approximate and some are debated.',

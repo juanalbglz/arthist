@@ -31,4 +31,17 @@ const hitos = defineCollection({
   }),
 });
 
-export const collections = { hitos };
+// Épocas: src/data/epocas.yaml
+const ficha = z.object({ nombre: z.string(), rango: z.string(), social: z.array(z.string()), economia: z.array(z.string()) });
+const epocas = defineCollection({
+  loader: file('src/data/epocas.yaml'),
+  schema: z.object({
+    hasta: z.number().optional(),
+    wiki: bi.optional(),
+    imagen: z.union([z.string(), z.literal(false)]).optional(),
+    es: ficha,
+    en: ficha,
+  }),
+});
+
+export const collections = { hitos, epocas };

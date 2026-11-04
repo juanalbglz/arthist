@@ -178,3 +178,28 @@ footer.site a { color: var(--muted); }
   .linea[data-abierta] .fila:not(.abierta) { display: none; }
   .fila .fecha { font-size: .72rem; }
 }
+
+/* Ficha de época */
+.sep .info {
+  font: inherit; font-weight: 800; font-style: italic; font-family: Georgia, serif; font-size: .95rem; line-height: 1;
+  width: 1.5rem; height: 1.5rem; margin: -.2rem 0 -.2rem .5rem; vertical-align: middle; cursor: pointer; padding: 0;
+  border-radius: 50%; border: 2px solid var(--red); background: transparent; color: var(--red);
+}
+.sep .info:hover { background: var(--red); color: var(--paper); }
+dialog.ficha-epoca {
+  width: min(40rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); overflow: auto;
+  padding: 1.5rem; border: 4px solid var(--text); border-radius: 0; background: var(--bg); color: var(--text);
+}
+dialog.ficha-epoca::backdrop { background: rgb(21 19 17 / .6); }
+dialog.ficha-epoca h2 { margin: .2rem 0 1rem; padding: 0; border: 0; font-size: clamp(1.6rem, 5vw, 2.2rem); }
+dialog.ficha-epoca h3 { margin: 1.2rem 0 .3rem; font-size: 1rem; color: var(--red); }
+dialog.ficha-epoca ul { margin: 0; padding-left: 1.1rem; }
+dialog.ficha-epoca li { margin: .3rem 0; font-size: 1rem; }
+dialog.ficha-epoca figure { margin: 0 0 1rem; }
+dialog.ficha-epoca img { display: block; width: 100%; max-height: 16rem; object-fit: cover; filter: grayscale(1) contrast(1.15); }
+dialog.ficha-epoca figcaption { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
+dialog.ficha-epoca figcaption a { color: var(--muted); }
+dialog.ficha-epoca .cerrar {
+  float: right; font: inherit; font-weight: 800; font-size: 1.6rem; line-height: 1; width: 2.2rem; height: 2.2rem;
+  margin: -.6rem -.6rem 0 .5rem; cursor: pointer; background: var(--text); color: var(--bg); border: 0;
+}

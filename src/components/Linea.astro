@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import creditos from '../data/imagenes.json';
-import { SOCIEDADES, DISCIPLINAS, EPOCAS, TEXTOS, wikiUrl, type Lang } from '../linea-temporal';
+import { SOCIEDADES, DISCIPLINAS, TEXTOS, wikiUrl, type Lang } from '../linea-temporal';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -28,12 +28,17 @@ const col = (s: string) => `var(--c-${s})`;
 const posiciones = columnas.map((s, i) => `--c-${s}:${i + 3}`).join(';');
 
 // Filas del eje: una por hito, con una marca al empezar cada época.
-type Fila = { epoca: (typeof EPOCAS)[number] } | { hito: Hito };
+// Épocas, de la más antigua a la más reciente (la última no tiene «hasta»).
+const epocas = (await getCollection('epocas'))
+  .map((e) => ({ id: e.id, ...e.data, hasta: e.data.hasta ?? Infinity }))
+  .sort((a, b) => a.hasta - b.hasta);
+type Epoca = (typeof epocas)[number];
+type Fila = { epoca: Epoca } | { hito: Hito };
 const filas: Fila[] = [];
 let epocaActual = -1;
 for (const h of hitos) {
-  const e = EPOCAS.findIndex((x) => h.año < x.hasta);
-  if (e !== epocaActual) { filas.push({ epoca: EPOCAS[e] }); epocaActual = e; }
+  const e = epocas.findIndex((x) => h.año < x.hasta);
+  if (e !== epocaActual) { filas.push({ epoca: epocas[e] }); epocaActual = e; }
   filas.push({ hito: h });
 }
 
@@ -72,7 +77,10 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
       </div>
       <ol>
         {filas.map((f) => 'epoca' in f ? (
-          <li class="sep" id={f.epoca.id}><span>{f.epoca.nombre[lang]} <small>{f.epoca.rango[lang]}</small></span></li>
+          <li class="sep" id={f.epoca.id}>
+            <span>{f.epoca[lang].nombre} <small>{f.epoca[lang].rango}</small>
+            <button type="button" class="info" data-info={f.epoca.id} aria-haspopup="dialog" aria-label={t.infoEpoca(f.epoca[lang].nombre)} title={t.infoEpoca(f.epoca[lang].nombre)}>i</button></span>
+          </li>
         ) : (
           <li class={`fila ${f.hito.pista}`} data-col={f.hito.sociedad} data-disc={f.hito.disciplinas.join(' ')}>
             <span class="fecha">{fecha(f.hito)}</span>
@@ -115,6 +123,28 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
       </ol>
     </div>
   </div>
+
+  {epocas.map((e) => {
+    const img = imagenes[`epoca-${e.id}`];
+    return (
+      <dialog class="ficha-epoca" id={`info-${e.id}`} aria-labelledby={`info-${e.id}-t`}>
+        <form method="dialog"><button class="cerrar" aria-label={t.cerrar}>×</button></form>
+        {img && (
+          <figure>
+            <img src={img.src} width={img.ancho} height={img.alto} alt="" loading="lazy" decoding="async" />
+            <figcaption><a href={img.fuente} rel="external">{t.imagen}</a>: {img.autor}{img.licencia && ` · ${img.licencia}`}</figcaption>
+          </figure>
+        )}
+        <p class="eyebrow">{e[lang].rango}</p>
+        <h2 id={`info-${e.id}-t`}>{e[lang].nombre}</h2>
+        <h3>{t.sociedad}</h3>
+        <ul>{e[lang].social.map((x) => <li>{x}</li>)}</ul>
+        <h3>{t.economia}</h3>
+        <ul>{e[lang].economia.map((x) => <li>{x}</li>)}</ul>
+        {e.wiki && <p class="meta"><a href={wikiUrl(lang, e.wiki[lang])} rel="external">Wikipedia ↗</a></p>}
+      </dialog>
+    );
+  })}
 
   <p class="meta">{t.nota}</p>
 </Base>
@@ -178,6 +208,14 @@ const disciplinas = Object.keys(DISCIPLINAS).filter((d) => hitos.some((h) => h.d
     if (!d) elegidas.clear(); else if (elegidas.has(d)) elegidas.delete(d); else elegidas.add(d);
     filtrar();
   });
+
+  // Fichas de época: el botón «i» abre su ventana; un clic fuera de ella la cierra.
+  linea.addEventListener('click', (ev) => {
+    const b = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-info]');
+    if (b) document.querySelector<HTMLDialogElement>(`#info-${b.dataset.info}`)?.showModal();
+  });
+  document.querySelectorAll<HTMLDialogElement>('dialog.ficha-epoca').forEach((d) =>
+    d.addEventListener('click', (ev) => { if (ev.target === d) d.close(); }));
 
   linea.addEventListener('click', (ev) => {
     const b = (ev.target as HTMLElement).closest<HTMLButtonElement>('[data-abrir]');

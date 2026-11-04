@@ -1,0 +1,160 @@
+# Épocas de la línea temporal. Son marcas sobre el eje; su icono «i» abre esta ficha.
+#
+#   id:        identificador único, sin espacios
+#   hasta:     año en que termina (sin incluir); negativo = antes de Cristo. La última no lleva.
+#   wiki:      artículo de Wikipedia de la época en cada idioma (también da la imagen)
+#   imagen:    opcional: archivo de Wikimedia Commons para elegir otra imagen, o «no»
+#   es / en:   nombre, rango que se muestra, y rasgos sociales y económicos (una línea cada uno)
+#
+# El orden importa: van de la más antigua a la más reciente.
+
+- id: tiempo-profundo
+  hasta: -10000
+  wiki: { es: "Paleolítico", en: "Paleolithic" }
+  es:
+    nombre: "Tiempo profundo"
+    rango: "hasta 10.000 a. C."
+    social:
+      - "Pequeños grupos nómadas de cazadores-recolectores, con poca desigualdad entre sus miembros."
+      - "Homo sapiens sale de África y llega a todos los continentes salvo la Antártida."
+      - "El conocimiento se transmite de forma oral, con ritos, adornos y pintura."
+    economia:
+      - "Caza, pesca y recolección; herramientas de piedra, hueso y madera."
+      - "Intercambio a larga distancia de materiales escasos, como ocre, conchas u obsidiana."
+  en:
+    nombre: "Deep time"
+    rango: "to 10,000 BCE"
+    social:
+      - "Small nomadic bands of hunter-gatherers, with little inequality among their members."
+      - "Homo sapiens leaves Africa and reaches every continent except Antarctica."
+      - "Knowledge passes on orally, through ritual, adornment and painting."
+    economia:
+      - "Hunting, fishing and gathering; tools of stone, bone and wood."
+      - "Long-distance exchange of scarce materials such as ochre, shells or obsidian."
+
+- id: aldeas-ciudades
+  hasta: 500
+  wiki: { es: "Revolución neolítica", en: "Neolithic Revolution" }
+  es:
+    nombre: "Aldeas, ciudades y estados"
+    rango: "10.000 a. C.–500"
+    social:
+      - "La vida se vuelve sedentaria: aldeas, después ciudades, templos y palacios."
+      - "Aparecen las jerarquías, los reyes, los ejércitos y el trabajo forzado."
+      - "La escritura nace para llevar cuentas, tributos y leyes."
+    economia:
+      - "Agricultura y ganadería en varias regiones del mundo por separado."
+      - "El excedente de grano permite almacenar, cobrar tributos y mantener a especialistas."
+      - "Metalurgia del cobre, el bronce y el hierro; comercio regional por tierra y mar."
+  en:
+    nombre: "Villages, cities and states"
+    rango: "10,000 BCE–500 CE"
+    social:
+      - "Life becomes settled: villages, then cities, temples and palaces."
+      - "Hierarchies, kings, armies and forced labour appear."
+      - "Writing is invented to keep accounts, tribute and laws."
+    economia:
+      - "Farming and herding arise separately in several regions of the world."
+      - "Grain surpluses make storage, tribute and full-time specialists possible."
+      - "Copper, bronze and iron metallurgy; regional trade by land and sea."
+
+- id: reinos
+  hasta: 1400
+  wiki: { es: "Comercio transahariano", en: "Trans-Saharan trade" }
+  es:
+    nombre: "Reinos e imperios"
+    rango: "500–1400"
+    social:
+      - "Grandes reinos e imperios en todos los continentes: Malí, Song, abasíes, Tiwanaku, Gran Zimbabue."
+      - "Religiones universales, como el islam, el budismo y el cristianismo, organizan la vida y el saber."
+      - "Ciudades como Tombuctú, Bagdad o Kaifeng son centros de estudio y de comercio."
+    economia:
+      - "Rutas comerciales que unen continentes: el Sáhara, la Ruta de la Seda y el océano Índico."
+      - "Se intercambian oro, sal, seda, especias, cerámica y personas esclavizadas."
+  en:
+    nombre: "Kingdoms and empires"
+    rango: "500–1400"
+    social:
+      - "Great kingdoms and empires on every continent: Mali, Song, the Abbasids, Tiwanaku, Great Zimbabwe."
+      - "Universal religions such as Islam, Buddhism and Christianity shape daily life and learning."
+      - "Cities like Timbuktu, Baghdad and Kaifeng are centres of scholarship and trade."
+    economia:
+      - "Trade routes link continents: across the Sahara, the Silk Road and the Indian Ocean."
+      - "Gold, salt, silk, spices, ceramics and enslaved people are traded."
+
+- id: conquistas
+  hasta: 1800
+  wiki: { es: "Comercio triangular", en: "Triangular trade" }
+  es:
+    nombre: "Conquistas y colonialismo"
+    rango: "1400–1800"
+    social:
+      - "Reinos europeos conquistan Canarias, América y enclaves de África y Asia."
+      - "Las guerras, las epidemias y el trabajo forzado provocan el colapso de muchos pueblos originarios."
+      - "La esclavitud se vuelve racial; surgen el mestizaje y las resistencias, como los cimarrones."
+    economia:
+      - "Economía atlántica de plantación: azúcar, tabaco y algodón trabajados por personas esclavizadas."
+      - "La plata de los Andes y México financia el comercio con Asia."
+      - "Canarias es escala de las rutas atlánticas y un primer ensayo del cultivo de azúcar."
+  en:
+    nombre: "Conquest and colonialism"
+    rango: "1400–1800"
+    social:
+      - "European kingdoms conquer the Canary Islands, the Americas and enclaves in Africa and Asia."
+      - "War, epidemics and forced labour cause the collapse of many Indigenous peoples."
+      - "Slavery becomes racial; mixed societies and resistance, such as maroon communities, emerge."
+    economia:
+      - "An Atlantic plantation economy: sugar, tobacco and cotton worked by enslaved people."
+      - "Silver from the Andes and Mexico pays for trade with Asia."
+      - "The Canary Islands are a stopover on Atlantic routes and an early testing ground for sugar."
+
+- id: imperios-coloniales
+  hasta: 1945
+  wiki: { es: "Revolución Industrial", en: "Industrial Revolution" }
+  es:
+    nombre: "Revoluciones e imperios coloniales"
+    rango: "1800–1945"
+    social:
+      - "Independencias en América y en Haití, y abolición progresiva de la esclavitud."
+      - "Crecen las ciudades y la clase obrera, con sindicatos y nuevos movimientos políticos."
+      - "Potencias europeas, Japón y EE. UU. se reparten África y gran parte de Asia; dos guerras mundiales."
+    economia:
+      - "Revolución industrial: carbón, vapor, ferrocarril y fábricas."
+      - "Las colonias proveen materias primas (caucho, algodón, minerales) y mercados cautivos."
+      - "Un capitalismo cada vez más global, con grandes crisis como la de 1929."
+  en:
+    nombre: "Revolutions and colonial empires"
+    rango: "1800–1945"
+    social:
+      - "Independence across the Americas and in Haiti, and the gradual abolition of slavery."
+      - "Cities and the working class grow, with trade unions and new political movements."
+      - "European powers, Japan and the US divide up Africa and much of Asia; two world wars."
+    economia:
+      - "Industrial revolution: coal, steam, railways and factories."
+      - "Colonies supply raw materials (rubber, cotton, minerals) and captive markets."
+      - "An increasingly global capitalism, with major crises such as 1929."
+
+- id: descolonizaciones
+  wiki: { es: "Descolonización", en: "Decolonization" }
+  es:
+    nombre: "Descolonizaciones y mundo global"
+    rango: "1945–hoy"
+    social:
+      - "Descolonización de Asia y África; movimientos por los derechos civiles, feminismos y luchas indígenas."
+      - "Guerra Fría y, después, un mundo multipolar."
+      - "Grandes migraciones y urbanización masiva; hoy más de la mitad de la humanidad vive en ciudades."
+    economia:
+      - "Petróleo, consumo de masas y globalización de la producción."
+      - "Turismo de masas, que en Canarias transforma el territorio desde los años sesenta."
+      - "Economía digital y crisis climática como horizonte común."
+  en:
+    nombre: "Decolonisation and a global world"
+    rango: "1945–today"
+    social:
+      - "Decolonisation in Asia and Africa; civil rights movements, feminisms and Indigenous struggles."
+      - "The Cold War and, afterwards, a multipolar world."
+      - "Large-scale migration and urbanisation; today over half of humanity lives in cities."
+    economia:
+      - "Oil, mass consumption and the globalisation of production."
+      - "Mass tourism, which has transformed the Canary Islands since the 1960s."
+      - "The digital economy and the climate crisis as a shared horizon."
