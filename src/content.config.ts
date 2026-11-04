@@ -15,6 +15,17 @@ const hitos = defineCollection({
     sociedad: z.string().refine((s) => s in SOCIEDADES, (s) => ({ message: `Sociedad desconocida: ${s} (añádela en src/linea-temporal.ts)` })),
     disciplinas: z.array(z.string().refine((d) => d in DISCIPLINAS, (d) => ({ message: `Disciplina desconocida: ${d}` }))).default([]),
     wiki: bi.optional(),
+    // Archivo de Wikimedia Commons, o «no» para no poner imagen (ver scripts/imagenes.mjs).
+    imagen: z.union([z.string(), z.literal(false)]).optional(),
+    enlaces: z.array(z.object({ titulo: z.string(), url: z.string().url() })).default([]),
+    peliculas: z.array(z.object({
+      titulo: z.string(),
+      año: z.number(),
+      tipo: z.enum(['pelicula', 'documental', 'corto']),
+      direccion: z.string().optional(),
+      // Título del artículo de Wikipedia si no coincide con el de la película.
+      wiki: z.string().optional(),
+    })).default([]),
     es: texto,
     en: texto,
   }),

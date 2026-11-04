@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import creditos from '../data/imagenes.json';
 import { SOCIEDADES, DISCIPLINAS, EPOCAS, TEXTOS, wikiUrl, type Lang } from '../linea-temporal';
 
 interface Props { lang: Lang }
@@ -11,6 +12,11 @@ const hitos = (await getCollection('hitos'))
   .map((h) => ({ id: h.id, ...h.data }))
   .sort((a, b) => a.año - b.año || (a.pista === 'arte' ? -1 : 1));
 type Hito = (typeof hitos)[number];
+const imagenes = creditos as Record<string, { src: string; ancho: number; alto: number; autor: string; licencia: string; fuente: string }>;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Enlace de una película: en español se busca por su título; en inglés, por su artículo.
+const peliUrl = (p: { titulo: string; wiki?: string }) =>
+  wikiUrl(lang, lang === 'es' ? p.titulo.replace(/\s*\(.*\)$/, '') : p.wiki ?? p.titulo);
 const fecha = (h: Hito) => h.fecha?.[lang] ?? (h.año < 0 ? t.ac(-h.año) : String(h.año));
 
 const orden = Object.keys(SOCIEDADES);
@@ -66,15 +72,32 @@ const sociedades = orden.filter((s) => hitos.some((h) => h.sociedad === s));
                   <li class={`hito ${h.pista}`} data-disc={h.disciplinas.join(' ')}>
                     <span class="fecha">{fecha(h)}</span>
                     <div class="tarjeta">
+                      {imagenes[h.id] && (
+                        <figure>
+                          <img src={base + imagenes[h.id].src} width={imagenes[h.id].ancho} height={imagenes[h.id].alto} alt="" loading="lazy" decoding="async" />
+                          <figcaption><a href={imagenes[h.id].fuente} rel="external">{t.imagen}</a>: {imagenes[h.id].autor}{imagenes[h.id].licencia && ` · ${imagenes[h.id].licencia}`}</figcaption>
+                        </figure>
+                      )}
                       <span class="pista">{t[h.pista]}</span>
                       <h3>{h[lang].titulo}</h3>
                       <p>{h[lang].texto}</p>
-                      {(h.disciplinas.length > 0 || h.wiki) && (
+                      {(h.disciplinas.length > 0 || h.wiki || h.enlaces.length > 0) && (
                         <p class="meta">
                           {h.disciplinas.map((d) => DISCIPLINAS[d][lang]).join(' · ')}
                           {h.disciplinas.length > 0 && h.wiki && ' · '}
                           {h.wiki && <a href={wikiUrl(lang, h.wiki[lang])} rel="external">Wikipedia ↗</a>}
+                          {h.enlaces.map((e) => <> · <a href={e.url} rel="external">{e.titulo} ↗</a></>)}
                         </p>
+                      )}
+                      {h.peliculas.length > 0 && (
+                        <div class="ver">
+                          <p class="eyebrow">{t.verTambien}</p>
+                          <ul>
+                            {h.peliculas.map((p) => (
+                              <li><a href={peliUrl(p)} rel="external"><cite>{p.titulo}</cite></a> <span class="meta">({t.tipos[p.tipo]}, {p.año}{p.direccion && `, ${p.direccion}`})</span></li>
+                            ))}
+                          </ul>
+                        </div>
                       )}
                     </div>
                   </li>

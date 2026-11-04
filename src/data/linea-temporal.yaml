@@ -8,6 +8,12 @@
 #   sociedad:    a qué sociedad o área cultural pertenece; ver la lista en src/linea-temporal.ts
 #   wiki:        título del artículo de Wikipedia en cada idioma (si no existe exacto, el enlace abre la búsqueda)
 #   disciplinas: solo en la pista de arte; ver la lista en src/linea-temporal.ts
+#   imagen:      opcional. Por defecto se usa la imagen libre del artículo de Wikipedia.
+#                Escribe el nombre de un archivo de Wikimedia Commons para elegir otra,
+#                o «no» para dejar el hito sin imagen.
+#   enlaces:     opcional, otras fuentes: - { titulo: "Museo X", url: "https://..." }
+#   peliculas:   opcional, películas o documentales relacionados:
+#                - { titulo: "Título", año: 2010, tipo: pelicula | documental | corto, direccion: "Nombre" }
 #   es / en:     título y texto breve en cada idioma
 #
 # El orden dentro del archivo da igual: la web los ordena por año.
@@ -61,6 +67,8 @@
   pista: arte
   sociedad: europa
   wiki: { es: "Cueva de Lascaux", en: "Lascaux" }
+  peliculas:
+    - { titulo: "La cueva de los sueños olvidados (Cave of Forgotten Dreams)", año: 2010, tipo: documental, direccion: "Werner Herzog", wiki: "Cave of Forgotten Dreams" }
   disciplinas: [rupestre]
   es:
     titulo: "Cueva de Lascaux (Francia)"
@@ -257,6 +265,8 @@
   pista: mundo
   sociedad: caribe
   wiki: { es: "Llegada de Colón a América", en: "Voyages of Christopher Columbus" }
+  peliculas:
+    - { titulo: "También la lluvia", año: 2010, tipo: pelicula, direccion: "Icíar Bollaín" }
   es:
     titulo: "Colón llega al Caribe"
     texto: "Comienza la invasión de Abya Yala. Guerras, epidemias y trabajo forzado diezman a los pueblos originarios."
@@ -270,6 +280,8 @@
   pista: mundo
   sociedad: atlantico
   wiki: { es: "Trata atlántica", en: "Atlantic slave trade" }
+  peliculas:
+    - { titulo: "12 años de esclavitud (12 Years a Slave)", año: 2013, tipo: pelicula, direccion: "Steve McQueen", wiki: "12 Years a Slave (film)" }
   es:
     titulo: "Trata atlántica de personas esclavizadas"
     texto: "Más de doce millones de africanas y africanos son embarcados a la fuerza hacia América."
@@ -311,6 +323,9 @@
   pista: arte
   sociedad: japon
   wiki: { es: "La gran ola de Kanagawa", en: "The Great Wave off Kanagawa" }
+  peliculas:
+    - { titulo: "Hokusai", año: 2020, tipo: pelicula, direccion: "Hajime Hashimoto", wiki: "Hokusai (film)" }
+    - { titulo: "Miss Hokusai", año: 2015, tipo: pelicula, direccion: "Keiichi Hara" }
   disciplinas: [grabado]
   es:
     titulo: "La gran ola de Kanagawa (Hokusai, Japón)"
@@ -349,6 +364,8 @@
   pista: arte
   sociedad: mesoamerica
   wiki: { es: "Muralismo mexicano", en: "Mexican muralism" }
+  peliculas:
+    - { titulo: "Frida", año: 2002, tipo: pelicula, direccion: "Julie Taymor", wiki: "Frida (film)" }
   disciplinas: [pintura]
   es:
     titulo: "Muralismo mexicano"
@@ -387,6 +404,8 @@
   pista: arte
   sociedad: europa
   wiki: { es: "Guernica (cuadro)", en: "Guernica (Picasso)" }
+  peliculas:
+    - { titulo: "Guernica", año: 1950, tipo: corto, direccion: "Alain Resnais", wiki: "Guernica (1950 film)" }
   disciplinas: [pintura]
   es:
     titulo: "Guernica (Picasso)"
@@ -439,6 +458,8 @@
   pista: arte
   sociedad: africa
   wiki: { es: "Festival Mundial de las Artes Negras", en: "World Festival of Black Arts" }
+  peliculas:
+    - { titulo: "The First World Festival of Negro Arts", año: 1966, tipo: documental, direccion: "William Greaves" }
   disciplinas: [escenicas, escultura, pintura]
   es:
     titulo: "Festival Mundial de las Artes Negras (Dakar)"
@@ -452,6 +473,8 @@
   pista: arte
   sociedad: japon
   wiki: { es: "Yayoi Kusama", en: "Yayoi Kusama" }
+  peliculas:
+    - { titulo: "Kusama: Infinity", año: 2018, tipo: documental, direccion: "Heather Lenz" }
   disciplinas: [instalacion, escenicas]
   es:
     titulo: "Narcissus Garden (Yayoi Kusama)"
@@ -490,6 +513,8 @@
   pista: mundo
   sociedad: europa
   wiki: { es: "Caída del Muro de Berlín", en: "Fall of the Berlin Wall" }
+  peliculas:
+    - { titulo: "Good Bye, Lenin!", año: 2003, tipo: pelicula, direccion: "Wolfgang Becker" }
   es:
     titulo: "Cae el Muro de Berlín"
     texto: "Fin de la Guerra Fría y aceleración de la globalización económica."
@@ -502,6 +527,8 @@
   pista: mundo
   sociedad: africa
   wiki: { es: "Informe Sarr-Savoy", en: "Restitution of African cultural heritage" }
+  peliculas:
+    - { titulo: "Dahomey", año: 2024, tipo: documental, direccion: "Mati Diop", wiki: "Dahomey (film)" }
   es:
     titulo: "Informe Sarr–Savoy"
     texto: "Recomienda a Francia devolver el patrimonio africano expoliado. Empiezan las restituciones, como la de bronces de Benín a Nigeria."

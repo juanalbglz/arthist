@@ -138,3 +138,14 @@ nav.epocas a:hover { color: var(--red); }
   .hito.arte .tarjeta { grid-column: 1; grid-row: 1; border-left: 0; border-right: 5px solid var(--red); padding: 0 .9rem 0 0; text-align: right; }
   .hito.mundo .tarjeta { grid-column: 3; grid-row: 1; }
 }
+.hito figure { margin: .2rem 0 .6rem; }
+.hito figure img { display: block; width: 100%; max-height: 14rem; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: multiply; }
+.hito figure img:hover { filter: none; mix-blend-mode: normal; }
+@media (prefers-color-scheme: dark) { .hito figure img { mix-blend-mode: normal; } }
+.hito figcaption { font-size: .75rem; color: var(--muted); margin-top: .25rem; }
+.hito figcaption a { color: var(--muted); }
+.hito .ver { margin-top: .6rem; }
+.hito .ver .eyebrow { font-size: .72rem; }
+.hito .ver ul { list-style: none; padding: 0; margin: .2rem 0 0; font-size: .95rem; }
+.hito .ver li { margin: .15rem 0; }
+.hito .ver cite { font-style: italic; }
