@@ -4,11 +4,11 @@ Historia del arte de todo el mundo junto a la historia de cada sociedad que la h
 
 ## Cómo está organizada
 
-- **Épocas** (tiempo profundo, aldeas y estados, reinos, conquistas…): cada una es una sección.
-- Dentro de cada época, un **carril por sociedad** (África, Canarias, Mesoamérica…): a la izquierda su arte, a la derecha lo que le pasaba a esa sociedad. Los carriles se pliegan y despliegan.
-- **Sociedad en foco**: abre su carril, lo pone el primero y pliega el resto.
+- **Un solo eje vertical de tiempo**: todos los hitos, de todas las sociedades, ordenados por fecha. Las épocas son marcas sobre el eje.
+- **Una columna por sociedad** (África, Canarias, Mesoamérica…). Sin desplegar, cada hito es un punto (rojo = arte, blanco = sociedad) con su título.
+- **Desplegar una sociedad** (pulsando su nombre o uno de sus puntos) abre su columna con las fichas completas: arte a la izquierda, historia social a la derecha. Las demás se pliegan a una franja estrecha con solo sus puntos, para ver qué pasaba a la vez; en el móvil se ocultan. La sociedad abierta queda en la dirección (`#canarias`), así se puede enlazar.
 - **Disciplinas**: filtra los hitos de arte (pintura, escultura, arquitectura…).
-- Cada hito enlaza a su artículo de Wikipedia, y cada carril a la historia de esa sociedad.
+- Cada ficha: imagen, Wikipedia, otros enlaces y películas o documentales relacionados. Cada sociedad enlaza a su historia en Wikipedia.
 
 ## Añadir o cambiar hitos
 
